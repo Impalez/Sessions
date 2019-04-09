@@ -1,0 +1,52 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F8722 ]
+[d frameptr 4065 ]
+"62 C:\_DevTools\Microchip\xc8\v1.41\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\_DevTools\Microchip\xc8\v1.41\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 C:\_DevTools\Microchip\xc8\v1.41\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 C:\_DevTools\Microchip\xc8\v1.41\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"20 C:\_DevTools\Microchip\xc8\v1.41\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"10 C:\_DevTools\Microchip\xc8\v1.41\sources\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 C:\_DevTools\Microchip\xc8\v1.41\sources\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 C:\_DevTools\Microchip\xc8\v1.41\sources\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 C:\_DevTools\Microchip\xc8\v1.41\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"31 C:\Hella Embeddec Club\02_DigitalOutputs\20 - DigtalOutputs.X\DigitalOutputs.c
+[v _initLEDs initLEDs `(v  1 e 1 0 ]
+"44
+[v _init init `(v  1 e 1 0 ]
+"95
+[v _main main `(v  1 e 1 0 ]
+"4770 C:\_DevTools\Microchip\xc8\v1.41\include\pic18f8722.h
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+"6069
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"95 C:\Hella Embeddec Club\02_DigitalOutputs\20 - DigtalOutputs.X\DigitalOutputs.c
+[v _main main `(v  1 e 1 0 ]
+{
+"97
+[v main@i i `ui  1 a 2 1 ]
+"114
+} 0
+"44
+[v _init init `(v  1 e 1 0 ]
+{
+"49
+} 0
+"31
+[v _initLEDs initLEDs `(v  1 e 1 0 ]
+{
+"37
+} 0

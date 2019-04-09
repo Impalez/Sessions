@@ -1,0 +1,12 @@
+_LedAction: CODE, 24 0 214
+_Adc_GetMess: CODE, 476 0 36
+_setPeriod: CODE, 532 0 10
+_CloseADC: CODE, 570 0 6
+_PwmInit: CODE, 384 0 46
+_main: CODE, 512 0 20
+i2_setPeriod: CODE, 552 0 10
+__initialization: CODE, 562 0 2
+_setDuty: CODE, 430 0 46
+_intrerupt_ext: CODE, 8 0 376
+_InteruptInit: CODE, 542 0 10
+Total: 776

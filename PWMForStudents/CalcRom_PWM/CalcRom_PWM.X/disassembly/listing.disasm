@@ -1,0 +1,497 @@
+Disassembly Listing for CalcRom_PWM
+Generated From:
+C:/Users/testrdcr/Desktop/ws/CalcRom_PWM/CalcRom_PWM.X/dist/default/debug/CalcRom_PWM.X.debug.elf
+Apr 26, 2017 2:48:50 PM
+
+---  C:/Users/testrdcr/Desktop/ws/CalcRom_PWM/main.c  ---------------------------------------------------
+1:             #include "Pwm.h"
+2:             
+3:             #include <xc.h>
+4:             
+5:             #pragma config OSC = HS
+6:             #pragma config FCMEN = OFF
+7:             #pragma config IESO = OFF
+8:             #pragma config PWRT = OFF
+9:             #pragma config BOREN = OFF
+10:            #pragma config WDT = OFF
+11:            #pragma config MCLRE = ON
+12:            #pragma config LVP = OFF
+13:            #pragma config XINST = OFF
+14:            
+15:            void interrupt intrerupt_ext (void)
+0008  8217     BSF btemp, 1, ACCESS
+00CC  0006     POP
+00CE  CFFA     MOVFF PCLATH, 0x2
+00D0  F002     NOP
+00D2  CFFB     MOVFF PCLATU, 0x3
+00D4  F003     NOP
+00D6  CFE9     MOVFF FSR0, 0x4
+00D8  F004     NOP
+00DA  CFEA     MOVFF FSR0H, 0x5
+00DC  F005     NOP
+00DE  CFE1     MOVFF FSR1, 0x6
+00E0  F006     NOP
+00E2  CFE2     MOVFF FSR1H, 0x7
+00E4  F007     NOP
+00E6  CFD9     MOVFF FSR2, 0x8
+00E8  F008     NOP
+00EA  CFDA     MOVFF FSR2H, 0x9
+00EC  F009     NOP
+00EE  CFF3     MOVFF PROD, 0xA
+00F0  F00A     NOP
+00F2  CFF4     MOVFF PRODH, 0xB
+00F4  F00B     NOP
+00F6  CFF6     MOVFF TBLPTR, 0xC
+00F8  F00C     NOP
+00FA  CFF7     MOVFF TBLPTRH, 0xD
+00FC  F00D     NOP
+00FE  CFF8     MOVFF TBLPTRU, 0xE
+0100  F00E     NOP
+0102  CFF5     MOVFF TABLAT, 0xF
+0104  F00F     NOP
+16:            {
+17:                static uint8 tempValue = OLD_VALUE;
+18:            
+19:                if(INTCONbits.INT0IE && INTCONbits.INT0IF)
+0106  B8F2     BTFSC INTCON, 4, ACCESS
+0108  A2F2     BTFSS INTCON, 1, ACCESS
+010A  D00E     BRA 0x128
+20:                {
+21:                    if(tempValue == OLD_VALUE)
+010C  5016     MOVF __pbssCOMRAM, W, ACCESS
+010E  A4D8     BTFSS STATUS, 2, ACCESS
+0110  D005     BRA 0x11C
+22:                    {
+23:                        setPeriod(0x7D);
+0112  0E7D     MOVLW 0x7D
+0114  EC0A     CALL 0x214, 0
+0116  F001     NOP
+24:                        tempValue = NEW_VALUE;
+0118  0E01     MOVLW 0x1
+011A  D004     BRA 0x124
+25:                    }
+26:                    else
+27:                    {
+28:                        setPeriod(0xFF);
+011C  0EFF     MOVLW 0xFF
+011E  EC0A     CALL 0x214, 0
+0120  F001     NOP
+29:                        tempValue = OLD_VALUE;
+0122  0E00     MOVLW 0x0
+0124  6E16     MOVWF __pbssCOMRAM, ACCESS
+30:                    }
+31:                    INTCONbits.INT0IF = 0;
+0126  92F2     BCF INTCON, 1, ACCESS
+32:                }
+33:            }
+0128  C00F     MOVFF 0xF, TABLAT
+012A  FFF5     NOP
+012C  C00E     MOVFF 0xE, TBLPTRU
+012E  FFF8     NOP
+0130  C00D     MOVFF 0xD, TBLPTRH
+0132  FFF7     NOP
+0134  C00C     MOVFF 0xC, TBLPTR
+0136  FFF6     NOP
+0138  C00B     MOVFF 0xB, PRODH
+013A  FFF4     NOP
+013C  C00A     MOVFF 0xA, PROD
+013E  FFF3     NOP
+0140  C009     MOVFF 0x9, FSR2H
+0142  FFDA     NOP
+0144  C008     MOVFF 0x8, FSR2
+0146  FFD9     NOP
+0148  C007     MOVFF 0x7, FSR1H
+014A  FFE2     NOP
+014C  C006     MOVFF 0x6, FSR1
+014E  FFE1     NOP
+0150  C005     MOVFF 0x5, FSR0H
+0152  FFEA     NOP
+0154  C004     MOVFF 0x4, FSR0
+0156  FFE9     NOP
+0158  C003     MOVFF 0x3, PCLATU
+015A  FFFB     NOP
+015C  C002     MOVFF 0x2, PCLATH
+015E  FFFA     NOP
+0160  9217     BCF btemp, 1, ACCESS
+0162  0011     RETFIE 1
+34:            
+35:            void main()
+36:            {
+37:               
+38:                PwmInit();
+01E2  ECB2     CALL 0x164, 0
+01E4  F000     NOP
+39:                InteruptInit();
+01E6  EC01     CALL 0x202, 0
+01E8  F001     NOP
+40:                setPeriod(0xFF);
+01EA  0EFF     MOVLW 0xFF
+01EC  EC06     CALL 0x20C, 0
+01EE  F001     NOP
+41:                while(1)
+01F4  D7FD     BRA 0x1F0
+42:                {
+43:                    LedAction();
+01F0  EC09     CALL 0x12, 0
+01F2  F000     NOP
+01F4  D7FD     BRA 0x1F0
+44:                }
+45:            }
+---  C:/Users/testrdcr/Desktop/ws/CalcRom_PWM/Pwm.c  ----------------------------------------------------
+1:             #include "Pwm.h"
+2:             #include "Pwm_Private.h"
+3:             #include <xc.h>
+4:             #include "Adc_1.h"
+5:             
+6:             
+7:             void PwmInit()
+8:             {
+9:             	TRISCbits.RC2=1;
+0164  8494     BSF TRISC, 2, ACCESS
+10:                    TRISCbits.RC1=1;
+0166  8294     BSF TRISC, 1, ACCESS
+11:                    TRISGbits.RG0=1;
+0168  8098     BSF TRISG, 0, ACCESS
+12:            
+13:            	CCP1CON=0b00001100;
+016A  0E0C     MOVLW 0xC
+016C  6EBD     MOVWF CCP1CON, ACCESS
+14:                    CCP2CON=0b00001100;
+016E  0E0C     MOVLW 0xC
+0170  6EBA     MOVWF CCP2CON, ACCESS
+15:                    CCP3CON=0b00001100;
+0172  0E0C     MOVLW 0xC
+0174  6EB7     MOVWF CCP3CON, ACCESS
+16:            
+17:            	CCPR1L=0x00;
+0176  0E00     MOVLW 0x0
+0178  6EBE     MOVWF CCPR1, ACCESS
+18:                    CCPR2L=0x00;
+017A  0E00     MOVLW 0x0
+017C  6EBB     MOVWF CCPR2, ACCESS
+19:                    CCPR3L=0x00;
+017E  0E00     MOVLW 0x0
+0180  6EB8     MOVWF CCPR3, ACCESS
+20:            
+21:            	T2CON=0b00000101;
+0182  0E05     MOVLW 0x5
+0184  6ECA     MOVWF T2CON, ACCESS
+22:            	while (!PIR1bits.TMR2IF);
+0186  A29E     BTFSS PIR1, 1, ACCESS
+0188  D7FE     BRA 0x186
+23:            
+24:            	TRISCbits.RC2=0;
+018A  9494     BCF TRISC, 2, ACCESS
+25:                    TRISCbits.RC1=0;
+018C  9294     BCF TRISC, 1, ACCESS
+26:                    TRISGbits.RG0=0;
+018E  9098     BCF TRISG, 0, ACCESS
+27:            }
+0190  0012     RETURN 0
+28:            
+29:            void InteruptInit()
+30:            {
+31:                INTCONbits.GIE=1;
+0202  8EF2     BSF INTCON, 7, ACCESS
+32:                INTCONbits.INT0IE=1;
+0204  88F2     BSF INTCON, 4, ACCESS
+33:                INTCONbits.INT0IF=0;
+0206  92F2     BCF INTCON, 1, ACCESS
+34:                INTCON2bits.INTEDG0=1;
+0208  8CF1     BSF INTCON2, 6, ACCESS
+35:            }
+0008  8217     BSF btemp, 1, ACCESS
+020A  0012     RETURN 0
+36:            
+37:            void setDuty(uint8 chanId,uint8 duty)
+0192  6E11     MOVWF chanId, ACCESS
+38:            {
+39:                switch(chanId)
+0194  D009     BRA 0x1A8
+01A8  5011     MOVF chanId, W, ACCESS
+40:                {
+41:                    case RC2_0:
+42:                    {
+43:                        CCPR1L = duty;
+0196  C010     MOVFF period, CCPR1
+0198  FFBE     NOP
+44:                        break;
+019A  0012     RETURN 0
+45:                    }
+46:                    case RC1_0:
+47:                    {
+48:                        CCPR2L = duty;
+019C  C010     MOVFF period, CCPR2
+019E  FFBB     NOP
+49:                        break;
+01A0  0012     RETURN 0
+50:                    }
+51:                    case RG0_0:
+52:                    {
+53:                        CCPR3L = duty;
+01A2  C010     MOVFF period, CCPR3
+01A4  FFB8     NOP
+54:                        break;
+55:                    }
+56:                }
+01A6  0012     RETURN 0
+01A8  5011     MOVF chanId, W, ACCESS
+01AA  0A00     XORLW 0x0
+01AC  B4D8     BTFSC STATUS, 2, ACCESS
+01AE  D7F3     BRA 0x196
+01B0  0A01     XORLW 0x1
+01B2  B4D8     BTFSC STATUS, 2, ACCESS
+01B4  D7F3     BRA 0x19C
+01B6  0A03     XORLW 0x3
+01B8  A4D8     BTFSS STATUS, 2, ACCESS
+01BA  0012     RETURN 0
+01BC  D7F2     BRA 0x1A2
+57:            }
+58:            
+59:            void setPeriod(uint8 period)
+020C  6E10     MOVWF period, ACCESS
+0214  6E01     MOVWF __pcstackCOMRAM, ACCESS
+60:            {
+61:            	PR2 = period;
+020E  C010     MOVFF period, PR2
+0210  FFCB     NOP
+0216  C001     MOVFF __pcstackCOMRAM, PR2
+0218  FFCB     NOP
+62:            }
+0212  0012     RETURN 0
+021A  0012     RETURN 0
+63:            
+64:            void LedAction()
+65:            {
+66:                uint8 adcValue = 0;
+0012  0E00     MOVLW 0x0
+0014  6E15     MOVWF adcValue, ACCESS
+67:                uint8 tempValue = 0;
+0016  0E00     MOVLW 0x0
+0018  6E13     MOVWF tempValue, ACCESS
+68:                uint8 tempValue1 = 0;
+001A  0E00     MOVLW 0x0
+001C  6E14     MOVWF tempValue1, ACCESS
+69:            
+70:                Adc_GetMess(&adcValue);
+001E  0E15     MOVLW 0x15
+0020  6E10     MOVWF period, ACCESS
+0022  0E00     MOVLW 0x0
+0024  6E11     MOVWF chanId, ACCESS
+0026  ECDF     CALL 0x1BE, 0
+0028  F000     NOP
+71:                if(adcValue <= 85)
+002A  0E56     MOVLW 0x56
+002C  6015     CPFSLT adcValue, ACCESS
+002E  D017     BRA 0x5E
+72:                {
+73:                    setDuty(RC2_0,255 - 3*adcValue);
+0030  5015     MOVF adcValue, W, ACCESS
+0032  0D03     MULLW 0x3
+0034  50F3     MOVF PROD, W, ACCESS
+0036  0800     SUBLW 0x0
+0038  6E12     MOVWF 0x12, ACCESS
+003A  0412     DECF 0x12, W, ACCESS
+003C  6E10     MOVWF period, ACCESS
+003E  0E00     MOVLW 0x0
+0040  ECC9     CALL 0x192, 0
+0042  F000     NOP
+74:                    setDuty(RC1_0,3*adcValue);
+0044  5015     MOVF adcValue, W, ACCESS
+0046  0D03     MULLW 0x3
+0048  CFF3     MOVFF PROD, period
+004A  F010     NOP
+004C  0E01     MOVLW 0x1
+004E  ECC9     CALL 0x192, 0
+0050  F000     NOP
+75:                    setDuty(RG0_0,0);
+0052  0E00     MOVLW 0x0
+0054  6E10     MOVWF period, ACCESS
+0056  0E02     MOVLW 0x2
+0058  ECC9     CALL 0x192, 0
+005A  F000     NOP
+76:                }
+005C  0012     RETURN 0
+77:                else if(adcValue > 85 && adcValue <= 170)
+005E  0E55     MOVLW 0x55
+0060  6415     CPFSGT adcValue, ACCESS
+0062  D01A     BRA 0x98
+0064  0EAB     MOVLW 0xAB
+0066  6015     CPFSLT adcValue, ACCESS
+0068  D017     BRA 0x98
+78:                {
+79:                    setDuty(RC1_0,255 - 3*adcValue);
+006A  5015     MOVF adcValue, W, ACCESS
+006C  0D03     MULLW 0x3
+006E  50F3     MOVF PROD, W, ACCESS
+0070  0800     SUBLW 0x0
+0072  6E12     MOVWF 0x12, ACCESS
+0074  0412     DECF 0x12, W, ACCESS
+0076  6E10     MOVWF period, ACCESS
+0078  0E01     MOVLW 0x1
+007A  ECC9     CALL 0x192, 0
+007C  F000     NOP
+80:                    setDuty(RG0_0,3*adcValue);
+007E  5015     MOVF adcValue, W, ACCESS
+0080  0D03     MULLW 0x3
+0082  CFF3     MOVFF PROD, period
+0084  F010     NOP
+0086  0E02     MOVLW 0x2
+0088  ECC9     CALL 0x192, 0
+008A  F000     NOP
+81:                    setDuty(RC2_0,0);
+008C  0E00     MOVLW 0x0
+008E  6E10     MOVWF period, ACCESS
+0090  0E00     MOVLW 0x0
+0092  ECC9     CALL 0x192, 0
+0094  F000     NOP
+82:                }
+0096  0012     RETURN 0
+83:                else if(adcValue > 170)
+0098  0EAA     MOVLW 0xAA
+009A  6415     CPFSGT adcValue, ACCESS
+009C  0012     RETURN 0
+84:                {
+85:                    setDuty(RG0_0,255 - 3*adcValue);
+009E  5015     MOVF adcValue, W, ACCESS
+00A0  0D03     MULLW 0x3
+00A2  50F3     MOVF PROD, W, ACCESS
+00A4  0800     SUBLW 0x0
+00A6  6E12     MOVWF 0x12, ACCESS
+00A8  0412     DECF 0x12, W, ACCESS
+00AA  6E10     MOVWF period, ACCESS
+00AC  0E02     MOVLW 0x2
+00AE  ECC9     CALL 0x192, 0
+00B0  F000     NOP
+86:                    setDuty(RC2_0,3*adcValue);
+00B2  5015     MOVF adcValue, W, ACCESS
+00B4  0D03     MULLW 0x3
+00B6  CFF3     MOVFF PROD, period
+00B8  F010     NOP
+00BA  0E00     MOVLW 0x0
+00BC  ECC9     CALL 0x192, 0
+00BE  F000     NOP
+87:                    setDuty(RC1_0,0);
+00C0  0E00     MOVLW 0x0
+00C2  6E10     MOVWF period, ACCESS
+00C4  0E01     MOVLW 0x1
+00C6  ECC9     CALL 0x192, 0
+00C8  F000     NOP
+88:                }
+89:            }
+00CA  0012     RETURN 0
+90:            
+91:            void LedControl()
+92:            {
+93:                //Add your code here
+94:            }
+---  C:/Users/testrdcr/Desktop/ws/CalcRom_PWM/Adc_1.c  --------------------------------------------------
+1:             #include "Adc_1.h"
+2:             #include "xc.h"
+3:             #include "plib/adc.h"
+4:             
+5:             void Adc_GetMess(uint8 *Value)
+6:             {
+7:                 CloseADC();
+01BE  EC0E     CALL 0x21C, 0
+01C0  F001     NOP
+8:                 ADCON0 = 0b00000001;
+01C2  0E01     MOVLW 0x1
+01C4  6EC2     MOVWF ADCON0, ACCESS
+9:                 ADCON1 = 0b00001110;
+01C6  0E0E     MOVLW 0xE
+01C8  6EC1     MOVWF ADCON1, ACCESS
+10:                ADCON2 = 0b00111010;
+01CA  0E3A     MOVLW 0x3A
+01CC  6EC0     MOVWF ADCON2, ACCESS
+11:                ADCON0bits.GO = 1;
+01CE  82C2     BSF ADCON0, 1, ACCESS
+12:            
+13:                while(ADCON0bits.GO)
+14:                {/*Do nothing wait for conversion*/
+15:                }
+01D0  B2C2     BTFSC ADCON0, 1, ACCESS
+01D2  D7FE     BRA 0x1D0
+16:            
+17:                *Value = ADRESH;
+01D4  C010     MOVFF period, FSR2
+01D6  FFD9     NOP
+01D8  C011     MOVFF chanId, FSR2H
+01DA  FFDA     NOP
+01DC  CFC4     MOVFF ADRESH, INDF2
+01DE  FFDF     NOP
+18:            }
+01E0  0012     RETURN 0
+---  C:/Program Files (x86)/Microchip/xc8/v1.41/sources/pic18/plib/ADC/adcclose.c  ----------------------
+1:             #include <p18cxxx.h>
+2:             #include <adc.h>
+3:             
+4:             #if defined (ADC_V1) || defined (ADC_V2) || defined (ADC_V3) ||\
+5:                 defined (ADC_V4) || defined (ADC_V5) || defined (ADC_V8) ||\
+6:             	defined (ADC_V6) || defined (ADC_V7) || defined (ADC_V7_1)||\
+7:             	defined (ADC_V10)|| defined (ADC_V11) || defined (ADC_V12) ||\
+8:             	defined (ADC_V13) || defined (ADC_V13_1) || defined (ADC_V11_1)\
+9:             	|| defined (ADC_V13_2) || defined (ADC_V13_3)|| defined (ADC_V14) || defined (ADC_V14_1) || defined (ADC_V14_2) || defined (ADC_V14_3)
+10:            /*************************************************************************************
+11:            Function :       void CloseADC(void)
+12:            
+13:            Overview :    This function turns off the ADC module and disables the ADC interrupts
+14:            
+15:            Parameters :  None
+16:            
+17:            Returns :        None
+18:            
+19:            Remarks :     This function first disables the ADC interrupt and then turns off the ADC
+20:            		module.The Interrupt Flag bit (ADIF) is also cleared.
+21:                        
+22:            ***************************************************************************************/
+23:            void CloseADC(void)
+24:            {
+25:              ADCON0bits.ADON = 0;
+021C  90C2     BCF ADCON0, 0, ACCESS
+26:              PIE1bits.ADIE = 0;
+021E  9C9D     BCF PIE1, 6, ACCESS
+27:            }
+0220  0012     RETURN 0
+28:            
+29:            #elif defined (ADC_V9) || defined (ADC_V9_1)
+30:            /*************************************************************************************
+31:            Function :       void CloseADC(void)
+32:            
+33:            Overview :    This function turns of the ADC module and disables the ADC interrupts
+34:            
+35:            Parameters :  None
+36:            
+37:            Returns :        None
+38:            
+39:            Remarks :     This function first disables the ADC interrupt and then turns off the ADC
+40:            		module.The Interrupt Flag bit (ADIF) is also cleared.
+41:                        
+42:            ***************************************************************************************/
+43:            void CloseADC(void)
+44:            {
+45:              WDTCONbits.DEVCFG = 0;  
+46:              ADCON0bits.ADON = 0;
+47:              PIE1bits.ADIE = 0;
+48:            }
+49:            
+50:            #elif defined (ADC_V15) || defined (ADC_V15_1)
+51:            /*************************************************************************************
+52:            Function :       void CloseADC(void)
+53:            
+54:            Overview :    This function turns of the ADC module and disables the ADC interrupts
+55:            
+56:            Parameters :  None
+57:            
+58:            Returns :        None
+59:            
+60:            Remarks :     This function first disables the ADC interrupt and then turns off the ADC
+61:            		module.The Interrupt Flag bit (ADIF) is also cleared.
+62:                        
+63:            ***************************************************************************************/
+64:            void CloseADC(void)
+65:            {
+66:              ADCON1Hbits.ADON = 0;
+67:              PIE1bits.ADIE = 0;
+68:            }
+69:            #endif

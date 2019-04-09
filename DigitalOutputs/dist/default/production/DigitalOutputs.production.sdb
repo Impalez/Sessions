@@ -1,0 +1,82 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F8722 ]
+[d frameptr 4065 ]
+"62 D:\Hella\Compiler\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 D:\Hella\Compiler\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 D:\Hella\Compiler\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 D:\Hella\Compiler\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"20 D:\Hella\Compiler\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"10 D:\Hella\Compiler\sources\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 D:\Hella\Compiler\sources\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 D:\Hella\Compiler\sources\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 D:\Hella\Compiler\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"31 D:\Hella\Sessions\DigitalOutputs\DigitalOutputs.c
+[v _initLEDs initLEDs `(v  1 e 1 0 ]
+"44
+[v _init init `(v  1 e 1 0 ]
+"66
+[v _delay50 delay50 `(v  1 e 1 0 ]
+"74
+[v _delays delays `(v  1 e 1 0 ]
+"119
+[v _sequence3 sequence3 `(v  1 e 1 0 ]
+"169
+[v _main main `(v  1 e 1 0 ]
+"4770 D:\Hella\Compiler\include\pic18f8722.h
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+"6069
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+"169 D:\Hella\Sessions\DigitalOutputs\DigitalOutputs.c
+[v _main main `(v  1 e 1 0 ]
+{
+"176
+} 0
+"119
+[v _sequence3 sequence3 `(v  1 e 1 0 ]
+{
+"123
+[v sequence3@j j `ui  1 a 2 11 ]
+[v sequence3@i i `ui  1 a 2 9 ]
+"128
+[v sequence3@VAR VAR `ui  1 a 2 7 ]
+"161
+} 0
+"74
+[v _delays delays `(v  1 e 1 0 ]
+{
+"75
+[v delays@i i `ui  1 a 2 3 ]
+"74
+[v delays@x x `ui  1 p 2 0 ]
+"79
+} 0
+"66
+[v _delay50 delay50 `(v  1 e 1 0 ]
+{
+"67
+[v delay50@i i `ui  1 a 2 1 ]
+"71
+} 0
+"44
+[v _init init `(v  1 e 1 0 ]
+{
+"50
+} 0
+"31
+[v _initLEDs initLEDs `(v  1 e 1 0 ]
+{
+"37
+} 0

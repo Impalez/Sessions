@@ -1,0 +1,785 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F8722 ]
+[d frameptr 4065 ]
+"34 D:\Hella\Sessions\AnalogInputsForStudents\AnalogInputs_students\AnalogInputs.c
+[v _initButtons initButtons `(v  1 e 1 0 ]
+"47
+[v _initLEDs initLEDs `(v  1 e 1 0 ]
+"58
+[v _initAdc initAdc `(v  1 e 1 0 ]
+"69
+[v _delay50 delay50 `(v  1 e 1 0 ]
+"81
+[v _sequence1 sequence1 `(v  1 e 1 0 ]
+"111
+[v _sequence2 sequence2 `(v  1 e 1 0 ]
+"137
+[v _sequence3 sequence3 `(v  1 e 1 0 ]
+"163
+[v _sequence4 sequence4 `(v  1 e 1 0 ]
+"197
+[v _main main `(v  1 e 1 0 ]
+"8 D:\Hella\Compiler\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"8 D:\Hella\Compiler\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"32 D:\Hella\Compiler\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+"409 D:\Hella\Compiler\sources\common\doprnt.c
+[v _fround fround `(d  1 s 3 fround ]
+"425
+[v _scale scale `(d  1 s 3 scale ]
+"492
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"60 D:\Hella\Compiler\sources\common\fldivl.c
+[v __div_to_l_ _div_to_l_ `(ul  1 e 4 0 ]
+"62 D:\Hella\Compiler\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 D:\Hella\Compiler\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 D:\Hella\Compiler\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"60 D:\Hella\Compiler\sources\common\ftdivl.c
+[v __tdiv_to_l_ _tdiv_to_l_ `(ul  1 e 4 0 ]
+"4 D:\Hella\Compiler\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+"62 D:\Hella\Compiler\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"15 D:\Hella\Compiler\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+"20 D:\Hella\Compiler\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"44 D:\Hella\Compiler\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+"8 D:\Hella\Compiler\sources\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+"8 D:\Hella\Compiler\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"8 D:\Hella\Compiler\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+"35 D:\Hella\Compiler\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+"10 D:\Hella\Compiler\sources\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 D:\Hella\Compiler\sources\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 D:\Hella\Compiler\sources\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 D:\Hella\Compiler\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 D:\Hella\Compiler\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"13 D:\Hella\Compiler\sources\pic18\plib\SPI\spi1open.c
+[v _OpenSPI1 OpenSPI1 `(v  1 e 1 0 ]
+"13 D:\Hella\Compiler\sources\pic18\plib\SPI\spi1writ.c
+[v _WriteSPI1 WriteSPI1 `(c  1 e 1 0 ]
+"55 D:\Hella\Sessions\AnalogInputsForStudents\AnalogInputs_students\lcd.c
+[v _setGPIO setGPIO `(v  1 e 1 0 ]
+"81
+[v _setIODIR setIODIR `(v  1 e 1 0 ]
+"102
+[v _lcdCommand lcdCommand `(v  1 e 1 0 ]
+"123
+[v _LcdInit LcdInit `(v  1 e 1 0 ]
+"166
+[v _LcdClear LcdClear `(v  1 e 1 0 ]
+"176
+[v _LcdGoTo LcdGoTo `(v  1 e 1 0 ]
+"186
+[v _LcdChar LcdChar `(v  1 e 1 0 ]
+"202
+[v _LcdWriteString LcdWriteString `(v  1 e 1 0 ]
+"30 D:\Hella\Sessions\AnalogInputsForStudents\AnalogInputs_students\AnalogInputs.c
+[v _state state `VEi  1 e 2 0 ]
+[s S21 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"2651 D:\Hella\Compiler\include\pic18f8722.h
+[s S30 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 VREFM 1 0 :1:2 
+`uc 1 VREFP 1 0 :1:3 
+`uc 1 T0CKI 1 0 :1:4 
+`uc 1 LVDIN 1 0 :1:5 
+]
+[s S36 . 1 `uc 1 AN0 1 0 :1:0 
+`uc 1 AN1 1 0 :1:1 
+`uc 1 AN2 1 0 :1:2 
+`uc 1 AN3 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 AN4 1 0 :1:5 
+]
+[s S43 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 HLVDIN 1 0 :1:5 
+]
+[s S46 . 1 `uc 1 ULPWUIN 1 0 :1:0 
+`uc 1 . 1 0 :6:1 
+`uc 1 RJPU 1 0 :1:7 
+]
+[u S50 . 1 `S21 1 . 1 0 `S30 1 . 1 0 `S36 1 . 1 0 `S43 1 . 1 0 `S46 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES50  1 e 1 @3968 ]
+"4770
+[v _LATD LATD `VEuc  1 e 1 @3980 ]
+"5406
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+[s S91 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"5438
+[u S109 . 1 `S91 1 . 1 0 `S21 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES109  1 e 1 @3986 ]
+"6069
+[v _TRISD TRISD `VEuc  1 e 1 @3989 ]
+[s S718 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"6173
+[s S727 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+[u S736 . 1 `S718 1 . 1 0 `S727 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES736  1 e 1 @3988 ]
+[s S678 . 1 `uc 1 TRISF0 1 0 :1:0 
+`uc 1 TRISF1 1 0 :1:1 
+`uc 1 TRISF2 1 0 :1:2 
+`uc 1 TRISF3 1 0 :1:3 
+`uc 1 TRISF4 1 0 :1:4 
+`uc 1 TRISF5 1 0 :1:5 
+`uc 1 TRISF6 1 0 :1:6 
+`uc 1 TRISF7 1 0 :1:7 
+]
+"6836
+[s S687 . 1 `uc 1 RF0 1 0 :1:0 
+`uc 1 RF1 1 0 :1:1 
+`uc 1 RF2 1 0 :1:2 
+`uc 1 RF3 1 0 :1:3 
+`uc 1 RF4 1 0 :1:4 
+`uc 1 RF5 1 0 :1:5 
+`uc 1 RF6 1 0 :1:6 
+`uc 1 RF7 1 0 :1:7 
+]
+[u S696 . 1 `S678 1 . 1 0 `S687 1 . 1 0 ]
+[v _TRISFbits TRISFbits `VES696  1 e 1 @3991 ]
+[s S792 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+"7845
+[s S801 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+]
+[u S806 . 1 `S792 1 . 1 0 `S801 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES806  1 e 1 @3998 ]
+"10002
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
+"10072
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"10156
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
+[s S192 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_NOT_DONE 1 0 :1:1 
+]
+"10200
+[s S195 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+]
+[s S199 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 DONE 1 0 :1:1 
+]
+[s S202 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+]
+[s S209 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[s S212 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_DONE 1 0 :1:1 
+]
+[s S215 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S218 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GODONE 1 0 :1:1 
+]
+[u S221 . 1 `S192 1 . 1 0 `S195 1 . 1 0 `S199 1 . 1 0 `S202 1 . 1 0 `S209 1 . 1 0 `S212 1 . 1 0 `S215 1 . 1 0 `S218 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES221  1 e 1 @4034 ]
+"10286
+[v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
+"11064
+[v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @4038 ]
+[s S598 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"11120
+[s S604 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[s S609 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 CKP1 1 0 :1:4 
+]
+[s S612 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 SSPEN1 1 0 :1:5 
+]
+[s S615 . 1 `uc 1 SSPM01 1 0 :1:0 
+]
+[s S617 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 SSPM11 1 0 :1:1 
+]
+[s S620 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 SSPM21 1 0 :1:2 
+]
+[s S623 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SSPM31 1 0 :1:3 
+]
+[s S626 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 SSPOV1 1 0 :1:6 
+]
+[s S629 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 WCOL1 1 0 :1:7 
+]
+[u S632 . 1 `S598 1 . 1 0 `S604 1 . 1 0 `S609 1 . 1 0 `S612 1 . 1 0 `S615 1 . 1 0 `S617 1 . 1 0 `S620 1 . 1 0 `S623 1 . 1 0 `S626 1 . 1 0 `S629 1 . 1 0 ]
+[v _SSP1CON1bits SSP1CON1bits `VES632  1 e 1 @4038 ]
+"11343
+[v _SSP1STAT SSP1STAT `VEuc  1 e 1 @4039 ]
+[s S371 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W 1 0 :1:2 
+]
+"11481
+[s S374 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A 1 0 :1:5 
+]
+[s S377 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+[s S392 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S397 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DAT 1 0 :1:5 
+]
+[s S403 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S408 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE 1 0 :1:2 
+]
+[s S411 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_ADDRESS 1 0 :1:5 
+]
+[s S414 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S419 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[s S424 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S429 . 1 `uc 1 BF1 1 0 :1:0 
+]
+[s S431 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 CKE1 1 0 :1:6 
+]
+[s S434 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 DA 1 0 :1:5 
+]
+[s S437 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 DA1 1 0 :1:5 
+]
+[s S440 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW 1 0 :1:2 
+]
+[s S443 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW1 1 0 :1:2 
+]
+[s S446 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 SMP1 1 0 :1:7 
+]
+[s S449 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 START 1 0 :1:3 
+]
+[s S452 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 START1 1 0 :1:3 
+]
+[s S455 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 STOP 1 0 :1:4 
+]
+[s S458 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 STOP1 1 0 :1:4 
+]
+[s S461 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 UA1 1 0 :1:1 
+]
+[s S464 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_W 1 0 :1:2 
+]
+[s S467 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_A 1 0 :1:5 
+]
+[u S470 . 1 `S371 1 . 1 0 `S374 1 . 1 0 `S377 1 . 1 0 `S371 1 . 1 0 `S374 1 . 1 0 `S392 1 . 1 0 `S397 1 . 1 0 `S403 1 . 1 0 `S408 1 . 1 0 `S411 1 . 1 0 `S414 1 . 1 0 `S419 1 . 1 0 `S424 1 . 1 0 `S429 1 . 1 0 `S431 1 . 1 0 `S434 1 . 1 0 `S437 1 . 1 0 `S440 1 . 1 0 `S443 1 . 1 0 `S446 1 . 1 0 `S449 1 . 1 0 `S452 1 . 1 0 `S455 1 . 1 0 `S458 1 . 1 0 `S461 1 . 1 0 `S464 1 . 1 0 `S467 1 . 1 0 ]
+[v _SSP1STATbits SSP1STATbits `VES470  1 e 1 @4039 ]
+"12321
+[v _SSP1BUF SSP1BUF `VEuc  1 e 1 @4041 ]
+"15122
+[v _TRISA5 TRISA5 `VEb  1 e 0 @31893 ]
+"15128
+[v _TRISB0 TRISB0 `VEb  1 e 0 @31896 ]
+"354 D:\Hella\Compiler\sources\common\doprnt.c
+[v _dpowers dpowers `C[10]ul  1 s 40 dpowers ]
+"7 D:\Hella\Compiler\sources\common\powers.c
+[v __powers_ _powers_ `C[13]d  1 e 39 0 ]
+"39
+[v __npowers_ _npowers_ `C[13]d  1 e 39 0 ]
+"197 D:\Hella\Sessions\AnalogInputsForStudents\AnalogInputs_students\AnalogInputs.c
+[v _main main `(v  1 e 1 0 ]
+{
+"234
+} 0
+"163
+[v _sequence4 sequence4 `(v  1 e 1 0 ]
+{
+"180
+[v sequence4@j j `i  1 a 2 63 ]
+"167
+[v sequence4@message message `[16]uc  1 a 16 44 ]
+"166
+[v sequence4@i i `uc  1 a 1 66 ]
+"165
+[v sequence4@potiValue potiValue `uc  1 a 1 65 ]
+"168
+[v sequence4@VARR VARR `i  1 s 2 VARR ]
+"195
+} 0
+"137
+[v _sequence3 sequence3 `(v  1 e 1 0 ]
+{
+"141
+[v sequence3@message message `[16]uc  1 a 16 41 ]
+"140
+[v sequence3@i i `uc  1 a 1 61 ]
+"139
+[v sequence3@potiValue potiValue `uc  1 a 1 60 ]
+"157
+} 0
+"111
+[v _sequence2 sequence2 `(v  1 e 1 0 ]
+{
+"114
+[v sequence2@message message `[16]uc  1 a 16 41 ]
+"113
+[v sequence2@potiValue potiValue `uc  1 a 1 60 ]
+[v sequence2@F6598 F6598 `[16]uc  1 s 16 F6598 ]
+"130
+} 0
+"492 D:\Hella\Compiler\sources\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+"1101
+[v sprintf@temp temp `d  1 a 3 18 ]
+"528
+[v sprintf@val val `ul  1 a 4 29 ]
+[u S357 . 4 `ul 1 vd 4 0 `d 1 integ 3 0 ]
+"526
+[v sprintf@tmpval tmpval `S357  1 a 4 25 ]
+"516
+[v sprintf@fval fval `d  1 a 3 37 ]
+"504
+[v sprintf@prec prec `i  1 a 2 35 ]
+"516
+[v sprintf@exp exp `i  1 a 2 33 ]
+"508
+[v sprintf@flag flag `us  1 a 2 23 ]
+"494
+[v sprintf@ap ap `[1]*.39v  1 a 2 21 ]
+"499
+[v sprintf@c c `c  1 a 1 40 ]
+"492
+[v sprintf@sp sp `*.39uc  1 p 2 0 ]
+[v sprintf@f f `*.32Cuc  1 p 2 2 ]
+"1541
+} 0
+"425
+[v _scale scale `(d  1 s 3 scale ]
+{
+[v scale@scl scl `c  1 a 1 wreg ]
+[v scale@scl scl `c  1 a 1 wreg ]
+"428
+[v scale@scl scl `c  1 a 1 68 ]
+"441
+} 0
+"8 D:\Hella\Compiler\sources\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+{
+[v isdigit@c c `uc  1 a 1 wreg ]
+[v isdigit@c c `uc  1 a 1 wreg ]
+"14
+[v isdigit@c c `uc  1 a 1 2 ]
+"15
+} 0
+"409 D:\Hella\Compiler\sources\common\doprnt.c
+[v _fround fround `(d  1 s 3 fround ]
+{
+[v fround@prec prec `uc  1 a 1 wreg ]
+[v fround@prec prec `uc  1 a 1 wreg ]
+"413
+[v fround@prec prec `uc  1 a 1 71 ]
+"418
+} 0
+"15 D:\Hella\Compiler\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 18 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 14 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 16 ]
+"53
+} 0
+"62 D:\Hella\Compiler\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+{
+"65
+[v ___ftmul@f3_as_product f3_as_product `um  1 a 3 57 ]
+"64
+[v ___ftmul@sign sign `uc  1 a 1 61 ]
+[v ___ftmul@cntr cntr `uc  1 a 1 60 ]
+[v ___ftmul@exp exp `uc  1 a 1 56 ]
+"62
+[v ___ftmul@f1 f1 `f  1 p 3 47 ]
+[v ___ftmul@f2 f2 `f  1 p 3 50 ]
+"157
+} 0
+"8 D:\Hella\Compiler\sources\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"11
+[v ___awmod@sign sign `uc  1 a 1 5 ]
+[v ___awmod@counter counter `uc  1 a 1 4 ]
+"8
+[v ___awmod@dividend dividend `i  1 p 2 0 ]
+[v ___awmod@divisor divisor `i  1 p 2 2 ]
+"35
+} 0
+"8 D:\Hella\Compiler\sources\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"11
+[v ___awdiv@quotient quotient `i  1 a 2 12 ]
+"12
+[v ___awdiv@sign sign `uc  1 a 1 11 ]
+[v ___awdiv@counter counter `uc  1 a 1 10 ]
+"8
+[v ___awdiv@dividend dividend `i  1 p 2 6 ]
+[v ___awdiv@divisor divisor `i  1 p 2 8 ]
+"42
+} 0
+"60 D:\Hella\Compiler\sources\common\ftdivl.c
+[v __tdiv_to_l_ _tdiv_to_l_ `(ul  1 e 4 0 ]
+{
+"63
+[v __tdiv_to_l_@quot quot `ul  1 a 4 9 ]
+"62
+[v __tdiv_to_l_@exp1 exp1 `uc  1 a 1 14 ]
+[v __tdiv_to_l_@cntr cntr `uc  1 a 1 13 ]
+"60
+[v __tdiv_to_l_@f1 f1 `f  1 p 3 0 ]
+[v __tdiv_to_l_@f2 f2 `f  1 p 3 3 ]
+"101
+} 0
+"60 D:\Hella\Compiler\sources\common\fldivl.c
+[v __div_to_l_ _div_to_l_ `(ul  1 e 4 0 ]
+{
+"63
+[v __div_to_l_@quot quot `ul  1 a 4 6 ]
+"62
+[v __div_to_l_@exp1 exp1 `uc  1 a 1 11 ]
+[v __div_to_l_@cntr cntr `uc  1 a 1 10 ]
+"60
+[v __div_to_l_@f1 f1 `d  1 p 3 0 ]
+[v __div_to_l_@f2 f2 `d  1 p 3 3 ]
+"101
+} 0
+"35 D:\Hella\Compiler\sources\common\lltoft.c
+[v ___lltoft __lltoft `(f  1 e 3 0 ]
+{
+"37
+[v ___lltoft@exp exp `uc  1 a 1 43 ]
+"35
+[v ___lltoft@c c `ul  1 p 4 35 ]
+"46
+} 0
+"8 D:\Hella\Compiler\sources\common\llmod.c
+[v ___llmod __llmod `(ul  1 e 4 0 ]
+{
+"11
+[v ___llmod@counter counter `uc  1 a 1 21 ]
+"8
+[v ___llmod@dividend dividend `ul  1 p 4 13 ]
+[v ___llmod@divisor divisor `ul  1 p 4 17 ]
+"26
+} 0
+"8 D:\Hella\Compiler\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"11
+[v ___lldiv@quotient quotient `ul  1 a 4 8 ]
+"12
+[v ___lldiv@counter counter `uc  1 a 1 12 ]
+"8
+[v ___lldiv@dividend dividend `ul  1 p 4 0 ]
+[v ___lldiv@divisor divisor `ul  1 p 4 4 ]
+"31
+} 0
+"44 D:\Hella\Compiler\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
+{
+"47
+[v ___fttol@lval lval `ul  1 a 4 30 ]
+"46
+[v ___fttol@exp1 exp1 `uc  1 a 1 34 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 29 ]
+"44
+[v ___fttol@f1 f1 `f  1 p 3 20 ]
+"73
+} 0
+"20 D:\Hella\Compiler\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+{
+[v ___ftsub@f1 f1 `f  1 p 3 84 ]
+[v ___ftsub@f2 f2 `f  1 p 3 87 ]
+"27
+} 0
+"86 D:\Hella\Compiler\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+{
+"88
+[v ___ftadd@exp1 exp1 `uc  1 a 1 83 ]
+[v ___ftadd@exp2 exp2 `uc  1 a 1 82 ]
+[v ___ftadd@sign sign `uc  1 a 1 81 ]
+"86
+[v ___ftadd@f1 f1 `f  1 p 3 72 ]
+[v ___ftadd@f2 f2 `f  1 p 3 75 ]
+"148
+} 0
+"15 D:\Hella\Compiler\sources\common\ftneg.c
+[v ___ftneg __ftneg `(f  1 e 3 0 ]
+{
+[v ___ftneg@f1 f1 `f  1 p 3 44 ]
+"20
+} 0
+"4 D:\Hella\Compiler\sources\common\ftge.c
+[v ___ftge __ftge `(b  1 e 0 0 ]
+{
+[v ___ftge@ff1 ff1 `f  1 p 3 84 ]
+[v ___ftge@ff2 ff2 `f  1 p 3 87 ]
+"13
+} 0
+"54 D:\Hella\Compiler\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+{
+"60
+[v ___ftdiv@f3 f3 `f  1 a 3 79 ]
+"59
+[v ___ftdiv@sign sign `uc  1 a 1 83 ]
+[v ___ftdiv@exp exp `uc  1 a 1 82 ]
+[v ___ftdiv@cntr cntr `uc  1 a 1 78 ]
+"54
+[v ___ftdiv@f1 f1 `f  1 p 3 69 ]
+[v ___ftdiv@f2 f2 `f  1 p 3 72 ]
+"86
+} 0
+"32 D:\Hella\Compiler\sources\common\awtoft.c
+[v ___awtoft __awtoft `(f  1 e 3 0 ]
+{
+"34
+[v ___awtoft@sign sign `uc  1 a 1 11 ]
+"32
+[v ___awtoft@c c `i  1 p 2 8 ]
+"42
+} 0
+"62 D:\Hella\Compiler\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+{
+[v ___ftpack@arg arg `um  1 p 3 0 ]
+[v ___ftpack@exp exp `uc  1 p 1 3 ]
+[v ___ftpack@sign sign `uc  1 p 1 4 ]
+"86
+} 0
+"202 D:\Hella\Sessions\AnalogInputsForStudents\AnalogInputs_students\lcd.c
+[v _LcdWriteString LcdWriteString `(v  1 e 1 0 ]
+{
+[v LcdWriteString@s s `*.39Cuc  1 p 2 5 ]
+"208
+} 0
+"186
+[v _LcdChar LcdChar `(v  1 e 1 0 ]
+{
+[v LcdChar@letter letter `uc  1 a 1 wreg ]
+[v LcdChar@letter letter `uc  1 a 1 wreg ]
+"188
+[v LcdChar@letter letter `uc  1 a 1 4 ]
+"196
+} 0
+"176
+[v _LcdGoTo LcdGoTo `(v  1 e 1 0 ]
+{
+[v LcdGoTo@pos pos `uc  1 a 1 wreg ]
+[v LcdGoTo@pos pos `uc  1 a 1 wreg ]
+"179
+[v LcdGoTo@pos pos `uc  1 a 1 5 ]
+"180
+} 0
+"81 D:\Hella\Sessions\AnalogInputsForStudents\AnalogInputs_students\AnalogInputs.c
+[v _sequence1 sequence1 `(v  1 e 1 0 ]
+{
+"83
+[v sequence1@potiValue potiValue `uc  1 a 1 3 ]
+"106
+} 0
+"69
+[v _delay50 delay50 `(v  1 e 1 0 ]
+{
+"70
+[v delay50@i i `ui  1 a 2 1 ]
+"74
+} 0
+"47
+[v _initLEDs initLEDs `(v  1 e 1 0 ]
+{
+"53
+} 0
+"34
+[v _initButtons initButtons `(v  1 e 1 0 ]
+{
+"42
+} 0
+"58
+[v _initAdc initAdc `(v  1 e 1 0 ]
+{
+"66
+} 0
+"123 D:\Hella\Sessions\AnalogInputsForStudents\AnalogInputs_students\lcd.c
+[v _LcdInit LcdInit `(v  1 e 1 0 ]
+{
+"160
+} 0
+"81
+[v _setIODIR setIODIR `(v  1 e 1 0 ]
+{
+[v setIODIR@address address `uc  1 a 1 wreg ]
+[v setIODIR@address address `uc  1 a 1 wreg ]
+[v setIODIR@dir dir `uc  1 p 1 2 ]
+"90
+[v setIODIR@address address `uc  1 a 1 3 ]
+"96
+} 0
+"13 D:\Hella\Compiler\sources\pic18\plib\SPI\spi1open.c
+[v _OpenSPI1 OpenSPI1 `(v  1 e 1 0 ]
+{
+[v OpenSPI1@sync_mode sync_mode `uc  1 a 1 wreg ]
+[v OpenSPI1@sync_mode sync_mode `uc  1 a 1 wreg ]
+[v OpenSPI1@bus_mode bus_mode `uc  1 p 1 0 ]
+[v OpenSPI1@smp_phase smp_phase `uc  1 p 1 1 ]
+"15
+[v OpenSPI1@sync_mode sync_mode `uc  1 a 1 2 ]
+"59
+} 0
+"166 D:\Hella\Sessions\AnalogInputsForStudents\AnalogInputs_students\lcd.c
+[v _LcdClear LcdClear `(v  1 e 1 0 ]
+{
+"170
+} 0
+"102
+[v _lcdCommand lcdCommand `(v  1 e 1 0 ]
+{
+[v lcdCommand@command command `uc  1 a 1 wreg ]
+[v lcdCommand@command command `uc  1 a 1 wreg ]
+"104
+[v lcdCommand@command command `uc  1 a 1 4 ]
+"112
+} 0
+"55
+[v _setGPIO setGPIO `(v  1 e 1 0 ]
+{
+[v setGPIO@address address `uc  1 a 1 wreg ]
+[v setGPIO@address address `uc  1 a 1 wreg ]
+[v setGPIO@value value `uc  1 p 1 2 ]
+"66
+[v setGPIO@address address `uc  1 a 1 3 ]
+"74
+} 0
+"13 D:\Hella\Compiler\sources\pic18\plib\SPI\spi1writ.c
+[v _WriteSPI1 WriteSPI1 `(c  1 e 1 0 ]
+{
+[v WriteSPI1@data_out data_out `uc  1 a 1 wreg ]
+"15
+[v WriteSPI1@TempVar TempVar `uc  1 a 1 0 ]
+"13
+[v WriteSPI1@data_out data_out `uc  1 a 1 wreg ]
+"16
+[v WriteSPI1@data_out data_out `uc  1 a 1 1 ]
+"26
+} 0
