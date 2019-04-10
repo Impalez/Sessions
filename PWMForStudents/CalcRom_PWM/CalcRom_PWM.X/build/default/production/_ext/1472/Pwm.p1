@@ -1,5 +1,5 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"5859 C:\_DevTools\Microchip\xc8\v1.41\include\pic18f8722.h
+"5859 D:\Hella\Compiler\include\pic18f8722.h
 [s S219 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S219 . TRISC0 TRISC1 TRISC2 TRISC3 TRISC4 TRISC5 TRISC6 TRISC7 ]
 "5869
@@ -46,6 +46,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S269 . . . ]
 "7552
 [v _PIR1bits `VS269 ~T0 @X0 0 e@3998 ]
+"5406
+[v _TRISA `Vuc ~T0 @X0 0 e@3986 ]
+"10156
+[v _ADCON0 `Vuc ~T0 @X0 0 e@4034 ]
 "12962
 [s S489 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S489 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE PEIE_GIEL GIE_GIEH ]
@@ -76,6 +80,15 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _INTCON2bits `VS484 ~T0 @X0 0 e@4081 ]
 "11781
 [v _PR2 `Vuc ~T0 @X0 0 e@4043 ]
+[v F6346 `(v ~T0 @X0 1 tf1`ul ]
+"161 D:\Hella\Compiler\include\pic18.h
+[v __delay `JF6346 ~T0 @X0 0 e ]
+[p i __delay ]
+"91 ../Pwm.c
+[c E6357 0 1 2 .. ]
+[n E6357 . albastru verde rosu  ]
+"6 ../Adc_1.h
+[v _Adc_GetMess `(v ~T0 @X0 0 ef1`*uc ]
 [; ;Types.h: 4: typedef unsigned char uint8;
 [; ;Pwm.h: 5: extern void setDuty(uint8 chanId,uint8 duty);
 [; ;Pwm.h: 6: extern void setPeriod(uint8 period);
@@ -87,7 +100,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
 [; ;pic18f8722.h: 49: extern volatile unsigned char SSP2CON2 @ 0xF62;
-"51 C:\_DevTools\Microchip\xc8\v1.41\include\pic18f8722.h
+"51 D:\Hella\Compiler\include\pic18f8722.h
 [; ;pic18f8722.h: 51: asm("SSP2CON2 equ 0F62h");
 [; <" SSP2CON2 equ 0F62h ;# ">
 [; ;pic18f8722.h: 54: typedef union {
@@ -5730,206 +5743,795 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic18.h: 165: extern __nonreentrant void _delay3(unsigned char);
 [; ;Adc_1.h: 5: extern void Adc_Init();
 [; ;Adc_1.h: 6: extern void Adc_GetMess(uint8 *Value);
-"7 ../Pwm.c
+[; ;Pwm.c: 6: typedef unsigned char byte;
+[; ;Pwm.c: 8: enum {
+[; ;Pwm.c: 9: albastru = 0,
+[; ;Pwm.c: 10: verde = 1,
+[; ;Pwm.c: 11: rosu = 2
+[; ;Pwm.c: 12: };
+"15 ../Pwm.c
 [v _PwmInit `(v ~T0 @X0 1 ef ]
-"8
+"16
 {
-[; ;Pwm.c: 7: void PwmInit()
-[; ;Pwm.c: 8: {
+[; ;Pwm.c: 15: void PwmInit()
+[; ;Pwm.c: 16: {
 [e :U _PwmInit ]
 [f ]
-[; ;Pwm.c: 9: TRISCbits.RC2=1;
-"9
-[e = . . _TRISCbits 1 2 -> -> 1 `i `uc ]
-[; ;Pwm.c: 10: TRISCbits.RC1=1;
-"10
-[e = . . _TRISCbits 1 1 -> -> 1 `i `uc ]
-[; ;Pwm.c: 11: TRISGbits.RG0=1;
-"11
-[e = . . _TRISGbits 1 0 -> -> 1 `i `uc ]
-[; ;Pwm.c: 13: CCP1CON=0b00001100;
-"13
-[e = _CCP1CON -> -> 12 `i `uc ]
-[; ;Pwm.c: 14: CCP2CON=0b00001100;
-"14
-[e = _CCP2CON -> -> 12 `i `uc ]
-[; ;Pwm.c: 15: CCP3CON=0b00001100;
-"15
-[e = _CCP3CON -> -> 12 `i `uc ]
-[; ;Pwm.c: 17: CCPR1L=0x00;
+[; ;Pwm.c: 17: TRISCbits.RC2=1;
 "17
-[e = _CCPR1L -> -> 0 `i `uc ]
-[; ;Pwm.c: 18: CCPR2L=0x00;
+[e = . . _TRISCbits 1 2 -> -> 1 `i `uc ]
+[; ;Pwm.c: 18: TRISCbits.RC1=1;
 "18
-[e = _CCPR2L -> -> 0 `i `uc ]
-[; ;Pwm.c: 19: CCPR3L=0x00;
+[e = . . _TRISCbits 1 1 -> -> 1 `i `uc ]
+[; ;Pwm.c: 19: TRISGbits.RG0=1;
 "19
-[e = _CCPR3L -> -> 0 `i `uc ]
-[; ;Pwm.c: 21: T2CON=0b00000101;
+[e = . . _TRISGbits 1 0 -> -> 1 `i `uc ]
+[; ;Pwm.c: 21: CCP1CON=0b00001100;
 "21
-[e = _T2CON -> -> 5 `i `uc ]
-[; ;Pwm.c: 22: while (!PIR1bits.TMR2IF);
+[e = _CCP1CON -> -> 12 `i `uc ]
+[; ;Pwm.c: 22: CCP2CON=0b00001100;
 "22
+[e = _CCP2CON -> -> 12 `i `uc ]
+[; ;Pwm.c: 23: CCP3CON=0b00001100;
+"23
+[e = _CCP3CON -> -> 12 `i `uc ]
+[; ;Pwm.c: 25: CCPR1L=0x00;
+"25
+[e = _CCPR1L -> -> 0 `i `uc ]
+[; ;Pwm.c: 26: CCPR2L=0x00;
+"26
+[e = _CCPR2L -> -> 0 `i `uc ]
+[; ;Pwm.c: 27: CCPR3L=0x00;
+"27
+[e = _CCPR3L -> -> 0 `i `uc ]
+[; ;Pwm.c: 29: T2CON=0b00000101;
+"29
+[e = _T2CON -> -> 5 `i `uc ]
+[; ;Pwm.c: 30: while (!PIR1bits.TMR2IF);
+"30
 [e $U 533  ]
 [e :U 534 ]
 [e :U 533 ]
 [e $ ! != -> . . _PIR1bits 0 1 `i -> -> -> 0 `i `Vuc `i 534  ]
 [e :U 535 ]
-[; ;Pwm.c: 24: TRISCbits.RC2=0;
-"24
+[; ;Pwm.c: 32: TRISCbits.RC2=0;
+"32
 [e = . . _TRISCbits 1 2 -> -> 0 `i `uc ]
-[; ;Pwm.c: 25: TRISCbits.RC1=0;
-"25
+[; ;Pwm.c: 33: TRISCbits.RC1=0;
+"33
 [e = . . _TRISCbits 1 1 -> -> 0 `i `uc ]
-[; ;Pwm.c: 26: TRISGbits.RG0=0;
-"26
+[; ;Pwm.c: 34: TRISGbits.RG0=0;
+"34
 [e = . . _TRISGbits 1 0 -> -> 0 `i `uc ]
-[; ;Pwm.c: 27: }
-"27
+[; ;Pwm.c: 36: TRISA = TRISA | (1<<0);
+"36
+[e = _TRISA -> | -> _TRISA `i << -> 1 `i -> 0 `i `uc ]
+[; ;Pwm.c: 38: ADCON0 = 0b00000001;
+"38
+[e = _ADCON0 -> -> 1 `i `uc ]
+[; ;Pwm.c: 39: }
+"39
 [e :UE 532 ]
 }
-"29
-[v _InteruptInit `(v ~T0 @X0 1 ef ]
-"30
-{
-[; ;Pwm.c: 29: void InteruptInit()
-[; ;Pwm.c: 30: {
-[e :U _InteruptInit ]
-[f ]
-[; ;Pwm.c: 31: INTCONbits.GIE=1;
-"31
-[e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
-[; ;Pwm.c: 32: INTCONbits.INT0IE=1;
-"32
-[e = . . _INTCONbits 0 4 -> -> 1 `i `uc ]
-[; ;Pwm.c: 33: INTCONbits.INT0IF=0;
-"33
-[e = . . _INTCONbits 0 1 -> -> 0 `i `uc ]
-[; ;Pwm.c: 34: INTCON2bits.INTEDG0=1;
-"34
-[e = . . _INTCON2bits 1 6 -> -> 1 `i `uc ]
-[; ;Pwm.c: 35: }
-"35
-[e :UE 536 ]
-}
-"37
-[v _setDuty `(v ~T0 @X0 1 ef2`uc`uc ]
-"38
-{
-[; ;Pwm.c: 37: void setDuty(uint8 chanId,uint8 duty)
-[; ;Pwm.c: 38: {
-[e :U _setDuty ]
-"37
-[v _chanId `uc ~T0 @X0 1 r1 ]
-[v _duty `uc ~T0 @X0 1 r2 ]
-"38
-[f ]
-[; ;Pwm.c: 39: switch(chanId)
-"39
-[e $U 539  ]
-[; ;Pwm.c: 40: {
-"40
-{
-[; ;Pwm.c: 41: case 0:
 "41
-[e :U 540 ]
-[; ;Pwm.c: 42: {
+[v _InteruptInit `(v ~T0 @X0 1 ef ]
 "42
 {
-[; ;Pwm.c: 43: CCPR1L = duty;
+[; ;Pwm.c: 41: void InteruptInit()
+[; ;Pwm.c: 42: {
+[e :U _InteruptInit ]
+[f ]
+[; ;Pwm.c: 43: INTCONbits.GIE=1;
 "43
-[e = _CCPR1L _duty ]
-[; ;Pwm.c: 44: break;
+[e = . . _INTCONbits 1 7 -> -> 1 `i `uc ]
+[; ;Pwm.c: 44: INTCONbits.INT0IE=1;
 "44
-[e $U 538  ]
+[e = . . _INTCONbits 0 4 -> -> 1 `i `uc ]
+[; ;Pwm.c: 45: INTCONbits.INT0IF=0;
 "45
-}
-[; ;Pwm.c: 45: }
-[; ;Pwm.c: 46: case 1:
+[e = . . _INTCONbits 0 1 -> -> 0 `i `uc ]
+[; ;Pwm.c: 46: INTCON2bits.INTEDG0=1;
 "46
-[e :U 541 ]
-[; ;Pwm.c: 47: {
+[e = . . _INTCON2bits 1 6 -> -> 1 `i `uc ]
+[; ;Pwm.c: 47: }
 "47
-{
-[; ;Pwm.c: 48: CCPR2L = duty;
-"48
-[e = _CCPR2L _duty ]
-[; ;Pwm.c: 49: break;
-"49
-[e $U 538  ]
-"50
+[e :UE 536 ]
 }
-[; ;Pwm.c: 50: }
-[; ;Pwm.c: 51: case 2:
+"49
+[v _setDuty `(v ~T0 @X0 1 ef2`uc`uc ]
+"50
+{
+[; ;Pwm.c: 49: void setDuty(uint8 chanId,uint8 duty)
+[; ;Pwm.c: 50: {
+[e :U _setDuty ]
+"49
+[v _chanId `uc ~T0 @X0 1 r1 ]
+[v _duty `uc ~T0 @X0 1 r2 ]
+"50
+[f ]
+[; ;Pwm.c: 51: switch(chanId)
 "51
-[e :U 542 ]
+[e $U 539  ]
 [; ;Pwm.c: 52: {
 "52
 {
-[; ;Pwm.c: 53: CCPR3L = duty;
+[; ;Pwm.c: 53: case 0:
 "53
-[e = _CCPR3L _duty ]
-[; ;Pwm.c: 54: break;
+[e :U 540 ]
+[; ;Pwm.c: 54: {
 "54
-[e $U 538  ]
+{
+[; ;Pwm.c: 55: CCPR1L = duty;
 "55
-}
+[e = _CCPR1L _duty ]
+[; ;Pwm.c: 56: break;
 "56
-}
-[; ;Pwm.c: 55: }
-[; ;Pwm.c: 56: }
 [e $U 538  ]
-"39
+"57
+}
+[; ;Pwm.c: 57: }
+[; ;Pwm.c: 58: case 1:
+"58
+[e :U 541 ]
+[; ;Pwm.c: 59: {
+"59
+{
+[; ;Pwm.c: 60: CCPR2L = duty;
+"60
+[e = _CCPR2L _duty ]
+[; ;Pwm.c: 61: break;
+"61
+[e $U 538  ]
+"62
+}
+[; ;Pwm.c: 62: }
+[; ;Pwm.c: 63: case 2:
+"63
+[e :U 542 ]
+[; ;Pwm.c: 64: {
+"64
+{
+[; ;Pwm.c: 65: CCPR3L = duty;
+"65
+[e = _CCPR3L _duty ]
+[; ;Pwm.c: 66: break;
+"66
+[e $U 538  ]
+"67
+}
+"68
+}
+[; ;Pwm.c: 67: }
+[; ;Pwm.c: 68: }
+[e $U 538  ]
+"51
 [e :U 539 ]
 [e [\ _chanId , $ -> -> 0 `i `uc 540
  , $ -> -> 1 `i `uc 541
  , $ -> -> 2 `i `uc 542
  538 ]
-"56
+"68
 [e :U 538 ]
-[; ;Pwm.c: 57: }
-"57
+[; ;Pwm.c: 69: }
+"69
 [e :UE 537 ]
 }
-"59
+"71
 [v _setPeriod `(v ~T0 @X0 1 ef1`uc ]
-"60
+"72
 {
-[; ;Pwm.c: 59: void setPeriod(uint8 period)
-[; ;Pwm.c: 60: {
+[; ;Pwm.c: 71: void setPeriod(uint8 period)
+[; ;Pwm.c: 72: {
 [e :U _setPeriod ]
-"59
+"71
 [v _period `uc ~T0 @X0 1 r1 ]
-"60
+"72
 [f ]
-[; ;Pwm.c: 61: PR2 = period;
-"61
+[; ;Pwm.c: 73: PR2 = period;
+"73
 [e = _PR2 _period ]
-[; ;Pwm.c: 62: }
-"62
+[; ;Pwm.c: 74: }
+"74
 [e :UE 543 ]
 }
-"64
+"76
 [v _LedAction `(v ~T0 @X0 1 ef ]
-"65
+"77
 {
-[; ;Pwm.c: 64: void LedAction()
-[; ;Pwm.c: 65: {
+[; ;Pwm.c: 76: void LedAction()
+[; ;Pwm.c: 77: {
 [e :U _LedAction ]
 [f ]
-[; ;Pwm.c: 66: }
-"66
+[; ;Pwm.c: 78: }
+"78
 [e :UE 544 ]
 }
-"68
-[v _LedControl `(v ~T0 @X0 1 ef ]
-"69
+"80
+[v _delay `(v ~T0 @X0 1 ef1`i ]
 {
-[; ;Pwm.c: 68: void LedControl()
-[; ;Pwm.c: 69: {
+[; ;Pwm.c: 80: void delay(int j) {
+[e :U _delay ]
+[v _j `i ~T0 @X0 1 r1 ]
+[f ]
+"81
+[v _i `uc ~T0 @X0 1 a ]
+[; ;Pwm.c: 81: uint8 i;
+[; ;Pwm.c: 82: for (i=0; i<j; i++) {
+"82
+{
+[e = _i -> -> 0 `i `uc ]
+[e $U 549  ]
+[e :U 546 ]
+{
+[; ;Pwm.c: 83: _delay(500);
+"83
+[e ( __delay (1 -> -> -> 500 `i `l `ul ]
+"84
+}
+"82
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 549 ]
+[e $ < -> _i `i _j 546  ]
+[e :U 547 ]
+"84
+}
+[; ;Pwm.c: 84: }
+[; ;Pwm.c: 85: }
+"85
+[e :UE 545 ]
+}
+"87
+[v _LedControl `(v ~T0 @X0 1 ef ]
+"88
+{
+[; ;Pwm.c: 87: void LedControl()
+[; ;Pwm.c: 88: { int i;
 [e :U _LedControl ]
 [f ]
-[; ;Pwm.c: 71: }
-"71
-[e :UE 545 ]
+[v _i `i ~T0 @X0 1 a ]
+[; ;Pwm.c: 90: for(i=0; i<=255; i++ )
+"90
+{
+[e = _i -> 0 `i ]
+[e $ <= _i -> 255 `i 551  ]
+[e $U 552  ]
+"91
+[e :U 551 ]
+[; ;Pwm.c: 91: {setDuty(albastru, i);
+{
+[e ( _setDuty (2 , -> . `E6357 0 `uc -> _i `uc ]
+[; ;Pwm.c: 92: delay(20);
+"92
+[e ( _delay (1 -> 20 `i ]
+"93
+}
+"90
+[e ++ _i -> 1 `i ]
+[e $ <= _i -> 255 `i 551  ]
+[e :U 552 ]
+"93
+}
+[; ;Pwm.c: 93: }
+[; ;Pwm.c: 95: delay(20);
+"95
+[e ( _delay (1 -> 20 `i ]
+[; ;Pwm.c: 97: for(i=255; i>=0; i-- )
+"97
+{
+[e = _i -> 255 `i ]
+[e $ >= _i -> 0 `i 554  ]
+[e $U 555  ]
+"98
+[e :U 554 ]
+[; ;Pwm.c: 98: { setDuty(albastru, i);
+{
+[e ( _setDuty (2 , -> . `E6357 0 `uc -> _i `uc ]
+[; ;Pwm.c: 99: delay(20);
+"99
+[e ( _delay (1 -> 20 `i ]
+"100
+}
+"97
+[e -- _i -> 1 `i ]
+[e $ >= _i -> 0 `i 554  ]
+[e :U 555 ]
+"100
+}
+[; ;Pwm.c: 100: }
+[; ;Pwm.c: 102: delay(20);
+"102
+[e ( _delay (1 -> 20 `i ]
+[; ;Pwm.c: 104: for(i=0; i<=255; i++ )
+"104
+{
+[e = _i -> 0 `i ]
+[e $ <= _i -> 255 `i 557  ]
+[e $U 558  ]
+"105
+[e :U 557 ]
+[; ;Pwm.c: 105: {setDuty(verde, i);
+{
+[e ( _setDuty (2 , -> . `E6357 1 `uc -> _i `uc ]
+[; ;Pwm.c: 106: delay(20);
+"106
+[e ( _delay (1 -> 20 `i ]
+"107
+}
+"104
+[e ++ _i -> 1 `i ]
+[e $ <= _i -> 255 `i 557  ]
+[e :U 558 ]
+"107
+}
+[; ;Pwm.c: 107: }
+[; ;Pwm.c: 109: delay(20);
+"109
+[e ( _delay (1 -> 20 `i ]
+[; ;Pwm.c: 111: for(i=255; i>=0; i-- )
+"111
+{
+[e = _i -> 255 `i ]
+[e $ >= _i -> 0 `i 560  ]
+[e $U 561  ]
+"112
+[e :U 560 ]
+[; ;Pwm.c: 112: { setDuty(verde, i);
+{
+[e ( _setDuty (2 , -> . `E6357 1 `uc -> _i `uc ]
+[; ;Pwm.c: 113: delay(20);
+"113
+[e ( _delay (1 -> 20 `i ]
+"114
+}
+"111
+[e -- _i -> 1 `i ]
+[e $ >= _i -> 0 `i 560  ]
+[e :U 561 ]
+"114
+}
+[; ;Pwm.c: 114: }
+[; ;Pwm.c: 116: delay(20);
+"116
+[e ( _delay (1 -> 20 `i ]
+[; ;Pwm.c: 118: for(i=0; i<=255; i++ )
+"118
+{
+[e = _i -> 0 `i ]
+[e $ <= _i -> 255 `i 563  ]
+[e $U 564  ]
+"119
+[e :U 563 ]
+[; ;Pwm.c: 119: {setDuty(rosu, i);
+{
+[e ( _setDuty (2 , -> . `E6357 2 `uc -> _i `uc ]
+[; ;Pwm.c: 120: delay(20);
+"120
+[e ( _delay (1 -> 20 `i ]
+"121
+}
+"118
+[e ++ _i -> 1 `i ]
+[e $ <= _i -> 255 `i 563  ]
+[e :U 564 ]
+"121
+}
+[; ;Pwm.c: 121: }
+[; ;Pwm.c: 123: delay(20);
+"123
+[e ( _delay (1 -> 20 `i ]
+[; ;Pwm.c: 125: for(i=255; i>=0; i-- )
+"125
+{
+[e = _i -> 255 `i ]
+[e $ >= _i -> 0 `i 566  ]
+[e $U 567  ]
+"126
+[e :U 566 ]
+[; ;Pwm.c: 126: { setDuty(rosu, i);
+{
+[e ( _setDuty (2 , -> . `E6357 2 `uc -> _i `uc ]
+[; ;Pwm.c: 127: delay(20);
+"127
+[e ( _delay (1 -> 20 `i ]
+"128
+}
+"125
+[e -- _i -> 1 `i ]
+[e $ >= _i -> 0 `i 566  ]
+[e :U 567 ]
+"128
+}
+[; ;Pwm.c: 128: }
+[; ;Pwm.c: 131: }
+"131
+[e :UE 550 ]
+}
+"133
+[v _LedControl2 `(v ~T0 @X0 1 ef ]
+"134
+{
+[; ;Pwm.c: 133: void LedControl2()
+[; ;Pwm.c: 134: {
+[e :U _LedControl2 ]
+[f ]
+"135
+[v _potiValue `uc ~T0 @X0 1 a ]
+[; ;Pwm.c: 135: uint8 potiValue = 0;
+[e = _potiValue -> -> 0 `i `uc ]
+[; ;Pwm.c: 146: Adc_GetMess(&potiValue);
+"146
+[e ( _Adc_GetMess (1 &U _potiValue ]
+[; ;Pwm.c: 147: setDuty(verde, potiValue);
+"147
+[e ( _setDuty (2 , -> . `E6357 1 `uc _potiValue ]
+[; ;Pwm.c: 148: }
+"148
+[e :UE 569 ]
+}
+"150
+[v _LedControl3 `(v ~T0 @X0 1 ef ]
+"151
+{
+[; ;Pwm.c: 150: void LedControl3()
+[; ;Pwm.c: 151: {
+[e :U _LedControl3 ]
+[f ]
+"152
+[v _potiValue `uc ~T0 @X0 1 a ]
+[; ;Pwm.c: 152: uint8 potiValue = 0;
+[e = _potiValue -> -> 0 `i `uc ]
+[; ;Pwm.c: 155: Adc_GetMess(&potiValue);
+"155
+[e ( _Adc_GetMess (1 &U _potiValue ]
+[; ;Pwm.c: 157: if( potiValue <= 80 )
+"157
+[e $ ! <= -> _potiValue `i -> 80 `i 571  ]
+[; ;Pwm.c: 158: {setDuty(verde, 0);
+"158
+{
+[e ( _setDuty (2 , -> . `E6357 1 `uc -> -> 0 `i `uc ]
+[; ;Pwm.c: 159: setDuty(rosu, 255);
+"159
+[e ( _setDuty (2 , -> . `E6357 2 `uc -> -> 255 `i `uc ]
+[; ;Pwm.c: 160: setDuty(albastru, 0);
+"160
+[e ( _setDuty (2 , -> . `E6357 0 `uc -> -> 0 `i `uc ]
+"161
+}
+[; ;Pwm.c: 161: }
+[e $U 572  ]
+"162
+[e :U 571 ]
+[; ;Pwm.c: 162: else if ( potiValue <= 160)
+[e $ ! <= -> _potiValue `i -> 160 `i 573  ]
+[; ;Pwm.c: 163: {setDuty(verde, 255);
+"163
+{
+[e ( _setDuty (2 , -> . `E6357 1 `uc -> -> 255 `i `uc ]
+[; ;Pwm.c: 164: setDuty(rosu, 0);
+"164
+[e ( _setDuty (2 , -> . `E6357 2 `uc -> -> 0 `i `uc ]
+[; ;Pwm.c: 165: setDuty(albastru, 0);
+"165
+[e ( _setDuty (2 , -> . `E6357 0 `uc -> -> 0 `i `uc ]
+"166
+}
+[; ;Pwm.c: 166: }
+[e $U 574  ]
+"167
+[e :U 573 ]
+[; ;Pwm.c: 167: else
+[; ;Pwm.c: 168: {
+"168
+{
+[; ;Pwm.c: 169: setDuty(verde, 0);
+"169
+[e ( _setDuty (2 , -> . `E6357 1 `uc -> -> 0 `i `uc ]
+[; ;Pwm.c: 170: setDuty(rosu, 0);
+"170
+[e ( _setDuty (2 , -> . `E6357 2 `uc -> -> 0 `i `uc ]
+[; ;Pwm.c: 171: setDuty(albastru, 255);
+"171
+[e ( _setDuty (2 , -> . `E6357 0 `uc -> -> 255 `i `uc ]
+"172
+}
+[e :U 574 ]
+[e :U 572 ]
+[; ;Pwm.c: 172: }
+[; ;Pwm.c: 176: }
+"176
+[e :UE 570 ]
+}
+"178
+[v _LedControl4 `(v ~T0 @X0 1 ef ]
+"179
+{
+[; ;Pwm.c: 178: void LedControl4()
+[; ;Pwm.c: 179: {
+[e :U _LedControl4 ]
+[f ]
+"180
+[v _potiValue `uc ~T0 @X0 1 a ]
+[; ;Pwm.c: 180: uint8 potiValue = 0;
+[e = _potiValue -> -> 0 `i `uc ]
+[; ;Pwm.c: 183: Adc_GetMess(&potiValue);
+"183
+[e ( _Adc_GetMess (1 &U _potiValue ]
+[; ;Pwm.c: 185: if( potiValue <= 80 )
+"185
+[e $ ! <= -> _potiValue `i -> 80 `i 576  ]
+[; ;Pwm.c: 186: {setDuty(verde, 255);
+"186
+{
+[e ( _setDuty (2 , -> . `E6357 1 `uc -> -> 255 `i `uc ]
+[; ;Pwm.c: 187: setDuty(rosu, 255);
+"187
+[e ( _setDuty (2 , -> . `E6357 2 `uc -> -> 255 `i `uc ]
+[; ;Pwm.c: 188: setDuty(albastru, 0);
+"188
+[e ( _setDuty (2 , -> . `E6357 0 `uc -> -> 0 `i `uc ]
+"189
+}
+[; ;Pwm.c: 189: }
+[e $U 577  ]
+"190
+[e :U 576 ]
+[; ;Pwm.c: 190: else if ( potiValue <= 160)
+[e $ ! <= -> _potiValue `i -> 160 `i 578  ]
+[; ;Pwm.c: 191: {setDuty(verde, 255);
+"191
+{
+[e ( _setDuty (2 , -> . `E6357 1 `uc -> -> 255 `i `uc ]
+[; ;Pwm.c: 192: setDuty(rosu, 0);
+"192
+[e ( _setDuty (2 , -> . `E6357 2 `uc -> -> 0 `i `uc ]
+[; ;Pwm.c: 193: setDuty(albastru, 255);
+"193
+[e ( _setDuty (2 , -> . `E6357 0 `uc -> -> 255 `i `uc ]
+"194
+}
+[; ;Pwm.c: 194: }
+[e $U 579  ]
+"195
+[e :U 578 ]
+[; ;Pwm.c: 195: else
+[; ;Pwm.c: 196: {
+"196
+{
+[; ;Pwm.c: 197: setDuty(verde, 0);
+"197
+[e ( _setDuty (2 , -> . `E6357 1 `uc -> -> 0 `i `uc ]
+[; ;Pwm.c: 198: setDuty(rosu, 255);
+"198
+[e ( _setDuty (2 , -> . `E6357 2 `uc -> -> 255 `i `uc ]
+[; ;Pwm.c: 199: setDuty(albastru, 255);
+"199
+[e ( _setDuty (2 , -> . `E6357 0 `uc -> -> 255 `i `uc ]
+"200
+}
+[e :U 579 ]
+[e :U 577 ]
+[; ;Pwm.c: 200: }
+[; ;Pwm.c: 201: }
+"201
+[e :UE 575 ]
+}
+"203
+[v _LedControl5 `(v ~T0 @X0 1 ef ]
+"204
+{
+[; ;Pwm.c: 203: void LedControl5()
+[; ;Pwm.c: 204: { int i;
+[e :U _LedControl5 ]
+[f ]
+[v _i `i ~T0 @X0 1 a ]
+"205
+[v _potiValue `uc ~T0 @X0 1 a ]
+[; ;Pwm.c: 205: uint8 potiValue = 0;
+[e = _potiValue -> -> 0 `i `uc ]
+[; ;Pwm.c: 208: Adc_GetMess(&potiValue);
+"208
+[e ( _Adc_GetMess (1 &U _potiValue ]
+[; ;Pwm.c: 210: if( potiValue <= 85){
+"210
+[e $ ! <= -> _potiValue `i -> 85 `i 581  ]
+{
+[; ;Pwm.c: 211: setDuty(verde, 0);
+"211
+[e ( _setDuty (2 , -> . `E6357 1 `uc -> -> 0 `i `uc ]
+[; ;Pwm.c: 212: for(i=255; i>=0; i-- )
+"212
+{
+[e = _i -> 255 `i ]
+[e $ >= _i -> 0 `i 582  ]
+[e $U 583  ]
+"213
+[e :U 582 ]
+[; ;Pwm.c: 213: {
+{
+[; ;Pwm.c: 214: setDuty(rosu, i);
+"214
+[e ( _setDuty (2 , -> . `E6357 2 `uc -> _i `uc ]
+[; ;Pwm.c: 215: delay(20);
+"215
+[e ( _delay (1 -> 20 `i ]
+"216
+}
+"212
+[e -- _i -> 1 `i ]
+[e $ >= _i -> 0 `i 582  ]
+[e :U 583 ]
+"216
+}
+[; ;Pwm.c: 216: }
+[; ;Pwm.c: 218: setDuty(albastru, 0);
+"218
+[e ( _setDuty (2 , -> . `E6357 0 `uc -> -> 0 `i `uc ]
+[; ;Pwm.c: 219: delay(50);
+"219
+[e ( _delay (1 -> 50 `i ]
+[; ;Pwm.c: 220: for(i=0; i<=255; i++ )
+"220
+{
+[e = _i -> 0 `i ]
+[e $ <= _i -> 255 `i 585  ]
+[e $U 586  ]
+"221
+[e :U 585 ]
+[; ;Pwm.c: 221: {
+{
+[; ;Pwm.c: 222: setDuty(verde, i);
+"222
+[e ( _setDuty (2 , -> . `E6357 1 `uc -> _i `uc ]
+[; ;Pwm.c: 223: delay(20);
+"223
+[e ( _delay (1 -> 20 `i ]
+"224
+}
+"220
+[e ++ _i -> 1 `i ]
+[e $ <= _i -> 255 `i 585  ]
+[e :U 586 ]
+"224
+}
+[; ;Pwm.c: 224: }
+[; ;Pwm.c: 226: delay(50);
+"226
+[e ( _delay (1 -> 50 `i ]
+"229
+}
+[; ;Pwm.c: 229: }
+[e $U 588  ]
+"231
+[e :U 581 ]
+[; ;Pwm.c: 231: else if ( potiValue <= 170)
+[e $ ! <= -> _potiValue `i -> 170 `i 589  ]
+[; ;Pwm.c: 232: {
+"232
+{
+[; ;Pwm.c: 233: setDuty(rosu, 0);
+"233
+[e ( _setDuty (2 , -> . `E6357 2 `uc -> -> 0 `i `uc ]
+[; ;Pwm.c: 234: for(i=255; i>=0; i-- )
+"234
+{
+[e = _i -> 255 `i ]
+[e $ >= _i -> 0 `i 590  ]
+[e $U 591  ]
+"235
+[e :U 590 ]
+[; ;Pwm.c: 235: {setDuty(verde, i);
+{
+[e ( _setDuty (2 , -> . `E6357 1 `uc -> _i `uc ]
+[; ;Pwm.c: 236: delay(20);
+"236
+[e ( _delay (1 -> 20 `i ]
+"237
+}
+"234
+[e -- _i -> 1 `i ]
+[e $ >= _i -> 0 `i 590  ]
+[e :U 591 ]
+"237
+}
+[; ;Pwm.c: 237: }
+[; ;Pwm.c: 239: setDuty(verde, 0);
+"239
+[e ( _setDuty (2 , -> . `E6357 1 `uc -> -> 0 `i `uc ]
+[; ;Pwm.c: 240: for(i=0; i<=255; i++ )
+"240
+{
+[e = _i -> 0 `i ]
+[e $ <= _i -> 255 `i 593  ]
+[e $U 594  ]
+"241
+[e :U 593 ]
+[; ;Pwm.c: 241: {setDuty(albastru, i);
+{
+[e ( _setDuty (2 , -> . `E6357 0 `uc -> _i `uc ]
+[; ;Pwm.c: 242: delay(20);
+"242
+[e ( _delay (1 -> 20 `i ]
+"243
+}
+"240
+[e ++ _i -> 1 `i ]
+[e $ <= _i -> 255 `i 593  ]
+[e :U 594 ]
+"243
+}
+[; ;Pwm.c: 243: }
+[; ;Pwm.c: 245: setDuty(albastru, 0);
+"245
+[e ( _setDuty (2 , -> . `E6357 0 `uc -> -> 0 `i `uc ]
+"246
+}
+[; ;Pwm.c: 246: }
+[e $U 596  ]
+"247
+[e :U 589 ]
+[; ;Pwm.c: 247: else
+[; ;Pwm.c: 248: {
+"248
+{
+[; ;Pwm.c: 250: setDuty(verde, 0);
+"250
+[e ( _setDuty (2 , -> . `E6357 1 `uc -> -> 0 `i `uc ]
+[; ;Pwm.c: 252: for(i=0; i<=255; i++ )
+"252
+{
+[e = _i -> 0 `i ]
+[e $ <= _i -> 255 `i 597  ]
+[e $U 598  ]
+"253
+[e :U 597 ]
+[; ;Pwm.c: 253: {setDuty(rosu, i);
+{
+[e ( _setDuty (2 , -> . `E6357 2 `uc -> _i `uc ]
+[; ;Pwm.c: 254: delay(20);
+"254
+[e ( _delay (1 -> 20 `i ]
+"255
+}
+"252
+[e ++ _i -> 1 `i ]
+[e $ <= _i -> 255 `i 597  ]
+[e :U 598 ]
+"255
+}
+[; ;Pwm.c: 255: }
+[; ;Pwm.c: 257: setDuty(rosu, 0);
+"257
+[e ( _setDuty (2 , -> . `E6357 2 `uc -> -> 0 `i `uc ]
+[; ;Pwm.c: 259: for(i=255; i>=0; i-- )
+"259
+{
+[e = _i -> 255 `i ]
+[e $ >= _i -> 0 `i 600  ]
+[e $U 601  ]
+"260
+[e :U 600 ]
+[; ;Pwm.c: 260: {setDuty(albastru, i);
+{
+[e ( _setDuty (2 , -> . `E6357 0 `uc -> _i `uc ]
+[; ;Pwm.c: 261: delay(20);
+"261
+[e ( _delay (1 -> 20 `i ]
+"262
+}
+"259
+[e -- _i -> 1 `i ]
+[e $ >= _i -> 0 `i 600  ]
+[e :U 601 ]
+"262
+}
+"264
+}
+[e :U 596 ]
+[e :U 588 ]
+[; ;Pwm.c: 262: }
+[; ;Pwm.c: 264: }
+[; ;Pwm.c: 265: }
+"265
+[e :UE 580 ]
 }

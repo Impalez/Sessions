@@ -1,5 +1,5 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"10156 C:\_DevTools\Microchip\xc8\v1.41\include\pic18f8722.h
+"10156 D:\Hella\Compiler\include\pic18f8722.h
 [v _ADCON0 `Vuc ~T0 @X0 0 e@4034 ]
 "10072
 [v _ADCON1 `Vuc ~T0 @X0 0 e@4033 ]
@@ -43,7 +43,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
 [; ;pic18f8722.h: 49: extern volatile unsigned char SSP2CON2 @ 0xF62;
-"51 C:\_DevTools\Microchip\xc8\v1.41\include\pic18f8722.h
+"51 D:\Hella\Compiler\include\pic18f8722.h
 [; ;pic18f8722.h: 51: asm("SSP2CON2 equ 0F62h");
 [; <" SSP2CON2 equ 0F62h ;# ">
 [; ;pic18f8722.h: 54: typedef union {
@@ -5701,36 +5701,36 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _Value `*uc ~T0 @X0 1 r1 ]
 "6
 [f ]
-[; ;Adc_1.c: 8: ADCON0 = 0b00000001;
-"8
+[; ;Adc_1.c: 7: ADCON0 = 0b00000001;
+"7
 [e = _ADCON0 -> -> 1 `i `uc ]
-[; ;Adc_1.c: 9: ADCON1 = 0b00001110;
-"9
+[; ;Adc_1.c: 8: ADCON1 = 0b00001110;
+"8
 [e = _ADCON1 -> -> 14 `i `uc ]
-[; ;Adc_1.c: 10: ADCON2 = 0b00111010;
-"10
+[; ;Adc_1.c: 9: ADCON2 = 0b00111010;
+"9
 [e = _ADCON2 -> -> 58 `i `uc ]
-[; ;Adc_1.c: 11: ADCON0bits.GO = 1;
-"11
+[; ;Adc_1.c: 10: ADCON0bits.GO = 1;
+"10
 [e = . . _ADCON0bits 4 1 -> -> 1 `i `uc ]
-[; ;Adc_1.c: 13: while(ADCON0bits.GO)
-"13
+[; ;Adc_1.c: 12: while(ADCON0bits.GO)
+"12
 [e $U 533  ]
 [e :U 534 ]
-[; ;Adc_1.c: 14: {
-"14
+[; ;Adc_1.c: 13: {
+"13
 {
-"15
+"14
 }
 [e :U 533 ]
-"13
+"12
 [e $ != -> . . _ADCON0bits 4 1 `i -> -> -> 0 `i `Vuc `i 534  ]
 [e :U 535 ]
-[; ;Adc_1.c: 15: }
-[; ;Adc_1.c: 17: *Value = ADRESH;
-"17
+[; ;Adc_1.c: 14: }
+[; ;Adc_1.c: 16: *Value = ADRESH;
+"16
 [e = *U _Value _ADRESH ]
-[; ;Adc_1.c: 18: }
-"18
+[; ;Adc_1.c: 17: }
+"17
 [e :UE 532 ]
 }

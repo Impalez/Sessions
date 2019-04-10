@@ -1,5 +1,5 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"12962 C:\_DevTools\Microchip\xc8\v1.41\include\pic18f8722.h
+"12962 D:\Hella\Compiler\include\pic18f8722.h
 [s S489 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S489 . RBIF INT0IF TMR0IF RBIE INT0IE TMR0IE PEIE_GIEL GIE_GIEH ]
 "12972
@@ -20,8 +20,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _PwmInit `(v ~T0 @X0 0 ef ]
 "11
 [v _InteruptInit `(v ~T0 @X0 0 ef ]
-"7
-[v _LedAction `(v ~T0 @X0 0 ef ]
+"43 ../main.c
+[v _LedControl5 `(i ~T0 @X0 0 ef ]
 [; ;Types.h: 4: typedef unsigned char uint8;
 [; ;Pwm.h: 5: extern void setDuty(uint8 chanId,uint8 duty);
 [; ;Pwm.h: 6: extern void setPeriod(uint8 period);
@@ -33,7 +33,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;htc.h: 28: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
 [; ;pic18f8722.h: 49: extern volatile unsigned char SSP2CON2 @ 0xF62;
-"51 C:\_DevTools\Microchip\xc8\v1.41\include\pic18f8722.h
+"51 D:\Hella\Compiler\include\pic18f8722.h
 [; ;pic18f8722.h: 51: asm("SSP2CON2 equ 0F62h");
 [; <" SSP2CON2 equ 0F62h ;# ">
 [; ;pic18f8722.h: 54: typedef union {
@@ -5779,9 +5779,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 42: {
 "42
 {
-[; ;main.c: 43: LedAction();
+[; ;main.c: 43: LedControl5();
 "43
-[e ( _LedAction ..  ]
+[e ( _LedControl5 ..  ]
 "44
 }
 [e :U 537 ]

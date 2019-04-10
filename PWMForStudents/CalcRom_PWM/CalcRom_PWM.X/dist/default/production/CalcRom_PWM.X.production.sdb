@@ -3,39 +3,53 @@
 [d edition pro ]
 [d chip 18F8722 ]
 [d frameptr 4065 ]
-"15 C:\Hella Embedded Club\05_PWM\01_PWM\CalcRom_PWM/main.c
+"91 D:\Hella\Sessions\PWMForStudents\CalcRom_PWM/Pwm.c
+[e E6357 . `uc
+albastru 0
+verde 1
+rosu 2
+]
+"5 D:\Hella\Sessions\PWMForStudents\CalcRom_PWM/Adc_1.c
+[v _Adc_GetMess Adc_GetMess `(v  1 e 1 0 ]
+"15 D:\Hella\Sessions\PWMForStudents\CalcRom_PWM/main.c
 [v _intrerupt_ext intrerupt_ext `II(v  1 e 1 0 ]
 "35
 [v _main main `(v  1 e 1 0 ]
-"7 C:\Hella Embedded Club\05_PWM\01_PWM\CalcRom_PWM/Pwm.c
+"15 D:\Hella\Sessions\PWMForStudents\CalcRom_PWM/Pwm.c
 [v _PwmInit PwmInit `(v  1 e 1 0 ]
-"29
+"41
 [v _InteruptInit InteruptInit `(v  1 e 1 0 ]
-"59
+"49
+[v _setDuty setDuty `(v  1 e 1 0 ]
+"71
 [v _setPeriod setPeriod `(v  1 e 1 0 ]
 [v i2_setPeriod setPeriod `(v  1 e 1 0 ]
-"64
-[v _LedAction LedAction `(v  1 e 1 0 ]
-"62 C:\_DevTools\Microchip\xc8\v1.41\sources\common\float.c
+"80
+[v _delay delay `(v  1 e 1 0 ]
+"203
+[v _LedControl5 LedControl5 `(v  1 e 1 0 ]
+"62 D:\Hella\Compiler\sources\common\float.c
 [v ___ftpack __ftpack `(f  1 e 3 0 ]
-"86 C:\_DevTools\Microchip\xc8\v1.41\sources\common\ftadd.c
+"86 D:\Hella\Compiler\sources\common\ftadd.c
 [v ___ftadd __ftadd `(f  1 e 3 0 ]
-"54 C:\_DevTools\Microchip\xc8\v1.41\sources\common\ftdiv.c
+"54 D:\Hella\Compiler\sources\common\ftdiv.c
 [v ___ftdiv __ftdiv `(f  1 e 3 0 ]
-"62 C:\_DevTools\Microchip\xc8\v1.41\sources\common\ftmul.c
+"62 D:\Hella\Compiler\sources\common\ftmul.c
 [v ___ftmul __ftmul `(f  1 e 3 0 ]
-"20 C:\_DevTools\Microchip\xc8\v1.41\sources\common\ftsub.c
+"20 D:\Hella\Compiler\sources\common\ftsub.c
 [v ___ftsub __ftsub `(f  1 e 3 0 ]
-"10 C:\_DevTools\Microchip\xc8\v1.41\sources\common\sprcadd.c
+"10 D:\Hella\Compiler\sources\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 3 0 ]
 "245
 [v ___flsub __flsub `(d  1 e 3 0 ]
-"11 C:\_DevTools\Microchip\xc8\v1.41\sources\common\sprcdiv.c
+"11 D:\Hella\Compiler\sources\common\sprcdiv.c
 [v ___fldiv __fldiv `(d  1 e 3 0 ]
-"8 C:\_DevTools\Microchip\xc8\v1.41\sources\common\sprcmul.c
+"8 D:\Hella\Compiler\sources\common\sprcmul.c
 [v ___flmul __flmul `(d  1 e 3 0 ]
-"15 C:\_DevTools\Microchip\xc8\v1.41\sources\common\Umul32.c
+"15 D:\Hella\Compiler\sources\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
+"5406 D:\Hella\Compiler\include\pic18f8722.h
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
 [s S21 . 1 `uc 1 TRISC0 1 0 :1:0 
 `uc 1 TRISC1 1 0 :1:1 
 `uc 1 TRISC2 1 0 :1:2 
@@ -45,7 +59,7 @@
 `uc 1 TRISC6 1 0 :1:6 
 `uc 1 TRISC7 1 0 :1:7 
 ]
-"5880 C:\_DevTools\Microchip\xc8\v1.41\include\pic18f8722.h
+"5880
 [s S30 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
 `uc 1 RC2 1 0 :1:2 
@@ -107,49 +121,49 @@
 [v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
 "10156
 [v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
-[s S315 . 1 `uc 1 . 1 0 :1:0 
+[s S347 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO_NOT_DONE 1 0 :1:1 
 ]
 "10200
-[s S318 . 1 `uc 1 ADON 1 0 :1:0 
+[s S350 . 1 `uc 1 ADON 1 0 :1:0 
 `uc 1 GO_nDONE 1 0 :1:1 
 `uc 1 CHS 1 0 :4:2 
 ]
-[s S322 . 1 `uc 1 . 1 0 :1:0 
+[s S354 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 DONE 1 0 :1:1 
 ]
-[s S325 . 1 `uc 1 . 1 0 :1:0 
+[s S357 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO_DONE 1 0 :1:1 
 `uc 1 CHS0 1 0 :1:2 
 `uc 1 CHS1 1 0 :1:3 
 `uc 1 CHS2 1 0 :1:4 
 `uc 1 CHS3 1 0 :1:5 
 ]
-[s S332 . 1 `uc 1 . 1 0 :1:0 
+[s S364 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GO 1 0 :1:1 
 ]
-[s S335 . 1 `uc 1 . 1 0 :1:0 
+[s S367 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 NOT_DONE 1 0 :1:1 
 ]
-[s S338 . 1 `uc 1 . 1 0 :1:0 
+[s S370 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 nDONE 1 0 :1:1 
 ]
-[s S341 . 1 `uc 1 . 1 0 :1:0 
+[s S373 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 GODONE 1 0 :1:1 
 ]
-[u S344 . 1 `S315 1 . 1 0 `S318 1 . 1 0 `S322 1 . 1 0 `S325 1 . 1 0 `S332 1 . 1 0 `S335 1 . 1 0 `S338 1 . 1 0 `S341 1 . 1 0 ]
-[v _ADCON0bits ADCON0bits `VES344  1 e 1 @4034 ]
+[u S376 . 1 `S347 1 . 1 0 `S350 1 . 1 0 `S354 1 . 1 0 `S357 1 . 1 0 `S364 1 . 1 0 `S367 1 . 1 0 `S370 1 . 1 0 `S373 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES376  1 e 1 @4034 ]
 "10286
 [v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
 "11711
 [v _T2CON T2CON `VEuc  1 e 1 @4042 ]
 "11781
 [v _PR2 PR2 `VEuc  1 e 1 @4043 ]
-[s S177 . 1 `uc 1 . 1 0 :7:0 
+[s S179 . 1 `uc 1 . 1 0 :7:0 
 `uc 1 NOT_RBPU 1 0 :1:7 
 ]
 "12892
-[s S180 . 1 `uc 1 RBIP 1 0 :1:0 
+[s S182 . 1 `uc 1 RBIP 1 0 :1:0 
 `uc 1 INT3IP 1 0 :1:1 
 `uc 1 TMR0IP 1 0 :1:2 
 `uc 1 INTEDG3 1 0 :1:3 
@@ -158,15 +172,15 @@
 `uc 1 INTEDG0 1 0 :1:6 
 `uc 1 nRBPU 1 0 :1:7 
 ]
-[s S189 . 1 `uc 1 . 1 0 :1:0 
+[s S191 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 INT3P 1 0 :1:1 
 `uc 1 T0IP 1 0 :1:2 
 `uc 1 . 1 0 :4:3 
 `uc 1 RBPU 1 0 :1:7 
 ]
-[u S195 . 1 `S177 1 . 1 0 `S180 1 . 1 0 `S189 1 . 1 0 ]
-[v _INTCON2bits INTCON2bits `VES195  1 e 1 @4081 ]
-[s S128 . 1 `uc 1 RBIF 1 0 :1:0 
+[u S197 . 1 `S179 1 . 1 0 `S182 1 . 1 0 `S191 1 . 1 0 ]
+[v _INTCON2bits INTCON2bits `VES197  1 e 1 @4081 ]
+[s S130 . 1 `uc 1 RBIF 1 0 :1:0 
 `uc 1 INT0IF 1 0 :1:1 
 `uc 1 TMR0IF 1 0 :1:2 
 `uc 1 RBIE 1 0 :1:3 
@@ -176,7 +190,7 @@
 `uc 1 GIE_GIEH 1 0 :1:7 
 ]
 "12988
-[s S137 . 1 `uc 1 . 1 0 :1:0 
+[s S139 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 INT0F 1 0 :1:1 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -185,54 +199,82 @@
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
-[s S146 . 1 `uc 1 . 1 0 :6:0 
+[s S148 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 GIEL 1 0 :1:6 
 `uc 1 GIEH 1 0 :1:7 
 ]
-[u S150 . 1 `S128 1 . 1 0 `S137 1 . 1 0 `S146 1 . 1 0 ]
-[v _INTCONbits INTCONbits `VES150  1 e 1 @4082 ]
-"35 C:\Hella Embedded Club\05_PWM\01_PWM\CalcRom_PWM/main.c
+[u S152 . 1 `S130 1 . 1 0 `S139 1 . 1 0 `S148 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES152  1 e 1 @4082 ]
+"35 D:\Hella\Sessions\PWMForStudents\CalcRom_PWM/main.c
 [v _main main `(v  1 e 1 0 ]
 {
 "45
 } 0
-"59 C:\Hella Embedded Club\05_PWM\01_PWM\CalcRom_PWM/Pwm.c
+"71 D:\Hella\Sessions\PWMForStudents\CalcRom_PWM/Pwm.c
 [v _setPeriod setPeriod `(v  1 e 1 0 ]
 {
 [v setPeriod@period period `uc  1 a 1 wreg ]
 [v setPeriod@period period `uc  1 a 1 wreg ]
-"61
+"73
 [v setPeriod@period period `uc  1 a 1 15 ]
-"62
+"74
 } 0
-"7
+"15
 [v _PwmInit PwmInit `(v  1 e 1 0 ]
 {
-"27
+"39
 } 0
-"64
-[v _LedAction LedAction `(v  1 e 1 0 ]
+"203
+[v _LedControl5 LedControl5 `(v  1 e 1 0 ]
 {
-"66
+"204
+[v LedControl5@i i `i  1 a 2 22 ]
+"205
+[v LedControl5@potiValue potiValue `uc  1 a 1 21 ]
+"265
 } 0
-"29
+"49
+[v _setDuty setDuty `(v  1 e 1 0 ]
+{
+[v setDuty@chanId chanId `uc  1 a 1 wreg ]
+[v setDuty@chanId chanId `uc  1 a 1 wreg ]
+[v setDuty@duty duty `uc  1 p 1 15 ]
+[v setDuty@chanId chanId `uc  1 a 1 16 ]
+"69
+} 0
+"80
+[v _delay delay `(v  1 e 1 0 ]
+{
+"81
+[v delay@i i `uc  1 a 1 20 ]
+"80
+[v delay@j j `i  1 p 2 15 ]
+"85
+} 0
+"5 D:\Hella\Sessions\PWMForStudents\CalcRom_PWM/Adc_1.c
+[v _Adc_GetMess Adc_GetMess `(v  1 e 1 0 ]
+{
+[v Adc_GetMess@Value Value `*.39uc  1 p 2 15 ]
+"17
+} 0
+"41 D:\Hella\Sessions\PWMForStudents\CalcRom_PWM/Pwm.c
 [v _InteruptInit InteruptInit `(v  1 e 1 0 ]
 {
-"35
+"47
 } 0
-"15 C:\Hella Embedded Club\05_PWM\01_PWM\CalcRom_PWM/main.c
+"15 D:\Hella\Sessions\PWMForStudents\CalcRom_PWM/main.c
 [v _intrerupt_ext intrerupt_ext `II(v  1 e 1 0 ]
 {
 "17
 [v intrerupt_ext@tempValue tempValue `uc  1 s 1 tempValue ]
 "33
 } 0
-"59 C:\Hella Embedded Club\05_PWM\01_PWM\CalcRom_PWM/Pwm.c
+"71 D:\Hella\Sessions\PWMForStudents\CalcRom_PWM/Pwm.c
 [v i2_setPeriod setPeriod `(v  1 e 1 0 ]
 {
 [v i2setPeriod@period period `uc  1 a 1 wreg ]
 [v i2setPeriod@period period `uc  1 a 1 wreg ]
-"61
+"73
 [v i2setPeriod@period period `uc  1 a 1 0 ]
-"62
+"74
 } 0

@@ -15,23 +15,23 @@
 # $ makeMP_CC="/opt/microchip/mplabc30/v3.30c/bin/pic30-gcc" ...  
 #
 SHELL=cmd.exe
-PATH_TO_IDE_BIN=C:/_DevTools/Microchip/MPLABX/v4.15/mplab_ide/platform/../mplab_ide/modules/../../bin/
+PATH_TO_IDE_BIN=D:/Hella/IDE/mplab_ide/platform/../mplab_ide/modules/../../bin/
 # Adding MPLAB X bin directory to path.
-PATH:=C:/_DevTools/Microchip/MPLABX/v4.15/mplab_ide/platform/../mplab_ide/modules/../../bin/:$(PATH)
+PATH:=D:/Hella/IDE/mplab_ide/platform/../mplab_ide/modules/../../bin/:$(PATH)
 # Path to java used to run MPLAB X when this makefile was created
-MP_JAVA_PATH="C:\_DevTools\Microchip\MPLABX\v4.15\sys\java\jre1.8.0_144/bin/"
+MP_JAVA_PATH="D:\Hella\IDE\sys\java\jre1.8.0_144/bin/"
 OS_CURRENT="$(shell uname -s)"
-MP_CC="C:\_DevTools\Microchip\xc8\v1.41\bin\xc8.exe"
+MP_CC="D:\Hella\Compiler\bin\xc8.exe"
 # MP_CPPC is not defined
 # MP_BC is not defined
-MP_AS="C:\_DevTools\Microchip\xc8\v1.41\bin\xc8.exe"
-MP_LD="C:\_DevTools\Microchip\xc8\v1.41\bin\xc8.exe"
+MP_AS="D:\Hella\Compiler\bin\xc8.exe"
+MP_LD="D:\Hella\Compiler\bin\xc8.exe"
 # MP_AR is not defined
-DEP_GEN=${MP_JAVA_PATH}java -jar "C:/_DevTools/Microchip/MPLABX/v4.15/mplab_ide/platform/../mplab_ide/modules/../../bin/extractobjectdependencies.jar"
-MP_CC_DIR="C:\_DevTools\Microchip\xc8\v1.41\bin"
+DEP_GEN=${MP_JAVA_PATH}java -jar "D:/Hella/IDE/mplab_ide/platform/../mplab_ide/modules/../../bin/extractobjectdependencies.jar"
+MP_CC_DIR="D:\Hella\Compiler\bin"
 # MP_CPPC_DIR is not defined
 # MP_BC_DIR is not defined
-MP_AS_DIR="C:\_DevTools\Microchip\xc8\v1.41\bin"
-MP_LD_DIR="C:\_DevTools\Microchip\xc8\v1.41\bin"
+MP_AS_DIR="D:\Hella\Compiler\bin"
+MP_LD_DIR="D:\Hella\Compiler\bin"
 # MP_AR_DIR is not defined
 # MP_BC_DIR is not defined

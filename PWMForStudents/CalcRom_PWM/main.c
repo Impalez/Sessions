@@ -40,6 +40,6 @@ void main()
     setPeriod(0xFF);
     while(1)
     {
-        LedControl();
+        LedControl5();
     }
 }
