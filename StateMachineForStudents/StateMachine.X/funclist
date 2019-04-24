@@ -1,0 +1,26 @@
+_lcdCommand: CODE, 4538 0 82
+_init: CODE, 4896 0 32
+_LcdClear: CODE, 5138 0 8
+_OpenSPI1: CODE, 4450 0 88
+_getOnOffLeftButton: CODE, 5158 0 4
+_LcdLines: SMALLCONST, 4097 0 108
+_main: CODE, 4984 0 26
+_setLcd: CODE, 4696 0 66
+_checkInput: CODE, 4854 0 42
+_LcdInit: CODE, 4352 0 98
+_initButtons: CODE, 5130 0 8
+__initialization: CODE, 5100 0 10
+_updateOutputs: CODE, 5060 0 22
+_stateMachine: CODE, 4206 0 146
+_LcdWriteString: CODE, 4762 0 50
+_Delay10TCYx: CODE, 5082 0 18
+_Delay10KTCYx: CODE, 5036 0 24
+_setRD5Led: CODE, 5152 0 6
+_Delay1s: CODE, 4812 0 42
+_LcdChar: CODE, 4620 0 76
+_setRD8Led: CODE, 5146 0 6
+_LcdGoTo: CODE, 5116 0 14
+_setGPIO: CODE, 4956 0 28
+_WriteSPI1: CODE, 5010 0 26
+_setIODIR: CODE, 4928 0 28
+Total: 1058

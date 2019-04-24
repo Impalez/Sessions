@@ -1,0 +1,715 @@
+[p LITE_MODE AUTOSTATIC LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F8722 ]
+[d frameptr 4065 ]
+"492 D:\Hella\Compiler\sources\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"62 D:\Hella\Compiler\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 D:\Hella\Compiler\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"54 D:\Hella\Compiler\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
+"62 D:\Hella\Compiler\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
+"20 D:\Hella\Compiler\sources\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 3 0 ]
+"8 D:\Hella\Compiler\sources\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+"8 D:\Hella\Compiler\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"8 D:\Hella\Compiler\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"10 D:\Hella\Compiler\sources\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 3 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 3 0 ]
+"11 D:\Hella\Compiler\sources\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 3 0 ]
+"8 D:\Hella\Compiler\sources\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 3 0 ]
+"15 D:\Hella\Compiler\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 D:\Hella\Compiler\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"8 D:\Hella\Compiler\sources\pic18\d10tcyx.c
+[v _Delay10TCYx Delay10TCYx `(v  1 e 1 0 ]
+"55 D:\Hella\Sessions\TimersLCDForStudents\TimersLCD.X\lcd.c
+[v _setGPIO setGPIO `(v  1 e 1 0 ]
+"81
+[v _setIODIR setIODIR `(v  1 e 1 0 ]
+"102
+[v _lcdCommand lcdCommand `(v  1 e 1 0 ]
+"123
+[v _LcdInit LcdInit `(v  1 e 1 0 ]
+"166
+[v _LcdClear LcdClear `(v  1 e 1 0 ]
+"176
+[v _LcdGoTo LcdGoTo `(v  1 e 1 0 ]
+"186
+[v _LcdChar LcdChar `(v  1 e 1 0 ]
+"202
+[v _LcdWriteString LcdWriteString `(v  1 e 1 0 ]
+"15 D:\Hella\Sessions\TimersLCDForStudents\TimersLCD.X\swspi.c
+[v _SWSPIOpen SWSPIOpen `(v  1 e 1 0 ]
+"53
+[v _SWSPISetCS SWSPISetCS `(v  1 e 1 0 ]
+"64
+[v _SWSPIClearCS SWSPIClearCS `(v  1 e 1 0 ]
+"75
+[v _SWSPIWrite SWSPIWrite `(uc  1 e 1 0 ]
+"97 D:\Hella\Sessions\TimersLCDForStudents\TimersLCD.X\TimersLCD.c
+[v _checkInputs checkInputs `(v  1 e 1 0 ]
+"131
+[v _initButtons initButtons `(v  1 e 1 0 ]
+"146
+[v _initTmr initTmr `(v  1 e 1 0 ]
+"179
+[v _ISR ISR `II(v  1 e 1 0 ]
+"203
+[v _init init `(v  1 e 1 0 ]
+"228
+[v _main main `(v  1 e 1 0 ]
+"11 D:\Hella\Sessions\TimersLCDForStudents\TimersLCD.X\uart.c
+[v _UART_Init UART_Init `(uc  1 e 1 0 ]
+"45
+[v _UART_Read UART_Read `(uc  1 e 1 0 ]
+"60
+[v _UART_putc UART_putc `(v  1 e 1 0 ]
+"68
+[v _UART_puts UART_puts `(v  1 e 1 0 ]
+[s S62 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"2651 D:\Hella\Compiler\include\pic18f8722.h
+[s S71 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 VREFM 1 0 :1:2 
+`uc 1 VREFP 1 0 :1:3 
+`uc 1 T0CKI 1 0 :1:4 
+`uc 1 LVDIN 1 0 :1:5 
+]
+[s S77 . 1 `uc 1 AN0 1 0 :1:0 
+`uc 1 AN1 1 0 :1:1 
+`uc 1 AN2 1 0 :1:2 
+`uc 1 AN3 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 AN4 1 0 :1:5 
+]
+[s S84 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 HLVDIN 1 0 :1:5 
+]
+[s S87 . 1 `uc 1 ULPWUIN 1 0 :1:0 
+`uc 1 . 1 0 :6:1 
+`uc 1 RJPU 1 0 :1:7 
+]
+[u S91 . 1 `S62 1 . 1 0 `S71 1 . 1 0 `S77 1 . 1 0 `S84 1 . 1 0 `S87 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES91  1 e 1 @3968 ]
+[s S789 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"2799
+[s S798 . 1 `uc 1 INT0 1 0 :1:0 
+`uc 1 INT1 1 0 :1:1 
+`uc 1 INT2 1 0 :1:2 
+`uc 1 INT3 1 0 :1:3 
+`uc 1 KBI0 1 0 :1:4 
+`uc 1 KBI1 1 0 :1:5 
+`uc 1 KBI2 1 0 :1:6 
+`uc 1 KBI3 1 0 :1:7 
+]
+[s S807 . 1 `uc 1 FLT0 1 0 :1:0 
+`uc 1 . 1 0 :2:1 
+`uc 1 ECCP2 1 0 :1:3 
+]
+[s S811 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CCP2 1 0 :1:3 
+]
+[s S814 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 P2A 1 0 :1:3 
+]
+[s S817 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CCP2_PA2 1 0 :1:3 
+]
+[u S820 . 1 `S789 1 . 1 0 `S798 1 . 1 0 `S807 1 . 1 0 `S811 1 . 1 0 `S814 1 . 1 0 `S817 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES820  1 e 1 @3969 ]
+[s S127 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+"2970
+[s S136 . 1 `uc 1 T1OSO 1 0 :1:0 
+`uc 1 T1OSI 1 0 :1:1 
+`uc 1 ECCP1 1 0 :1:2 
+`uc 1 SCK 1 0 :1:3 
+`uc 1 SDI 1 0 :1:4 
+`uc 1 SDO 1 0 :1:5 
+`uc 1 TX 1 0 :1:6 
+`uc 1 RX 1 0 :1:7 
+]
+[s S145 . 1 `uc 1 T13CKI 1 0 :1:0 
+`uc 1 ECCP2 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 SCL 1 0 :1:3 
+`uc 1 SDA 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CK 1 0 :1:6 
+`uc 1 DT 1 0 :1:7 
+]
+[s S154 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 CCP2 1 0 :1:1 
+`uc 1 CCP1 1 0 :1:2 
+`uc 1 SCL1 1 0 :1:3 
+`uc 1 SDA1 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CK1 1 0 :1:6 
+`uc 1 DT1 1 0 :1:7 
+]
+[s S163 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 P2A 1 0 :1:1 
+`uc 1 P1A 1 0 :1:2 
+`uc 1 SCK1 1 0 :1:3 
+`uc 1 SDI1 1 0 :1:4 
+`uc 1 SDO1 1 0 :1:5 
+`uc 1 TX1 1 0 :1:6 
+`uc 1 RX1 1 0 :1:7 
+]
+[s S172 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 PA2 1 0 :1:1 
+`uc 1 PA1 1 0 :1:2 
+]
+[u S176 . 1 `S127 1 . 1 0 `S136 1 . 1 0 `S145 1 . 1 0 `S154 1 . 1 0 `S163 1 . 1 0 `S172 1 . 1 0 ]
+[v _PORTCbits PORTCbits `VES176  1 e 1 @3970 ]
+[s S897 . 1 `uc 1 RJ0 1 0 :1:0 
+`uc 1 RJ1 1 0 :1:1 
+`uc 1 RJ2 1 0 :1:2 
+`uc 1 RJ3 1 0 :1:3 
+`uc 1 RJ4 1 0 :1:4 
+`uc 1 RJ5 1 0 :1:5 
+`uc 1 RJ6 1 0 :1:6 
+`uc 1 RJ7 1 0 :1:7 
+]
+"4293
+[s S906 . 1 `uc 1 ALE 1 0 :1:0 
+`uc 1 OE 1 0 :1:1 
+`uc 1 WRL 1 0 :1:2 
+`uc 1 WRH 1 0 :1:3 
+`uc 1 BA0 1 0 :1:4 
+`uc 1 CE 1 0 :1:5 
+`uc 1 LB 1 0 :1:6 
+`uc 1 UB 1 0 :1:7 
+]
+[s S915 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_OE 1 0 :1:1 
+]
+[s S918 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRL 1 0 :1:2 
+]
+[s S921 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 NOT_WRH 1 0 :1:3 
+]
+[s S924 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_CE 1 0 :1:5 
+]
+[s S927 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 NOT_LB 1 0 :1:6 
+]
+[s S930 . 1 `uc 1 . 1 0 :7:0 
+`uc 1 NOT_UB 1 0 :1:7 
+]
+[s S933 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nOE 1 0 :1:1 
+`uc 1 nWRL 1 0 :1:2 
+`uc 1 nWRH 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 nCE 1 0 :1:5 
+`uc 1 nLB 1 0 :1:6 
+`uc 1 nUB 1 0 :1:7 
+]
+[u S942 . 1 `S897 1 . 1 0 `S906 1 . 1 0 `S915 1 . 1 0 `S918 1 . 1 0 `S921 1 . 1 0 `S924 1 . 1 0 `S927 1 . 1 0 `S930 1 . 1 0 `S933 1 . 1 0 ]
+[v _PORTJbits PORTJbits `VES942  1 e 1 @3976 ]
+[s S233 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"5438
+[u S251 . 1 `S233 1 . 1 0 `S62 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES251  1 e 1 @3986 ]
+[s S273 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"5880
+[u S291 . 1 `S273 1 . 1 0 `S127 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES291  1 e 1 @3988 ]
+[s S1104 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+"6101
+[s S1113 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+[u S1122 . 1 `S1104 1 . 1 0 `S1113 1 . 1 0 ]
+[v _TRISDbits TRISDbits `VES1122  1 e 1 @3989 ]
+[s S998 . 1 `uc 1 TRISJ0 1 0 :1:0 
+`uc 1 TRISJ1 1 0 :1:1 
+`uc 1 TRISJ2 1 0 :1:2 
+`uc 1 TRISJ3 1 0 :1:3 
+`uc 1 TRISJ4 1 0 :1:4 
+`uc 1 TRISJ5 1 0 :1:5 
+`uc 1 TRISJ6 1 0 :1:6 
+`uc 1 TRISJ7 1 0 :1:7 
+]
+"7134
+[u S1016 . 1 `S998 1 . 1 0 `S897 1 . 1 0 ]
+[v _TRISJbits TRISJbits `VES1016  1 e 1 @3994 ]
+[s S1073 . 1 `uc 1 WM 1 0 :2:0 
+`uc 1 . 1 0 :2:2 
+`uc 1 WAIT 1 0 :2:4 
+`uc 1 . 1 0 :1:6 
+`uc 1 EBDIS 1 0 :1:7 
+]
+"7408
+[s S1079 . 1 `uc 1 WM0 1 0 :1:0 
+`uc 1 WM1 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 WAIT0 1 0 :1:4 
+`uc 1 WAIT1 1 0 :1:5 
+]
+[u S1085 . 1 `S1073 1 . 1 0 `S1079 1 . 1 0 ]
+[v _MEMCONbits MEMCONbits `VES1085  1 e 1 @3996 ]
+[s S582 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 TX1IE 1 0 :1:4 
+`uc 1 RC1IE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 PSPIE 1 0 :1:7 
+]
+"7470
+[s S591 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+]
+[u S596 . 1 `S582 1 . 1 0 `S591 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES596  1 e 1 @3997 ]
+[s S695 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+"7552
+[s S704 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+]
+[u S709 . 1 `S695 1 . 1 0 `S704 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES709  1 e 1 @3998 ]
+[s S505 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"8311
+[s S514 . 1 `uc 1 RCD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S518 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 NOT_RC8 1 0 :1:6 
+]
+[s S521 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 nRC8 1 0 :1:6 
+]
+[s S524 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[s S527 . 1 `uc 1 RX9D1 1 0 :1:0 
+`uc 1 OERR1 1 0 :1:1 
+`uc 1 FERR1 1 0 :1:2 
+`uc 1 ADDEN1 1 0 :1:3 
+`uc 1 CREN1 1 0 :1:4 
+`uc 1 SREN1 1 0 :1:5 
+`uc 1 RX91 1 0 :1:6 
+`uc 1 SPEN1 1 0 :1:7 
+]
+[s S536 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 SRENA 1 0 :1:5 
+]
+[u S539 . 1 `S505 1 . 1 0 `S514 1 . 1 0 `S518 1 . 1 0 `S521 1 . 1 0 `S524 1 . 1 0 `S527 1 . 1 0 `S536 1 . 1 0 ]
+[v _RCSTA1bits RCSTA1bits `VES539  1 e 1 @4011 ]
+"8467
+[v _RCSTAbits RCSTAbits `VES539  1 e 1 @4011 ]
+[s S378 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"8626
+[s S387 . 1 `uc 1 TXD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[s S391 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 NOT_TX8 1 0 :1:6 
+]
+[s S394 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 nTX8 1 0 :1:6 
+]
+[s S397 . 1 `uc 1 TX9D1 1 0 :1:0 
+`uc 1 TRMT1 1 0 :1:1 
+`uc 1 BRGH1 1 0 :1:2 
+`uc 1 SENDB1 1 0 :1:3 
+`uc 1 SYNC1 1 0 :1:4 
+`uc 1 TXEN1 1 0 :1:5 
+`uc 1 TX91 1 0 :1:6 
+`uc 1 CSRC1 1 0 :1:7 
+]
+[u S406 . 1 `S378 1 . 1 0 `S387 1 . 1 0 `S391 1 . 1 0 `S394 1 . 1 0 `S397 1 . 1 0 ]
+[v _TXSTA1bits TXSTA1bits `VES406  1 e 1 @4012 ]
+"8764
+[v _TXSTAbits TXSTAbits `VES406  1 e 1 @4012 ]
+"8873
+[v _TXREG TXREG `VEuc  1 e 1 @4013 ]
+"8884
+[v _RCREG RCREG `VEuc  1 e 1 @4014 ]
+"8895
+[v _SPBRG SPBRG `VEuc  1 e 1 @4015 ]
+"12434
+[v _T0CON T0CON `VEuc  1 e 1 @4053 ]
+[s S1040 . 1 `uc 1 T0PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 T08BIT 1 0 :1:6 
+`uc 1 TMR0ON 1 0 :1:7 
+]
+"12455
+[s S1047 . 1 `uc 1 T0PS0 1 0 :1:0 
+`uc 1 T0PS1 1 0 :1:1 
+`uc 1 T0PS2 1 0 :1:2 
+`uc 1 T0PS3 1 0 :1:3 
+]
+[u S1052 . 1 `S1040 1 . 1 0 `S1047 1 . 1 0 ]
+[v _T0CONbits T0CONbits `VES1052  1 e 1 @4053 ]
+"12509
+[v _TMR0 TMR0 `VEus  1 e 2 @4054 ]
+"12515
+[v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
+"12521
+[v _TMR0H TMR0H `VEuc  1 e 1 @4055 ]
+"13814
+[v _GIE GIE `VEb  1 e 0 @32663 ]
+"14646
+[v _RCIF RCIF `VEb  1 e 0 @31989 ]
+"14992
+[v _T0IE T0IE `VEb  1 e 0 @32661 ]
+"14994
+[v _T0IF T0IF `VEb  1 e 0 @32658 ]
+"15122
+[v _TRISA5 TRISA5 `VEb  1 e 0 @31893 ]
+"15128
+[v _TRISB0 TRISB0 `VEb  1 e 0 @31896 ]
+"15252
+[v _TRMT1 TRMT1 `VEb  1 e 0 @32097 ]
+"354 D:\Hella\Compiler\sources\common\doprnt.c
+[v _dpowers dpowers `C[5]ui  1 s 10 dpowers ]
+"45 D:\Hella\Sessions\TimersLCDForStudents\TimersLCD.X\TimersLCD.c
+[v _leftButtonEv leftButtonEv `uc  1 e 1 0 ]
+"46
+[v _rightButtonEv rightButtonEv `uc  1 e 1 0 ]
+"49
+[v _tick tick `uc  1 e 1 0 ]
+"50
+[v _ev ev `uc  1 e 1 0 ]
+"54
+[v _mesaj mesaj `[20]uc  1 e 20 0 ]
+"66
+[v _tick100ms tick100ms `uc  1 e 1 0 ]
+"74
+[v _secunde secunde `uc  1 e 1 0 ]
+"81
+[v _minute minute `uc  1 e 1 0 ]
+"84
+[v _ore ore `uc  1 e 1 0 ]
+"228
+[v _main main `(v  1 e 1 0 ]
+{
+"300
+[v main@leftButton leftButton `uc  1 a 1 42 ]
+"301
+[v main@rightButton rightButton `uc  1 a 1 41 ]
+"230
+[v main@desc desc `uc  1 a 1 43 ]
+"375
+} 0
+"492 D:\Hella\Compiler\sources\common\doprnt.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+"501
+[v sprintf@width width `i  1 a 2 6 ]
+"528
+[v sprintf@val val `ui  1 a 2 3 ]
+"494
+[v sprintf@ap ap `[1]*.39v  1 a 2 0 ]
+"499
+[v sprintf@c c `c  1 a 1 8 ]
+"508
+[v sprintf@flag flag `uc  1 a 1 5 ]
+"506
+[v sprintf@prec prec `c  1 a 1 2 ]
+"492
+[v sprintf@sp sp `*.39uc  1 p 2 27 ]
+[v sprintf@f f `*.32Cuc  1 p 2 29 ]
+"1541
+} 0
+"8 D:\Hella\Compiler\sources\common\isdigit.c
+[v _isdigit isdigit `(b  1 e 0 0 ]
+{
+[v isdigit@c c `uc  1 a 1 wreg ]
+[v isdigit@c c `uc  1 a 1 wreg ]
+"14
+[v isdigit@c c `uc  1 a 1 17 ]
+"15
+} 0
+"15 D:\Hella\Compiler\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 19 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 15 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 17 ]
+"53
+} 0
+"8 D:\Hella\Compiler\sources\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwmod@counter counter `uc  1 a 1 26 ]
+"8
+[v ___lwmod@dividend dividend `ui  1 p 2 22 ]
+[v ___lwmod@divisor divisor `ui  1 p 2 24 ]
+"26
+} 0
+"8 D:\Hella\Compiler\sources\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"11
+[v ___lwdiv@quotient quotient `ui  1 a 2 20 ]
+"12
+[v ___lwdiv@counter counter `uc  1 a 1 19 ]
+"8
+[v ___lwdiv@dividend dividend `ui  1 p 2 15 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 17 ]
+"31
+} 0
+"203 D:\Hella\Sessions\TimersLCDForStudents\TimersLCD.X\TimersLCD.c
+[v _init init `(v  1 e 1 0 ]
+{
+"221
+} 0
+"146
+[v _initTmr initTmr `(v  1 e 1 0 ]
+{
+"173
+} 0
+"131
+[v _initButtons initButtons `(v  1 e 1 0 ]
+{
+"139
+} 0
+"68 D:\Hella\Sessions\TimersLCDForStudents\TimersLCD.X\uart.c
+[v _UART_puts UART_puts `(v  1 e 1 0 ]
+{
+[v UART_puts@s s `*.32uc  1 p 2 16 ]
+"76
+} 0
+"60
+[v _UART_putc UART_putc `(v  1 e 1 0 ]
+{
+[v UART_putc@data data `uc  1 a 1 wreg ]
+[v UART_putc@data data `uc  1 a 1 wreg ]
+"62
+[v UART_putc@data data `uc  1 a 1 15 ]
+"65
+} 0
+"8 D:\Hella\Compiler\sources\pic18\d10tcyx.c
+[v _Delay10TCYx Delay10TCYx `(v  1 e 1 0 ]
+{
+[v Delay10TCYx@unit unit `uc  1 a 1 wreg ]
+[v Delay10TCYx@unit unit `uc  1 a 1 wreg ]
+[v Delay10TCYx@unit unit `uc  1 a 1 15 ]
+"13
+} 0
+"11 D:\Hella\Sessions\TimersLCDForStudents\TimersLCD.X\uart.c
+[v _UART_Init UART_Init `(uc  1 e 1 0 ]
+{
+"13
+[v UART_Init@x x `ui  1 a 2 15 ]
+"29
+} 0
+"123 D:\Hella\Sessions\TimersLCDForStudents\TimersLCD.X\lcd.c
+[v _LcdInit LcdInit `(v  1 e 1 0 ]
+{
+"160
+} 0
+"81
+[v _setIODIR setIODIR `(v  1 e 1 0 ]
+{
+[v setIODIR@address address `uc  1 a 1 wreg ]
+[v setIODIR@address address `uc  1 a 1 wreg ]
+[v setIODIR@dir dir `uc  1 p 1 17 ]
+"84
+[v setIODIR@address address `uc  1 a 1 18 ]
+"96
+} 0
+"15 D:\Hella\Sessions\TimersLCDForStudents\TimersLCD.X\swspi.c
+[v _SWSPIOpen SWSPIOpen `(v  1 e 1 0 ]
+{
+"44
+} 0
+"166 D:\Hella\Sessions\TimersLCDForStudents\TimersLCD.X\lcd.c
+[v _LcdClear LcdClear `(v  1 e 1 0 ]
+{
+"170
+} 0
+"97 D:\Hella\Sessions\TimersLCDForStudents\TimersLCD.X\TimersLCD.c
+[v _checkInputs checkInputs `(v  1 e 1 0 ]
+{
+"100
+[v checkInputs@rightButton rightButton `uc  1 a 1 16 ]
+"99
+[v checkInputs@leftButton leftButton `uc  1 a 1 15 ]
+"101
+[v checkInputs@leftButton_old leftButton_old `uc  1 s 1 leftButton_old ]
+"102
+[v checkInputs@rightButton_old rightButton_old `uc  1 s 1 rightButton_old ]
+"123
+} 0
+"202 D:\Hella\Sessions\TimersLCDForStudents\TimersLCD.X\lcd.c
+[v _LcdWriteString LcdWriteString `(v  1 e 1 0 ]
+{
+[v LcdWriteString@s s `*.34Cuc  1 p 2 20 ]
+"208
+} 0
+"186
+[v _LcdChar LcdChar `(v  1 e 1 0 ]
+{
+[v LcdChar@letter letter `uc  1 a 1 wreg ]
+[v LcdChar@letter letter `uc  1 a 1 wreg ]
+"188
+[v LcdChar@letter letter `uc  1 a 1 19 ]
+"196
+} 0
+"176
+[v _LcdGoTo LcdGoTo `(v  1 e 1 0 ]
+{
+[v LcdGoTo@pos pos `uc  1 a 1 wreg ]
+[v LcdGoTo@pos pos `uc  1 a 1 wreg ]
+"179
+[v LcdGoTo@pos pos `uc  1 a 1 20 ]
+"180
+} 0
+"102
+[v _lcdCommand lcdCommand `(v  1 e 1 0 ]
+{
+[v lcdCommand@command command `uc  1 a 1 wreg ]
+[v lcdCommand@command command `uc  1 a 1 wreg ]
+"104
+[v lcdCommand@command command `uc  1 a 1 19 ]
+"112
+} 0
+"55
+[v _setGPIO setGPIO `(v  1 e 1 0 ]
+{
+[v setGPIO@address address `uc  1 a 1 wreg ]
+[v setGPIO@address address `uc  1 a 1 wreg ]
+[v setGPIO@value value `uc  1 p 1 17 ]
+"58
+[v setGPIO@address address `uc  1 a 1 18 ]
+"74
+} 0
+"75 D:\Hella\Sessions\TimersLCDForStudents\TimersLCD.X\swspi.c
+[v _SWSPIWrite SWSPIWrite `(uc  1 e 1 0 ]
+{
+[v SWSPIWrite@output output `uc  1 a 1 wreg ]
+"77
+[v SWSPIWrite@BitCount BitCount `uc  1 a 1 16 ]
+"75
+[v SWSPIWrite@output output `uc  1 a 1 wreg ]
+"78
+[v SWSPIWrite@input input `uc  1 s 1 input ]
+"80
+[v SWSPIWrite@output output `uc  1 a 1 15 ]
+"274
+} 0
+"53
+[v _SWSPISetCS SWSPISetCS `(v  1 e 1 0 ]
+{
+"56
+} 0
+"64
+[v _SWSPIClearCS SWSPIClearCS `(v  1 e 1 0 ]
+{
+"67
+} 0
+"179 D:\Hella\Sessions\TimersLCDForStudents\TimersLCD.X\TimersLCD.c
+[v _ISR ISR `II(v  1 e 1 0 ]
+{
+"197
+} 0
