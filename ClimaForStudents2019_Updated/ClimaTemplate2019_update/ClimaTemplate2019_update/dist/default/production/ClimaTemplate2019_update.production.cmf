@@ -1,0 +1,1272 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\Ezio\AppData\Local\Temp\sd5o.obj
+idloc IDLOC 0 200000 200000 8 1
+init CODE 0 E E 4 1
+reset_vec CODE 0 0 0 4 1
+config CONFIG 0 300000 300000 E 1
+$dist/default/production\ClimaTemplate2019_update.production.obj
+cinit CODE 0 10F16 10F16 22 1
+intcode_body CODE 0 10856 10856 FC 1
+text0 CODE 0 10D62 10D62 3E 1
+text1 CODE 0 10EA2 10EA2 2A 1
+text2 CODE 0 1030E 1030E 242 1
+text3 CODE 0 10550 10550 1E6 1
+text4 CODE 0 1101E 1101E 6 1
+text5 CODE 0 11024 11024 6 1
+text6 CODE 0 11036 11036 4 1
+text7 CODE 0 10EF2 10EF2 24 1
+text8 CODE 0 10A46 10A46 AE 1
+text9 CODE 0 10952 10952 F4 1
+text10 CODE 0 10AF4 10AF4 68 1
+text11 CODE 0 1102A 1102A 6 1
+text12 CODE 0 10FAE 10FAE 12 1
+text13 CODE 0 10FC0 10FC0 12 1
+text14 CODE 0 10C9E 10C9E 42 1
+text15 CODE 0 11002 11002 C 1
+text16 CODE 0 11030 11030 6 1
+text17 CODE 0 10D22 10D22 40 1
+text18 CODE 0 1100E 1100E 8 1
+text19 CODE 0 1103A 1103A 4 1
+text20 CODE 0 10DA0 10DA0 3C 1
+text21 CODE 0 10E14 10E14 36 1
+text22 CODE 0 10FF4 10FF4 E 1
+text23 CODE 0 10FE4 10FE4 10 1
+text24 CODE 0 10F92 10F92 1C 1
+text25 CODE 0 10C52 10C52 4C 1
+text26 CODE 0 10F38 10F38 1E 1
+text27 CODE 0 10FD2 10FD2 12 1
+text28 CODE 0 10B5C 10B5C 56 1
+text29 CODE 0 10E4A 10E4A 2C 1
+text30 CODE 0 11016 11016 8 1
+text31 CODE 0 10E76 10E76 2C 1
+text32 CODE 0 10F56 10F56 1E 1
+text33 CODE 0 10C04 10C04 4E 1
+text34 CODE 0 1103E 1103E 4 1
+text35 CODE 0 11042 11042 4 1
+text36 CODE 0 10736 10736 120 1
+text37 CODE 0 10000 10000 30E 1
+text38 CODE 0 10F74 10F74 1E 1
+text39 CODE 0 10ECC 10ECC 26 1
+text40 CODE 0 10CE0 10CE0 42 1
+text41 CODE 0 10BB2 10BB2 52 1
+text42 CODE 0 10DDC 10DDC 38 1
+cstackCOMRAM COMRAM 1 1 1 35 1
+cstackBANK0 BANK0 1 74 74 A 1
+temp COMRAM 1 50 50 1 1
+bssBANK0 BANK0 1 60 60 14 1
+intcode CODE 0 8 8 6 1
+bssCOMRAM COMRAM 1 36 36 1A 1
+mediumconst MEDIUMCONST 0 FEF4 FEF4 10C 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 7E-F5F 1
+SFR F60-FFF 1
+BANK0 7E-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+BANK8 800-8FF 1
+BANK9 900-9FF 1
+CONST 4-7 1
+CONST 12-FEF3 1
+CONST 11046-1FFFF 1
+STACK 7E-F5F 1
+SMALLCONST 1000-FEF3 1
+SMALLCONST 11046-1FFFF 1
+CODE 4-7 1
+CODE 12-FEF3 1
+CODE 11046-1FFFF 1
+BANK10 A00-AFF 1
+BANK11 B00-BFF 1
+BANK12 C00-CFF 1
+BANK13 D00-DFF 1
+BANK14 E00-EFF 1
+BANK15 F00-F5F 1
+BIGRAM 51-5F 1
+BIGRAM 7E-F5F 1
+COMRAM 51-5F 1
+EEDATA F00000-F003FF 1
+MEDIUMCONST 1000-FEF3 1
+MEDIUMCONST 11046-1FFFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\ClimaTemplate2019_update.production.obj
+8 intcode CODE >590:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+8 intcode CODE >657:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10856 intcode_body CODE >657:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10890 intcode_body CODE >660:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10896 intcode_body CODE >662:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10898 intcode_body CODE >663:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1089A intcode_body CODE >664:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1089E intcode_body CODE >665:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+108A2 intcode_body CODE >667:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+108A4 intcode_body CODE >668:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+108A6 intcode_body CODE >670:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+108B0 intcode_body CODE >672:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+108B2 intcode_body CODE >674:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+108BA intcode_body CODE >677:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+108BE intcode_body CODE >678:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+108C2 intcode_body CODE >682:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+108D4 intcode_body CODE >685:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+108E4 intcode_body CODE >686:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+108E8 intcode_body CODE >687:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+108E8 intcode_body CODE >688:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+108EA intcode_body CODE >691:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+108FA intcode_body CODE >692:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+108FE intcode_body CODE >693:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+108FE intcode_body CODE >694:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10900 intcode_body CODE >697:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10910 intcode_body CODE >698:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10914 intcode_body CODE >699:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10914 intcode_body CODE >700:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10916 intcode_body CODE >704:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10DDC text42 CODE >578:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10DDE text42 CODE >580:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10DEE text42 CODE >582:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10DF0 text42 CODE >583:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10E02 text42 CODE >584:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10E04 text42 CODE >585:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10E06 text42 CODE >586:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10E0A text42 CODE >589:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10E12 text42 CODE >590:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10BB2 text41 CODE >8:D:\Hella\Compiler\sources\common\lwdiv.c
+10BB2 text41 CODE >14:D:\Hella\Compiler\sources\common\lwdiv.c
+10BBA text41 CODE >15:D:\Hella\Compiler\sources\common\lwdiv.c
+10BC2 text41 CODE >16:D:\Hella\Compiler\sources\common\lwdiv.c
+10BC6 text41 CODE >17:D:\Hella\Compiler\sources\common\lwdiv.c
+10BC8 text41 CODE >18:D:\Hella\Compiler\sources\common\lwdiv.c
+10BCE text41 CODE >19:D:\Hella\Compiler\sources\common\lwdiv.c
+10BD0 text41 CODE >17:D:\Hella\Compiler\sources\common\lwdiv.c
+10BD4 text41 CODE >22:D:\Hella\Compiler\sources\common\lwdiv.c
+10BDA text41 CODE >23:D:\Hella\Compiler\sources\common\lwdiv.c
+10BE6 text41 CODE >24:D:\Hella\Compiler\sources\common\lwdiv.c
+10BEE text41 CODE >25:D:\Hella\Compiler\sources\common\lwdiv.c
+10BF0 text41 CODE >27:D:\Hella\Compiler\sources\common\lwdiv.c
+10BF6 text41 CODE >28:D:\Hella\Compiler\sources\common\lwdiv.c
+10BFA text41 CODE >29:D:\Hella\Compiler\sources\common\lwdiv.c
+10BFA text41 CODE >30:D:\Hella\Compiler\sources\common\lwdiv.c
+10C02 text41 CODE >31:D:\Hella\Compiler\sources\common\lwdiv.c
+10CE0 text40 CODE >8:D:\Hella\Compiler\sources\common\lwmod.c
+10CE0 text40 CODE >13:D:\Hella\Compiler\sources\common\lwmod.c
+10CE8 text40 CODE >14:D:\Hella\Compiler\sources\common\lwmod.c
+10CEC text40 CODE >15:D:\Hella\Compiler\sources\common\lwmod.c
+10CEE text40 CODE >16:D:\Hella\Compiler\sources\common\lwmod.c
+10CF4 text40 CODE >17:D:\Hella\Compiler\sources\common\lwmod.c
+10CF6 text40 CODE >15:D:\Hella\Compiler\sources\common\lwmod.c
+10CFA text40 CODE >20:D:\Hella\Compiler\sources\common\lwmod.c
+10D06 text40 CODE >21:D:\Hella\Compiler\sources\common\lwmod.c
+10D0E text40 CODE >22:D:\Hella\Compiler\sources\common\lwmod.c
+10D14 text40 CODE >23:D:\Hella\Compiler\sources\common\lwmod.c
+10D18 text40 CODE >24:D:\Hella\Compiler\sources\common\lwmod.c
+10D18 text40 CODE >25:D:\Hella\Compiler\sources\common\lwmod.c
+10D20 text40 CODE >26:D:\Hella\Compiler\sources\common\lwmod.c
+10ECC text39 CODE >15:D:\Hella\Compiler\sources\common\Umul16.c
+10ECC text39 CODE >37:D:\Hella\Compiler\sources\common\Umul16.c
+10ED8 text39 CODE >38:D:\Hella\Compiler\sources\common\Umul16.c
+10EE0 text39 CODE >39:D:\Hella\Compiler\sources\common\Umul16.c
+10EE8 text39 CODE >52:D:\Hella\Compiler\sources\common\Umul16.c
+10F74 text38 CODE >8:D:\Hella\Compiler\sources\common\isdigit.c
+10F76 text38 CODE >14:D:\Hella\Compiler\sources\common\isdigit.c
+10000 text37 CODE >492:D:\Hella\Compiler\sources\common\doprnt.c
+10000 text37 CODE >533:D:\Hella\Compiler\sources\common\doprnt.c
+1000C text37 CODE >536:D:\Hella\Compiler\sources\common\doprnt.c
+1000E text37 CODE >538:D:\Hella\Compiler\sources\common\doprnt.c
+10018 text37 CODE >541:D:\Hella\Compiler\sources\common\doprnt.c
+10028 text37 CODE >542:D:\Hella\Compiler\sources\common\doprnt.c
+1002A text37 CODE >546:D:\Hella\Compiler\sources\common\doprnt.c
+10034 text37 CODE >548:D:\Hella\Compiler\sources\common\doprnt.c
+1003A text37 CODE >551:D:\Hella\Compiler\sources\common\doprnt.c
+1003C text37 CODE >580:D:\Hella\Compiler\sources\common\doprnt.c
+10040 text37 CODE >581:D:\Hella\Compiler\sources\common\doprnt.c
+10044 text37 CODE >551:D:\Hella\Compiler\sources\common\doprnt.c
+1005A text37 CODE >597:D:\Hella\Compiler\sources\common\doprnt.c
+10072 text37 CODE >598:D:\Hella\Compiler\sources\common\doprnt.c
+1007C text37 CODE >600:D:\Hella\Compiler\sources\common\doprnt.c
+10098 text37 CODE >601:D:\Hella\Compiler\sources\common\doprnt.c
+100CC text37 CODE >602:D:\Hella\Compiler\sources\common\doprnt.c
+100E4 text37 CODE >635:D:\Hella\Compiler\sources\common\doprnt.c
+10110 text37 CODE >1259:D:\Hella\Compiler\sources\common\doprnt.c
+1012A text37 CODE >1261:D:\Hella\Compiler\sources\common\doprnt.c
+10130 text37 CODE >1262:D:\Hella\Compiler\sources\common\doprnt.c
+10136 text37 CODE >1263:D:\Hella\Compiler\sources\common\doprnt.c
+10140 text37 CODE >1305:D:\Hella\Compiler\sources\common\doprnt.c
+10150 text37 CODE >1306:D:\Hella\Compiler\sources\common\doprnt.c
+1017C text37 CODE >1305:D:\Hella\Compiler\sources\common\doprnt.c
+10182 text37 CODE >1345:D:\Hella\Compiler\sources\common\doprnt.c
+1019A text37 CODE >1346:D:\Hella\Compiler\sources\common\doprnt.c
+101A2 text37 CODE >1381:D:\Hella\Compiler\sources\common\doprnt.c
+101C0 text37 CODE >1382:D:\Hella\Compiler\sources\common\doprnt.c
+101D6 text37 CODE >1384:D:\Hella\Compiler\sources\common\doprnt.c
+101E0 text37 CODE >1387:D:\Hella\Compiler\sources\common\doprnt.c
+101E6 text37 CODE >1392:D:\Hella\Compiler\sources\common\doprnt.c
+101F2 text37 CODE >1393:D:\Hella\Compiler\sources\common\doprnt.c
+10202 text37 CODE >1415:D:\Hella\Compiler\sources\common\doprnt.c
+1020E text37 CODE >1417:D:\Hella\Compiler\sources\common\doprnt.c
+1021E text37 CODE >1418:D:\Hella\Compiler\sources\common\doprnt.c
+10228 text37 CODE >1428:D:\Hella\Compiler\sources\common\doprnt.c
+10234 text37 CODE >1430:D:\Hella\Compiler\sources\common\doprnt.c
+10244 text37 CODE >1431:D:\Hella\Compiler\sources\common\doprnt.c
+10258 text37 CODE >1438:D:\Hella\Compiler\sources\common\doprnt.c
+10264 text37 CODE >1439:D:\Hella\Compiler\sources\common\doprnt.c
+10274 text37 CODE >1472:D:\Hella\Compiler\sources\common\doprnt.c
+10278 text37 CODE >1474:D:\Hella\Compiler\sources\common\doprnt.c
+1027A text37 CODE >1489:D:\Hella\Compiler\sources\common\doprnt.c
+102C6 text37 CODE >1524:D:\Hella\Compiler\sources\common\doprnt.c
+102D6 text37 CODE >1474:D:\Hella\Compiler\sources\common\doprnt.c
+102E2 text37 CODE >536:D:\Hella\Compiler\sources\common\doprnt.c
+10300 text37 CODE >1538:D:\Hella\Compiler\sources\common\doprnt.c
+10736 text36 CODE >322:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10736 text36 CODE >324:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1073E text36 CODE >325:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10742 text36 CODE >330:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1074A text36 CODE >333:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10758 text36 CODE >335:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1075C text36 CODE >337:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10760 text36 CODE >347:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1076E text36 CODE >348:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1078A text36 CODE >351:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10790 text36 CODE >362:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1079E text36 CODE >363:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+107D2 text36 CODE >365:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+107EE text36 CODE >381:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+107FC text36 CODE >382:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10830 text36 CODE >384:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1084C text36 CODE >388:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10850 text36 CODE >389:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10852 text36 CODE >392:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+11042 text35 CODE >64:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+11042 text35 CODE >66:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+11044 text35 CODE >67:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+1103E text34 CODE >53:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+1103E text34 CODE >55:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+11040 text34 CODE >56:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10C04 text33 CODE >75:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10C06 text33 CODE >80:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10C0A text33 CODE >81:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10C0E text33 CODE >87:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10C10 text33 CODE >88:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10C12 text33 CODE >89:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10C14 text33 CODE >90:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10C16 text33 CODE >91:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10C18 text33 CODE >92:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10C18 text33 CODE >109:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10C1C text33 CODE >110:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10C22 text33 CODE >112:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10C28 text33 CODE >114:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10C2A text33 CODE >118:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10C2C text33 CODE >119:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10C2E text33 CODE >120:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10C30 text33 CODE >121:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10C32 text33 CODE >122:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10C34 text33 CODE >123:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10C36 text33 CODE >124:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10C38 text33 CODE >125:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10C3A text33 CODE >126:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10C3C text33 CODE >127:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10C3E text33 CODE >128:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10C40 text33 CODE >129:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10C42 text33 CODE >130:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10C44 text33 CODE >131:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10C46 text33 CODE >132:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10C48 text33 CODE >133:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10C4A text33 CODE >134:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10F56 text32 CODE >55:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10F58 text32 CODE >58:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10F5C text32 CODE >61:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10F62 text32 CODE >62:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10F68 text32 CODE >63:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10F6E text32 CODE >64:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10F72 text32 CODE >74:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10E76 text31 CODE >102:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10E78 text31 CODE >104:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10E82 text31 CODE >106:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10E8C text31 CODE >108:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10E96 text31 CODE >110:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10EA0 text31 CODE >112:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+11016 text30 CODE >166:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+11016 text30 CODE >169:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+1101C text30 CODE >170:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10E4A text29 CODE >186:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10E4C text29 CODE >188:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10E56 text29 CODE >190:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10E60 text29 CODE >192:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10E6A text29 CODE >194:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10E74 text29 CODE >196:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10B5C text28 CODE >202:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10B5C text28 CODE >204:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10B5E text28 CODE >206:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10B88 text28 CODE >204:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10FD2 text27 CODE >15:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10FD2 text27 CODE >17:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10FD4 text27 CODE >18:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10FD6 text27 CODE >21:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10FD8 text27 CODE >22:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10FDA text27 CODE >40:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10FDC text27 CODE >41:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10FDE text27 CODE >42:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10FE0 text27 CODE >43:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10FE2 text27 CODE >44:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\swspi.c
+10F38 text26 CODE >81:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10F3A text26 CODE >84:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10F3E text26 CODE >85:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10F44 text26 CODE >86:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10F4A text26 CODE >87:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10F50 text26 CODE >88:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10F54 text26 CODE >96:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10C52 text25 CODE >123:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10C52 text25 CODE >126:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10C56 text25 CODE >135:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10C60 text25 CODE >137:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10C6A text25 CODE >139:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10C74 text25 CODE >142:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10C7A text25 CODE >145:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10C80 text25 CODE >148:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10C86 text25 CODE >151:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10C8C text25 CODE >154:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10C98 text25 CODE >158:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10C9C text25 CODE >160:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10F92 text24 CODE >11:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\uart.c
+10F92 text24 CODE >34:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\uart.c
+10F9A text24 CODE >37:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\uart.c
+10F9C text24 CODE >38:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\uart.c
+10F9E text24 CODE >41:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\uart.c
+10FA0 text24 CODE >42:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\uart.c
+10FA4 text24 CODE >43:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\uart.c
+10FA6 text24 CODE >44:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\uart.c
+10FA8 text24 CODE >45:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\uart.c
+10FAA text24 CODE >46:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\uart.c
+10FE4 text23 CODE >8:D:\Hella\Compiler\sources\pic18\d10tcyx.c
+10FE6 text23 CODE >11:D:\Hella\Compiler\sources\pic18\d10tcyx.c
+10FEE text23 CODE >12:D:\Hella\Compiler\sources\pic18\d10tcyx.c
+10FF4 text22 CODE >80:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\uart.c
+10FF6 text22 CODE >82:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\uart.c
+10FFA text22 CODE >83:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\uart.c
+10FFE text22 CODE >84:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\uart.c
+11000 text22 CODE >85:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\uart.c
+10E14 text21 CODE >88:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\uart.c
+10E14 text21 CODE >92:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\uart.c
+10E28 text21 CODE >93:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\uart.c
+10E2C text21 CODE >94:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\uart.c
+10E32 text21 CODE >95:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\uart.c
+10DA0 text20 CODE >549:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10DA0 text20 CODE >552:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10DA6 text20 CODE >555:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10DAC text20 CODE >558:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10DB2 text20 CODE >561:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10DBA text20 CODE >562:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10DBC text20 CODE >563:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10DBE text20 CODE >565:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10DC2 text20 CODE >566:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10DCA text20 CODE >568:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10DCC text20 CODE >569:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10DD2 text20 CODE >570:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10DDA text20 CODE >571:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1103A text19 CODE >537:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1103A text19 CODE >540:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1103C text19 CODE >542:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1100E text18 CODE >597:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1100E text18 CODE >602:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+11010 text18 CODE >604:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+11012 text18 CODE >606:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+11014 text18 CODE >608:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D22 text17 CODE >614:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D22 text17 CODE >616:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D24 text17 CODE >617:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D26 text17 CODE >618:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D28 text17 CODE >619:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D2A text17 CODE >621:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D2C text17 CODE >622:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D2E text17 CODE >623:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D30 text17 CODE >624:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D32 text17 CODE >625:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D34 text17 CODE >626:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D36 text17 CODE >630:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D3E text17 CODE >631:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D42 text17 CODE >632:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D44 text17 CODE >633:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D46 text17 CODE >634:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D48 text17 CODE >635:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D4A text17 CODE >636:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D4C text17 CODE >637:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D52 text17 CODE >643:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D56 text17 CODE >644:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D5A text17 CODE >645:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D5C text17 CODE >646:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D5E text17 CODE >647:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D60 text17 CODE >649:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+11030 text16 CODE >155:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+11030 text16 CODE >157:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+11034 text16 CODE >158:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+11002 text15 CODE >176:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+11004 text15 CODE >179:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+1100C text15 CODE >180:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\lcd.c
+10C9E text14 CODE >225:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10C9E text14 CODE >227:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10CA2 text14 CODE >228:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10CA8 text14 CODE >229:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10CBC text14 CODE >230:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10CC2 text14 CODE >231:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10CDE text14 CODE >232:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10FC0 text13 CODE >175:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10FC2 text13 CODE >177:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10FC8 text13 CODE >178:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10FCC text13 CODE >179:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10FD0 text13 CODE >180:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10FAE text12 CODE >186:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10FB0 text12 CODE >188:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10FB6 text12 CODE >189:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10FBA text12 CODE >190:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10FBE text12 CODE >191:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1102A text11 CODE >135:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1102A text11 CODE >137:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1102E text11 CODE >138:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10AF4 text10 CODE >711:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10AF4 text10 CODE >713:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10AF8 text10 CODE >714:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10AFC text10 CODE >715:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10AFE text10 CODE >718:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10B02 text10 CODE >719:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10B0E text10 CODE >722:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10B12 text10 CODE >725:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10B16 text10 CODE >728:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10B1A text10 CODE >731:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10B1E text10 CODE >734:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10B22 text10 CODE >738:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10B26 text10 CODE >739:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10B2A text10 CODE >742:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10B36 text10 CODE >744:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10B42 text10 CODE >747:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10B48 text10 CODE >749:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10B4E text10 CODE >751:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10B5A text10 CODE >754:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10952 text9 CODE >44:D:\Hella\Compiler\sources\common\fttol.c
+10952 text9 CODE >49:D:\Hella\Compiler\sources\common\fttol.c
+1096C text9 CODE >50:D:\Hella\Compiler\sources\common\fttol.c
+1097E text9 CODE >51:D:\Hella\Compiler\sources\common\fttol.c
+109A4 text9 CODE >52:D:\Hella\Compiler\sources\common\fttol.c
+109A6 text9 CODE >53:D:\Hella\Compiler\sources\common\fttol.c
+109B2 text9 CODE >54:D:\Hella\Compiler\sources\common\fttol.c
+109C0 text9 CODE >55:D:\Hella\Compiler\sources\common\fttol.c
+109C4 text9 CODE >56:D:\Hella\Compiler\sources\common\fttol.c
+109C8 text9 CODE >57:D:\Hella\Compiler\sources\common\fttol.c
+109D2 text9 CODE >58:D:\Hella\Compiler\sources\common\fttol.c
+109E4 text9 CODE >60:D:\Hella\Compiler\sources\common\fttol.c
+109EE text9 CODE >61:D:\Hella\Compiler\sources\common\fttol.c
+109F2 text9 CODE >62:D:\Hella\Compiler\sources\common\fttol.c
+109F4 text9 CODE >63:D:\Hella\Compiler\sources\common\fttol.c
+109FA text9 CODE >64:D:\Hella\Compiler\sources\common\fttol.c
+10A0C text9 CODE >66:D:\Hella\Compiler\sources\common\fttol.c
+10A16 text9 CODE >67:D:\Hella\Compiler\sources\common\fttol.c
+10A18 text9 CODE >65:D:\Hella\Compiler\sources\common\fttol.c
+10A1E text9 CODE >70:D:\Hella\Compiler\sources\common\fttol.c
+10A24 text9 CODE >71:D:\Hella\Compiler\sources\common\fttol.c
+10A34 text9 CODE >72:D:\Hella\Compiler\sources\common\fttol.c
+10A46 text8 CODE >62:D:\Hella\Compiler\sources\common\float.c
+10A46 text8 CODE >64:D:\Hella\Compiler\sources\common\float.c
+10A56 text8 CODE >65:D:\Hella\Compiler\sources\common\float.c
+10A64 text8 CODE >67:D:\Hella\Compiler\sources\common\float.c
+10A66 text8 CODE >68:D:\Hella\Compiler\sources\common\float.c
+10A6E text8 CODE >66:D:\Hella\Compiler\sources\common\float.c
+10A8C text8 CODE >71:D:\Hella\Compiler\sources\common\float.c
+10A8E text8 CODE >72:D:\Hella\Compiler\sources\common\float.c
+10A9A text8 CODE >73:D:\Hella\Compiler\sources\common\float.c
+10AA2 text8 CODE >70:D:\Hella\Compiler\sources\common\float.c
+10AC0 text8 CODE >76:D:\Hella\Compiler\sources\common\float.c
+10AC2 text8 CODE >77:D:\Hella\Compiler\sources\common\float.c
+10ACA text8 CODE >75:D:\Hella\Compiler\sources\common\float.c
+10AD4 text8 CODE >79:D:\Hella\Compiler\sources\common\float.c
+10AD6 text8 CODE >80:D:\Hella\Compiler\sources\common\float.c
+10AD8 text8 CODE >81:D:\Hella\Compiler\sources\common\float.c
+10ADC text8 CODE >82:D:\Hella\Compiler\sources\common\float.c
+10AE0 text8 CODE >83:D:\Hella\Compiler\sources\common\float.c
+10AE4 text8 CODE >84:D:\Hella\Compiler\sources\common\float.c
+10AE6 text8 CODE >85:D:\Hella\Compiler\sources\common\float.c
+10EF2 text7 CODE >28:D:\Hella\Compiler\sources\common\lwtoft.c
+10EF2 text7 CODE >30:D:\Hella\Compiler\sources\common\lwtoft.c
+11036 text6 CODE >209:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+11036 text6 CODE >211:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+11024 text5 CODE >165:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+11024 text5 CODE >167:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+11028 text5 CODE >168:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1101E text4 CODE >145:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1101E text4 CODE >147:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+11022 text4 CODE >148:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10550 text3 CODE >239:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10550 text3 CODE >242:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10554 text3 CODE >246:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1055A text3 CODE >249:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1056E text3 CODE >251:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1058A text3 CODE >253:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10590 text3 CODE >254:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1059C text3 CODE >257:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+105B8 text3 CODE >258:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+105BE text3 CODE >259:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+105CA text3 CODE >262:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+105D0 text3 CODE >263:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+105D6 text3 CODE >264:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+105E4 text3 CODE >265:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+105EC text3 CODE >266:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+105FA text3 CODE >267:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10602 text3 CODE >268:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1060E text3 CODE >271:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10614 text3 CODE >272:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1061A text3 CODE >273:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10620 text3 CODE >274:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10620 text3 CODE >275:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10624 text3 CODE >277:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1062C text3 CODE >278:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1063A text3 CODE >279:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10642 text3 CODE >280:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10650 text3 CODE >281:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10658 text3 CODE >282:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10666 text3 CODE >283:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1066E text3 CODE >284:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1067C text3 CODE >286:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10688 text3 CODE >289:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+106A2 text3 CODE >290:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+106A8 text3 CODE >291:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+106B4 text3 CODE >293:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+106BC text3 CODE >295:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+106C2 text3 CODE >296:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+106CE text3 CODE >297:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+106D4 text3 CODE >298:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+106E0 text3 CODE >299:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+106E2 text3 CODE >300:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+106EA text3 CODE >302:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+106F0 text3 CODE >303:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+106FC text3 CODE >304:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10702 text3 CODE >305:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1070E text3 CODE >306:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10710 text3 CODE >309:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10716 text3 CODE >310:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10722 text3 CODE >311:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10728 text3 CODE >312:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10734 text3 CODE >313:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1030E text2 CODE >403:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1030E text2 CODE >408:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10334 text2 CODE >412:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10336 text2 CODE >417:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1034A text2 CODE >420:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10356 text2 CODE >421:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10362 text2 CODE >422:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1036E text2 CODE >423:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1037A text2 CODE >426:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10380 text2 CODE >427:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10386 text2 CODE >430:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10390 text2 CODE >431:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1039C text2 CODE >433:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1039E text2 CODE >438:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+103A2 text2 CODE >440:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+103AE text2 CODE >441:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+103BA text2 CODE >443:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+103E4 text2 CODE >448:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+103FA text2 CODE >451:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10410 text2 CODE >453:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1041A text2 CODE >454:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10426 text2 CODE >457:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10428 text2 CODE >462:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1042C text2 CODE >463:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10438 text2 CODE >464:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10444 text2 CODE >466:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10470 text2 CODE >471:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10486 text2 CODE >473:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1049C text2 CODE >475:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+104A6 text2 CODE >476:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+104B2 text2 CODE >478:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+104B4 text2 CODE >484:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+104B8 text2 CODE >486:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+104C4 text2 CODE >487:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+104D0 text2 CODE >489:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+104DC text2 CODE >490:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+104E8 text2 CODE >492:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+104EE text2 CODE >495:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10504 text2 CODE >496:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+1051C text2 CODE >499:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10526 text2 CODE >500:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10532 text2 CODE >509:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10534 text2 CODE >412:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10EA2 text1 CODE >517:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10EA2 text1 CODE >520:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10EAC text1 CODE >523:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10EB6 text1 CODE >526:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10EC0 text1 CODE >529:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10ECA text1 CODE >530:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D62 text0 CODE >761:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D62 text0 CODE >763:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D66 text0 CODE >764:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D6C text0 CODE >766:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D6E text0 CODE >767:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D70 text0 CODE >768:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D72 text0 CODE >769:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D74 text0 CODE >770:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D76 text0 CODE >771:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D78 text0 CODE >773:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D7C text0 CODE >778:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D82 text0 CODE >779:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D86 text0 CODE >781:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D8A text0 CODE >782:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D8C text0 CODE >784:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D90 text0 CODE >785:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D94 text0 CODE >786:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D98 text0 CODE >790:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D9C text0 CODE >792:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10D9E text0 CODE >776:D:\Hella\Sessions\ClimaForStudents2019_Updated\ClimaTemplate2019_update\ClimaTemplate2019_update\clima.c
+10F16 cinit CODE >2122:C:\Users\Ezio\AppData\Local\Temp\sd5o.
+10F16 cinit CODE >2124:C:\Users\Ezio\AppData\Local\Temp\sd5o.
+10F16 cinit CODE >2127:C:\Users\Ezio\AppData\Local\Temp\sd5o.
+10F16 cinit CODE >2204:C:\Users\Ezio\AppData\Local\Temp\sd5o.
+10F1A cinit CODE >2205:C:\Users\Ezio\AppData\Local\Temp\sd5o.
+10F1C cinit CODE >2206:C:\Users\Ezio\AppData\Local\Temp\sd5o.
+10F1C cinit CODE >2207:C:\Users\Ezio\AppData\Local\Temp\sd5o.
+10F1E cinit CODE >2208:C:\Users\Ezio\AppData\Local\Temp\sd5o.
+10F20 cinit CODE >2209:C:\Users\Ezio\AppData\Local\Temp\sd5o.
+10F22 cinit CODE >2212:C:\Users\Ezio\AppData\Local\Temp\sd5o.
+10F26 cinit CODE >2213:C:\Users\Ezio\AppData\Local\Temp\sd5o.
+10F28 cinit CODE >2214:C:\Users\Ezio\AppData\Local\Temp\sd5o.
+10F28 cinit CODE >2215:C:\Users\Ezio\AppData\Local\Temp\sd5o.
+10F2A cinit CODE >2216:C:\Users\Ezio\AppData\Local\Temp\sd5o.
+10F2C cinit CODE >2217:C:\Users\Ezio\AppData\Local\Temp\sd5o.
+10F2E cinit CODE >2223:C:\Users\Ezio\AppData\Local\Temp\sd5o.
+10F2E cinit CODE >2225:C:\Users\Ezio\AppData\Local\Temp\sd5o.
+10F30 cinit CODE >2226:C:\Users\Ezio\AppData\Local\Temp\sd5o.
+10F32 cinit CODE >2227:C:\Users\Ezio\AppData\Local\Temp\sd5o.
+10F34 cinit CODE >2228:C:\Users\Ezio\AppData\Local\Temp\sd5o.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+_a 40 0 COMRAM 1 bssCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+___lwmod@counter 21 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+__Lmediumconst FEF4 0 MEDIUMCONST 0 mediumconst dist/default/production\ClimaTemplate2019_update.production.obj
+_LcdClear 11016 0 CODE 0 text30 dist/default/production\ClimaTemplate2019_update.production.obj
+__Hspace_0 30000E 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__Hspace_1 7E 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__Hspace_2 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_LcdLines FEFF 0 MEDIUMCONST 0 mediumconst dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_setCoolElement 1102A 0 CODE 0 text5 dist/default/production\ClimaTemplate2019_update.production.obj
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\ClimaTemplate2019_update.production.obj
+__mediumconst FEF4 0 MEDIUMCONST 0 mediumconst C:\Users\Ezio\AppData\Local\Temp\sd5o.obj
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\ClimaTemplate2019_update.production.obj
+_Delay10TCYx 10FE4 0 CODE 0 text23 dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_LcdClear 1101E 0 CODE 0 text30 dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_LcdLines FF8F 0 MEDIUMCONST 0 mediumconst dist/default/production\ClimaTemplate2019_update.production.obj
+setIODIR@dir 12 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+_ev 44 0 COMRAM 1 bssCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_stateMachine 10550 0 CODE 0 text2 dist/default/production\ClimaTemplate2019_update.production.obj
+main@i 7D 0 BANK0 1 cstackBANK0 dist/default/production\ClimaTemplate2019_update.production.obj
+__Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\ClimaTemplate2019_update.production.obj
+_RCIF 7CF5 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_T0IE 7F95 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_T0IF 7F92 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_TMR0 FD6 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+___sp 0 0 STACK 2 stack C:\Users\Ezio\AppData\Local\Temp\sd5o.obj
+_init 10AF4 0 CODE 0 text10 dist/default/production\ClimaTemplate2019_update.production.obj
+_main 10D62 0 CODE 0 text0 dist/default/production\ClimaTemplate2019_update.production.obj
+_tick 45 0 COMRAM 1 bssCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+btemp 50 0 COMRAM 1 temp dist/default/production\ClimaTemplate2019_update.production.obj
+_setStandbyLed 1102A 0 CODE 0 text11 dist/default/production\ClimaTemplate2019_update.production.obj
+start E 0 CODE 0 init C:\Users\Ezio\AppData\Local\Temp\sd5o.obj
+__size_of___fttol 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_init 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of___lwdiv 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of___lwmod 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+setLcdBacklightLed@state 10 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+lcdCommand@command 14 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_lcdCommand 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+?___wmul 10 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+setGPIO@value 12 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_SWSPISetCS 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_SWSPIWrite 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+SWSPIWrite@input 3F 0 COMRAM 1 bssCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+_fanSpeedCool 4E 0 COMRAM 1 bssCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+__Hpowerup E 0 CODE 0 powerup dist/default/production\ClimaTemplate2019_update.production.obj
+_T0CONbits FD5 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_initButtons 1103E 0 CODE 0 text19 dist/default/production\ClimaTemplate2019_update.production.obj
+__accesstop 60 0 ABS 0 - C:\Users\Ezio\AppData\Local\Temp\sd5o.obj
+intlevel0 0 0 CODE 0 text C:\Users\Ezio\AppData\Local\Temp\sd5o.obj
+intlevel1 0 0 CODE 0 text C:\Users\Ezio\AppData\Local\Temp\sd5o.obj
+intlevel2 0 0 CODE 0 text C:\Users\Ezio\AppData\Local\Temp\sd5o.obj
+intlevel3 0 0 CODE 0 text C:\Users\Ezio\AppData\Local\Temp\sd5o.obj
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_setGPIO 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\ClimaTemplate2019_update.production.obj
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_setSpeedFanCool 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_setLcdBacklightLed 11024 0 CODE 0 text4 dist/default/production\ClimaTemplate2019_update.production.obj
+setStandbyLed@state 10 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+___wmul@multiplicand 12 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+setHeatElement@state 10 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+_updateOutputs 10EA2 0 CODE 0 text1 dist/default/production\ClimaTemplate2019_update.production.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\Ezio\AppData\Local\Temp\sd5o.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\Ezio\AppData\Local\Temp\sd5o.obj
+__size_of_setSpeedFanHeatVent 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_initAdc 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_initPwm 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_initTmr 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of___wmul 10EF2 0 CODE 0 text39 dist/default/production\ClimaTemplate2019_update.production.obj
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\ClimaTemplate2019_update.production.obj
+_heatElement 4B 0 COMRAM 1 bssCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+___fttol@f1 10 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_updateLcd 10736 0 CODE 0 text3 dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_sprintf 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_TXSTA1bits FAC 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__Hmediumconst 10000 0 MEDIUMCONST 0 mediumconst dist/default/production\ClimaTemplate2019_update.production.obj
+__Hintcodelo E 0 CODE 0 intcodelo dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_updateLcd 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+___lwmod@divisor 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of___ftpack 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of___fttol 10A46 0 CODE 0 text9 dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of___lwdiv 10C04 0 CODE 0 text41 dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of___lwmod 10D22 0 CODE 0 text40 dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_isdigit 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_setLcdBacklightLed 1101E 0 CODE 0 text4 dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_LcdWriteString 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_setStandbyLed 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+checkInputs@leftButton 33 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+LcdGoTo@pos 15 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+SWSPIWrite@output 10 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+_dpowers FEF5 0 MEDIUMCONST 0 mediumconst dist/default/production\ClimaTemplate2019_update.production.obj
+___lwdiv@quotient 1B 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+setIODIR@address 13 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+_updateLcd 10550 0 CODE 0 text3 dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of___lwtoft 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+___lwmod@dividend 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+__Lintcodelo E 0 CODE 0 intcodelo dist/default/production\ClimaTemplate2019_update.production.obj
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_SWSPIClearCS 11042 0 CODE 0 text35 dist/default/production\ClimaTemplate2019_update.production.obj
+start_initialization 10F16 0 CODE 0 cinit dist/default/production\ClimaTemplate2019_update.production.obj
+_setSpeedFanHeatVent 10FAE 0 CODE 0 text12 dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_checkInputs 10856 0 CODE 0 text36 dist/default/production\ClimaTemplate2019_update.production.obj
+UART_Init@x 10 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_setGPIO 10F74 0 CODE 0 text32 dist/default/production\ClimaTemplate2019_update.production.obj
+_TRISAbits F92 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_TRISCbits F94 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_TRISDbits F95 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_TRISJbits F9A 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_setStandbyLed 11030 0 CODE 0 text11 dist/default/production\ClimaTemplate2019_update.production.obj
+_ADCRead 10DDC 0 CODE 0 text42 dist/default/production\ClimaTemplate2019_update.production.obj
+___rparam_used 1 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_getOnOffButton 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_setHeatElement 11030 0 CODE 0 text16 dist/default/production\ClimaTemplate2019_update.production.obj
+__pcstackBANK0 74 0 BANK0 1 cstackBANK0 dist/default/production\ClimaTemplate2019_update.production.obj
+___fttol@exp1 1E 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+___fttol@lval 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+updateLcd@fanSpeed 30 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+_TRISB0 7C98 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+___ftpack 10A46 0 CODE 0 text8 dist/default/production\ClimaTemplate2019_update.production.obj
+___ftpack@arg 10 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+___ftpack@exp 13 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_LcdChar 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_LcdGoTo 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_LcdInit 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_initButtons 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_updateOutputs 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_initAdc 10DDC 0 CODE 0 text20 dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_initPwm 11016 0 CODE 0 text18 dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_initTmr 10D62 0 CODE 0 text17 dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of___ftpack 10AF4 0 CODE 0 text8 dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_setLcd 10CE0 0 CODE 0 text14 dist/default/production\ClimaTemplate2019_update.production.obj
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\ClimaTemplate2019_update.production.obj
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\ClimaTemplate2019_update.production.obj
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\ClimaTemplate2019_update.production.obj
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\ClimaTemplate2019_update.production.obj
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\ClimaTemplate2019_update.production.obj
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\ClimaTemplate2019_update.production.obj
+__Hbank6 0 0 ABS 0 bank6 dist/default/production\ClimaTemplate2019_update.production.obj
+__Hbank7 0 0 ABS 0 bank7 dist/default/production\ClimaTemplate2019_update.production.obj
+__Hbank8 0 0 ABS 0 bank8 dist/default/production\ClimaTemplate2019_update.production.obj
+__Hbank9 0 0 ABS 0 bank9 dist/default/production\ClimaTemplate2019_update.production.obj
+__Hcinit 0 0 ABS 0 cinit dist/default/production\ClimaTemplate2019_update.production.obj
+__Hconst 0 0 CONST 0 const dist/default/production\ClimaTemplate2019_update.production.obj
+__Hidata 0 0 CODE 0 idata dist/default/production\ClimaTemplate2019_update.production.obj
+__Hidloc 200008 0 IDLOC 0 idloc dist/default/production\ClimaTemplate2019_update.production.obj
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\ClimaTemplate2019_update.production.obj
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\ClimaTemplate2019_update.production.obj
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\ClimaTemplate2019_update.production.obj
+__Hstack 0 0 STACK 2 stack dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_SWSPIClearCS 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext0 0 0 ABS 0 text0 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext1 0 0 ABS 0 text1 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext2 0 0 ABS 0 text2 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext3 0 0 ABS 0 text3 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext4 0 0 ABS 0 text4 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext5 0 0 ABS 0 text5 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext6 0 0 ABS 0 text6 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext7 0 0 ABS 0 text7 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext8 0 0 ABS 0 text8 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext9 0 0 ABS 0 text9 dist/default/production\ClimaTemplate2019_update.production.obj
+___lwdiv@counter 1A 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+__Hbank10 0 0 ABS 0 bank10 dist/default/production\ClimaTemplate2019_update.production.obj
+__Hbank11 0 0 ABS 0 bank11 dist/default/production\ClimaTemplate2019_update.production.obj
+__Hbank12 0 0 ABS 0 bank12 dist/default/production\ClimaTemplate2019_update.production.obj
+__Hbank13 0 0 ABS 0 bank13 dist/default/production\ClimaTemplate2019_update.production.obj
+__Hbank14 0 0 ABS 0 bank14 dist/default/production\ClimaTemplate2019_update.production.obj
+__Hbank15 0 0 ABS 0 bank15 dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_SWSPIOpen 10FE4 0 CODE 0 text27 dist/default/production\ClimaTemplate2019_update.production.obj
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\ClimaTemplate2019_update.production.obj
+__Hbigram 0 0 ABS 0 bigram dist/default/production\ClimaTemplate2019_update.production.obj
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\Ezio\AppData\Local\Temp\sd5o.obj
+__end_of_sprintf 1030E 0 CODE 0 text37 dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_SWSPIOpen 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__Hcomram 0 0 ABS 0 comram dist/default/production\ClimaTemplate2019_update.production.obj
+__Hconfig 30000E 0 CONFIG 0 config dist/default/production\ClimaTemplate2019_update.production.obj
+___lwtoft 10EF2 0 CODE 0 text7 dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_Delay10TCYx 10FF4 0 CODE 0 text23 dist/default/production\ClimaTemplate2019_update.production.obj
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\ClimaTemplate2019_update.production.obj
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\ClimaTemplate2019_update.production.obj
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\ClimaTemplate2019_update.production.obj
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\ClimaTemplate2019_update.production.obj
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\ClimaTemplate2019_update.production.obj
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\ClimaTemplate2019_update.production.obj
+__Lbank6 0 0 ABS 0 bank6 dist/default/production\ClimaTemplate2019_update.production.obj
+__Lbank7 0 0 ABS 0 bank7 dist/default/production\ClimaTemplate2019_update.production.obj
+__Lbank8 0 0 ABS 0 bank8 dist/default/production\ClimaTemplate2019_update.production.obj
+__Lbank9 0 0 ABS 0 bank9 dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_isdigit 10F92 0 CODE 0 text38 dist/default/production\ClimaTemplate2019_update.production.obj
+__Lcinit 0 0 ABS 0 cinit dist/default/production\ClimaTemplate2019_update.production.obj
+__Lconst 0 0 CONST 0 const dist/default/production\ClimaTemplate2019_update.production.obj
+__Lidata 0 0 CODE 0 idata dist/default/production\ClimaTemplate2019_update.production.obj
+__Lidloc 200000 0 IDLOC 0 idloc dist/default/production\ClimaTemplate2019_update.production.obj
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\ClimaTemplate2019_update.production.obj
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\ClimaTemplate2019_update.production.obj
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\ClimaTemplate2019_update.production.obj
+__Lstack 0 0 STACK 2 stack dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_setCoolElement 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext0 0 0 ABS 0 text0 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext1 0 0 ABS 0 text1 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext2 0 0 ABS 0 text2 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext3 0 0 ABS 0 text3 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext4 0 0 ABS 0 text4 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext5 0 0 ABS 0 text5 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext6 0 0 ABS 0 text6 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext7 0 0 ABS 0 text7 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext8 0 0 ABS 0 text8 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext9 0 0 ABS 0 text9 dist/default/production\ClimaTemplate2019_update.production.obj
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\ClimaTemplate2019_update.production.obj
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of___lwtoft 10F16 0 CODE 0 text7 dist/default/production\ClimaTemplate2019_update.production.obj
+_PORTAbits F80 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_PORTBbits F81 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_PORTCbits F82 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_PORTDbits F83 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+LcdWriteString@s 15 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+_PORTJbits F88 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__Habs1 0 0 ABS 0 abs1 dist/default/production\ClimaTemplate2019_update.production.obj
+__Hdata 0 0 ABS 0 data dist/default/production\ClimaTemplate2019_update.production.obj
+__Hinit 12 0 CODE 0 init dist/default/production\ClimaTemplate2019_update.production.obj
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\ClimaTemplate2019_update.production.obj
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\ClimaTemplate2019_update.production.obj
+__Htemp 51 0 COMRAM 1 temp dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext 0 0 ABS 0 text dist/default/production\ClimaTemplate2019_update.production.obj
+__Labs1 0 0 ABS 0 abs1 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ldata 0 0 ABS 0 data dist/default/production\ClimaTemplate2019_update.production.obj
+__Linit E 0 CODE 0 init dist/default/production\ClimaTemplate2019_update.production.obj
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\ClimaTemplate2019_update.production.obj
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltemp 50 0 COMRAM 1 temp dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext 0 0 ABS 0 text dist/default/production\ClimaTemplate2019_update.production.obj
+?_ADCRead 10 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+___wmul 10ECC 0 CODE 0 text39 dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_setHeatElement 11036 0 CODE 0 text16 dist/default/production\ClimaTemplate2019_update.production.obj
+_SWSPIOpen 10FD2 0 CODE 0 text27 dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_SWSPIClearCS 11046 0 CODE 0 text35 dist/default/production\ClimaTemplate2019_update.production.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_updateOutputs 10ECC 0 CODE 0 text1 dist/default/production\ClimaTemplate2019_update.production.obj
+int$flags 50 0 COMRAM 1 temp dist/default/production\ClimaTemplate2019_update.production.obj
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+__Hintret 0 0 ABS 0 intret dist/default/production\ClimaTemplate2019_update.production.obj
+__Hirdata 0 0 CODE 0 irdata dist/default/production\ClimaTemplate2019_update.production.obj
+_GIE 7F97 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_ISR 8 0 CODE 0 intcode dist/default/production\ClimaTemplate2019_update.production.obj
+__S0 30000E 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__S1 7E 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__S2 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_cnt 43 0 COMRAM 1 bssCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+_msg 60 0 BANK0 1 bssBANK0 dist/default/production\ClimaTemplate2019_update.production.obj
+_levelHeat 4C 0 COMRAM 1 bssCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_setSpeedFanHeatVent 10FC0 0 CODE 0 text12 dist/default/production\ClimaTemplate2019_update.production.obj
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\ClimaTemplate2019_update.production.obj
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\ClimaTemplate2019_update.production.obj
+sprintf@val 77 0 BANK0 1 cstackBANK0 dist/default/production\ClimaTemplate2019_update.production.obj
+_standbyLed 49 0 COMRAM 1 bssCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_ISR 10952 0 CODE 0 intcode_body dist/default/production\ClimaTemplate2019_update.production.obj
+int_func 10856 0 CODE 0 intcode_body dist/default/production\ClimaTemplate2019_update.production.obj
+UART_putc@data 10 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+__Lintentry 0 0 ABS 0 intentry dist/default/production\ClimaTemplate2019_update.production.obj
+__Hramtop 1000 0 RAM 0 ramtop dist/default/production\ClimaTemplate2019_update.production.obj
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\ClimaTemplate2019_update.production.obj
+_inTemp 3D 0 COMRAM 1 bssCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+__activetblptr 3 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_LcdChar 10E76 0 CODE 0 text29 dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_LcdGoTo 1100E 0 CODE 0 text15 dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_LcdInit 10C9E 0 CODE 0 text25 dist/default/production\ClimaTemplate2019_update.production.obj
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of___wmul 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext10 0 0 ABS 0 text10 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext11 0 0 ABS 0 text11 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext12 0 0 ABS 0 text12 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext13 0 0 ABS 0 text13 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext14 0 0 ABS 0 text14 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext15 0 0 ABS 0 text15 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext16 0 0 ABS 0 text16 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext17 0 0 ABS 0 text17 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext18 0 0 ABS 0 text18 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext19 0 0 ABS 0 text19 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext20 0 0 ABS 0 text20 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext21 0 0 ABS 0 text21 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext22 0 0 ABS 0 text22 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext23 0 0 ABS 0 text23 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext24 0 0 ABS 0 text24 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext25 0 0 ABS 0 text25 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext26 0 0 ABS 0 text26 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext27 0 0 ABS 0 text27 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext28 0 0 ABS 0 text28 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext29 0 0 ABS 0 text29 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext30 0 0 ABS 0 text30 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext31 0 0 ABS 0 text31 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext32 0 0 ABS 0 text32 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext33 0 0 ABS 0 text33 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext34 0 0 ABS 0 text34 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext35 0 0 ABS 0 text35 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext36 0 0 ABS 0 text36 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext37 0 0 ABS 0 text37 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext38 0 0 ABS 0 text38 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext39 0 0 ABS 0 text39 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext40 0 0 ABS 0 text40 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext41 0 0 ABS 0 text41 dist/default/production\ClimaTemplate2019_update.production.obj
+__Htext42 0 0 ABS 0 text42 dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_checkInputs 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_RCSTAbits FAB 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_PIE1bits F9D 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+LcdChar@letter 14 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+sprintf@flag 79 0 BANK0 1 cstackBANK0 dist/default/production\ClimaTemplate2019_update.production.obj
+sprintf@prec 76 0 BANK0 1 cstackBANK0 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext10 10AF4 0 CODE 0 text10 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext11 1102A 0 CODE 0 text11 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext12 10FAE 0 CODE 0 text12 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext13 10FC0 0 CODE 0 text13 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext14 10C9E 0 CODE 0 text14 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext15 11002 0 CODE 0 text15 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext16 11030 0 CODE 0 text16 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext17 10D22 0 CODE 0 text17 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext18 1100E 0 CODE 0 text18 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext19 1103A 0 CODE 0 text19 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext20 10DA0 0 CODE 0 text20 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext21 10E14 0 CODE 0 text21 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext22 10FF4 0 CODE 0 text22 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext23 10FE4 0 CODE 0 text23 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext24 10F92 0 CODE 0 text24 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext25 10C52 0 CODE 0 text25 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext26 10F38 0 CODE 0 text26 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext27 10FD2 0 CODE 0 text27 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext28 10B5C 0 CODE 0 text28 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext29 10E4A 0 CODE 0 text29 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext30 11016 0 CODE 0 text30 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext31 10E76 0 CODE 0 text31 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext32 10F56 0 CODE 0 text32 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext33 10C04 0 CODE 0 text33 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext34 1103E 0 CODE 0 text34 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext35 11042 0 CODE 0 text35 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext36 10736 0 CODE 0 text36 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext37 10000 0 CODE 0 text37 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext38 10F74 0 CODE 0 text38 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext39 10ECC 0 CODE 0 text39 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext40 10CE0 0 CODE 0 text40 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext41 10BB2 0 CODE 0 text41 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext42 10DDC 0 CODE 0 text42 dist/default/production\ClimaTemplate2019_update.production.obj
+setSpeedFanHeatVent@speed 10 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+ADCRead@ch 13 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+___fttol 10952 0 CODE 0 text9 dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_setLcdBacklightLed 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__pintcode_body 10856 0 CODE 0 intcode_body dist/default/production\ClimaTemplate2019_update.production.obj
+___lwdiv 10BB2 0 CODE 0 text41 dist/default/production\ClimaTemplate2019_update.production.obj
+___lwmod 10CE0 0 CODE 0 text40 dist/default/production\ClimaTemplate2019_update.production.obj
+__Lbank10 0 0 ABS 0 bank10 dist/default/production\ClimaTemplate2019_update.production.obj
+__Lbank11 0 0 ABS 0 bank11 dist/default/production\ClimaTemplate2019_update.production.obj
+__Lbank12 0 0 ABS 0 bank12 dist/default/production\ClimaTemplate2019_update.production.obj
+__Lbank13 0 0 ABS 0 bank13 dist/default/production\ClimaTemplate2019_update.production.obj
+__Lbank14 0 0 ABS 0 bank14 dist/default/production\ClimaTemplate2019_update.production.obj
+__Lbank15 0 0 ABS 0 bank15 dist/default/production\ClimaTemplate2019_update.production.obj
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\ClimaTemplate2019_update.production.obj
+__Lbigram 0 0 ABS 0 bigram dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_setIODIR 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_outTemp 3B 0 COMRAM 1 bssCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+__Lcomram 0 0 ABS 0 comram dist/default/production\ClimaTemplate2019_update.production.obj
+__Lconfig 300000 0 CONFIG 0 config dist/default/production\ClimaTemplate2019_update.production.obj
+?___ftpack 10 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+_lcdCommand 10E76 0 CODE 0 text31 dist/default/production\ClimaTemplate2019_update.production.obj
+___wmul@multiplier 10 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+_SWSPISetCS 1103E 0 CODE 0 text34 dist/default/production\ClimaTemplate2019_update.production.obj
+_SWSPIWrite 10C04 0 CODE 0 text33 dist/default/production\ClimaTemplate2019_update.production.obj
+_RCSTA1bits FAB 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\ClimaTemplate2019_update.production.obj
+_setLcd 10C9E 0 CODE 0 text14 dist/default/production\ClimaTemplate2019_update.production.obj
+___lwdiv@divisor 18 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\ClimaTemplate2019_update.production.obj
+___lwtoft@c 18 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+stackhi F5F 0 ABS 0 - C:\Users\Ezio\AppData\Local\Temp\sd5o.obj
+stacklo 7E 0 ABS 0 - C:\Users\Ezio\AppData\Local\Temp\sd5o.obj
+UART_puts@s 11 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+__Lintcode 8 0 CODE 0 intcode dist/default/production\ClimaTemplate2019_update.production.obj
+_lcdBacklightLed 48 0 COMRAM 1 bssCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+__Lintret 0 0 ABS 0 intret dist/default/production\ClimaTemplate2019_update.production.obj
+__Lirdata 0 0 CODE 0 irdata dist/default/production\ClimaTemplate2019_update.production.obj
+?___lwtoft 18 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+_setGPIO 10F56 0 CODE 0 text32 dist/default/production\ClimaTemplate2019_update.production.obj
+_setTemp 46 0 COMRAM 1 bssCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+_ADCON0bits FC2 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_shouldClearLcd 39 0 COMRAM 1 bssCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+_ADCON1bits FC1 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_ADCON2bits FC0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_climaState 4F 0 COMRAM 1 bssCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+SWSPIWrite@BitCount 11 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+__Lspace_0 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__Lspace_1 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__Lspace_2 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__pbssCOMRAM 36 0 COMRAM 1 bssCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_Delay10TCYx 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_LcdWriteString 10B5C 0 CODE 0 text28 dist/default/production\ClimaTemplate2019_update.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\ClimaTemplate2019_update.production.obj
+_PIR1bits F9E 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_leftButtonEv 47 0 COMRAM 1 bssCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+_initButtons 1103A 0 CODE 0 text19 dist/default/production\ClimaTemplate2019_update.production.obj
+end_of_initialization 10F2E 0 CODE 0 cinit dist/default/production\ClimaTemplate2019_update.production.obj
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\ClimaTemplate2019_update.production.obj
+__Hintentry 0 0 ABS 0 intentry dist/default/production\ClimaTemplate2019_update.production.obj
+__CFG_OSC$HS 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+___lwdiv@dividend 16 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+?___fttol 10 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+_fanSpeedHeatVent 4D 0 COMRAM 1 bssCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+?___lwdiv 16 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+?___lwmod 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+_setIODIR 10F38 0 CODE 0 text26 dist/default/production\ClimaTemplate2019_update.production.obj
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\ClimaTemplate2019_update.production.obj
+checkInputs@adcVal 34 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_setLcd 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_initAdc 10DA0 0 CODE 0 text20 dist/default/production\ClimaTemplate2019_update.production.obj
+_initPwm 1100E 0 CODE 0 text18 dist/default/production\ClimaTemplate2019_update.production.obj
+_initTmr 10D22 0 CODE 0 text17 dist/default/production\ClimaTemplate2019_update.production.obj
+__Lramtop 1000 0 RAM 0 ramtop dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_UART_Init 10FAE 0 CODE 0 text24 dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_UART_putc 11002 0 CODE 0 text22 dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_UART_puts 10E4A 0 CODE 0 text21 dist/default/production\ClimaTemplate2019_update.production.obj
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\ClimaTemplate2019_update.production.obj
+__pcinit 10F16 0 CODE 0 cinit dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_lcdCommand 10EA2 0 CODE 0 text31 dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_UART_Init 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_UART_putc 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_UART_puts 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext0 10D62 0 CODE 0 text0 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext1 10EA2 0 CODE 0 text1 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext2 1030E 0 CODE 0 text2 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext3 10550 0 CODE 0 text3 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext4 1101E 0 CODE 0 text4 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext5 11024 0 CODE 0 text5 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext6 11036 0 CODE 0 text6 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext7 10EF2 0 CODE 0 text7 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext8 10A46 0 CODE 0 text8 dist/default/production\ClimaTemplate2019_update.production.obj
+__ptext9 10952 0 CODE 0 text9 dist/default/production\ClimaTemplate2019_update.production.obj
+_coolElement 4A 0 COMRAM 1 bssCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_setIODIR 10F56 0 CODE 0 text26 dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_SWSPISetCS 11042 0 CODE 0 text34 dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_SWSPIWrite 10C52 0 CODE 0 text33 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext10 0 0 ABS 0 text10 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext11 0 0 ABS 0 text11 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext12 0 0 ABS 0 text12 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext13 0 0 ABS 0 text13 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext14 0 0 ABS 0 text14 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext15 0 0 ABS 0 text15 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext16 0 0 ABS 0 text16 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext17 0 0 ABS 0 text17 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext18 0 0 ABS 0 text18 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext19 0 0 ABS 0 text19 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext20 0 0 ABS 0 text20 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext21 0 0 ABS 0 text21 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext22 0 0 ABS 0 text22 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext23 0 0 ABS 0 text23 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext24 0 0 ABS 0 text24 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext25 0 0 ABS 0 text25 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext26 0 0 ABS 0 text26 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext27 0 0 ABS 0 text27 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext28 0 0 ABS 0 text28 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext29 0 0 ABS 0 text29 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext30 0 0 ABS 0 text30 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext31 0 0 ABS 0 text31 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext32 0 0 ABS 0 text32 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext33 0 0 ABS 0 text33 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext34 0 0 ABS 0 text34 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext35 0 0 ABS 0 text35 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext36 0 0 ABS 0 text36 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext37 0 0 ABS 0 text37 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext38 0 0 ABS 0 text38 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext39 0 0 ABS 0 text39 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext40 0 0 ABS 0 text40 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext41 0 0 ABS 0 text41 dist/default/production\ClimaTemplate2019_update.production.obj
+__Ltext42 0 0 ABS 0 text42 dist/default/production\ClimaTemplate2019_update.production.obj
+__ramtop 1000 0 RAM 0 ramtop C:\Users\Ezio\AppData\Local\Temp\sd5o.obj
+_sprintf 10000 0 CODE 0 text37 dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_ADCRead 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__Lpowerup E 0 CODE 0 powerup dist/default/production\ClimaTemplate2019_update.production.obj
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\ClimaTemplate2019_update.production.obj
+_getOnOffButton 11036 0 CODE 0 text6 dist/default/production\ClimaTemplate2019_update.production.obj
+sprintf@ap 74 0 BANK0 1 cstackBANK0 dist/default/production\ClimaTemplate2019_update.production.obj
+sprintf@sp 22 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+_isdigit 10F74 0 CODE 0 text38 dist/default/production\ClimaTemplate2019_update.production.obj
+setGPIO@address 13 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+checkInputs@leftButton_old 41 0 COMRAM 1 bssCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\ClimaTemplate2019_update.production.obj
+_UART_Init 10F92 0 CODE 0 text24 dist/default/production\ClimaTemplate2019_update.production.obj
+_UART_putc 10FF4 0 CODE 0 text22 dist/default/production\ClimaTemplate2019_update.production.obj
+_UART_puts 10E14 0 CODE 0 text21 dist/default/production\ClimaTemplate2019_update.production.obj
+Delay10TCYx@unit 10 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_LcdWriteString 10BB2 0 CODE 0 text28 dist/default/production\ClimaTemplate2019_update.production.obj
+___param_bank 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__CFG_WDT$OFF 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of__initialization 10F2E 0 CODE 0 cinit dist/default/production\ClimaTemplate2019_update.production.obj
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\ClimaTemplate2019_update.production.obj
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_setSpeedFanCool 10FD2 0 CODE 0 text13 dist/default/production\ClimaTemplate2019_update.production.obj
+___ftpack@sign 14 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+setCoolElement@state 10 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+_TXSTAbits FAC 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_LcdClear 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_stateMachine 1030E 0 CODE 0 text2 dist/default/production\ClimaTemplate2019_update.production.obj
+__pmediumconst FEF4 0 MEDIUMCONST 0 mediumconst dist/default/production\ClimaTemplate2019_update.production.obj
+_setCoolElement 11024 0 CODE 0 text5 dist/default/production\ClimaTemplate2019_update.production.obj
+sprintf@c 7C 0 BANK0 1 cstackBANK0 dist/default/production\ClimaTemplate2019_update.production.obj
+sprintf@f 24 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_init 10B5C 0 CODE 0 text10 dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_main 10DA0 0 CODE 0 text0 dist/default/production\ClimaTemplate2019_update.production.obj
+__pintcode 8 0 CODE 0 intcode dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_setHeatElement 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+isdigit@c 12 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+_ADRES FC3 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_dpowers FEFF 0 MEDIUMCONST 0 mediumconst dist/default/production\ClimaTemplate2019_update.production.obj
+?_sprintf 22 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+_isdigit$1784 11 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+_PORTD F83 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_getOnOffButton 1103A 0 CODE 0 text6 dist/default/production\ClimaTemplate2019_update.production.obj
+_RCREG FAE 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_SPBRG FAF 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_T0CON FD5 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_checkInputs 10736 0 CODE 0 text36 dist/default/production\ClimaTemplate2019_update.production.obj
+_TMR0H FD7 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_TMR0L FD6 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_TMR1H FCF 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_TMR1L FCE 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_TRISA F92 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_TRISD F95 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_TRMT1 7D61 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+_TXREG FAD 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__HRAM 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__Hbss 0 0 RAM 1 bss dist/default/production\ClimaTemplate2019_update.production.obj
+__Hram 0 0 ABS 0 ram dist/default/production\ClimaTemplate2019_update.production.obj
+__Hsfr 0 0 ABS 0 sfr dist/default/production\ClimaTemplate2019_update.production.obj
+__LRAM 1 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__Lbss 0 0 RAM 1 bss dist/default/production\ClimaTemplate2019_update.production.obj
+__Lram 0 0 ABS 0 ram dist/default/production\ClimaTemplate2019_update.production.obj
+__Lsfr 0 0 ABS 0 sfr dist/default/production\ClimaTemplate2019_update.production.obj
+_inDeb 42 0 COMRAM 1 bssCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+_value 36 0 COMRAM 1 bssCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+___extmem_base 20000 0 ABS 0 - C:\Users\Ezio\AppData\Local\Temp\sd5o.obj
+setSpeedFanCool@speed 10 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+___fttol@sign1 19 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+sprintf@width 7A 0 BANK0 1 cstackBANK0 dist/default/production\ClimaTemplate2019_update.production.obj
+_LcdChar 10E4A 0 CODE 0 text29 dist/default/production\ClimaTemplate2019_update.production.obj
+_LcdGoTo 11002 0 CODE 0 text15 dist/default/production\ClimaTemplate2019_update.production.obj
+_LcdInit 10C52 0 CODE 0 text25 dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_ISR 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__initialization 10F16 0 CODE 0 cinit dist/default/production\ClimaTemplate2019_update.production.obj
+__pbssBANK0 60 0 BANK0 1 bssBANK0 dist/default/production\ClimaTemplate2019_update.production.obj
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\ClimaTemplate2019_update.production.obj
+___wmul@product 14 0 COMRAM 1 cstackCOMRAM dist/default/production\ClimaTemplate2019_update.production.obj
+_MEMCONbits F9C 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__Hsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\ClimaTemplate2019_update.production.obj
+__end_of_ADCRead 10E14 0 CODE 0 text42 dist/default/production\ClimaTemplate2019_update.production.obj
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\ClimaTemplate2019_update.production.obj
+_setSpeedFanCool 10FC0 0 CODE 0 text13 dist/default/production\ClimaTemplate2019_update.production.obj
+__size_of_stateMachine 0 0 ABS 0 - dist/default/production\ClimaTemplate2019_update.production.obj
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\ClimaTemplate2019_update.production.obj
+__Hintcode E 0 CODE 0 intcode dist/default/production\ClimaTemplate2019_update.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+idloc 0 200000 200000 8 1
+text37 0 10000 10000 1046 1
+cstackCOMRAM 1 1 1 50 1
+reset_vec 0 0 0 4 1
+bssBANK0 1 60 60 1E 1
+intcode 0 8 8 A 1
+mediumconst 0 FEF4 FEF4 10C 1
+config 0 300000 300000 E 1

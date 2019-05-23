@@ -11,10 +11,6 @@
 # All addresses and the length are given in unqualified hexadecimal
 # in delta units.  Any other numeric values are decimal.
 %PSECTS
-$C:\Users\Ezio\AppData\Local\Temp\sck4.obj
-idloc IDLOC 0 200000 200000 8 1
-init CODE 0 0 0 4 1
-config CONFIG 0 300000 300000 E 1
 $dist/default/production\StateMachine.X.production.obj
 cinit CODE 0 1742 1742 12 1
 text0 CODE 0 1502 1502 4E 1
@@ -46,6 +42,10 @@ text25 CODE 0 16A6 16A6 20 1
 cstackCOMRAM COMRAM 1 2B 2B 1A 1
 smallconst SMALLCONST 0 1000 1000 BA 1
 bssCOMRAM COMRAM 1 1 1 2A 1
+$C:\Users\Ezio\AppData\Local\Temp\saa0.obj
+idloc IDLOC 0 200000 200000 8 1
+init CODE 0 0 0 4 1
+config CONFIG 0 300000 300000 E 1
 # %UNUSED Section
 # This section enumerates the unused ranges of each CLASS. Each entry
 # is described on a single line as follows:
@@ -356,18 +356,18 @@ $dist/default/production\StateMachine.X.production.obj
 153E text0 CODE >389:D:\Hella\Sessions\StateMachineForStudents\StateMachine.X\StateMachine.c
 154A text0 CODE >392:D:\Hella\Sessions\StateMachineForStudents\StateMachine.X\StateMachine.c
 154E text0 CODE >380:D:\Hella\Sessions\StateMachineForStudents\StateMachine.X\StateMachine.c
-1742 cinit CODE >1146:C:\Users\Ezio\AppData\Local\Temp\sck4.
-1742 cinit CODE >1148:C:\Users\Ezio\AppData\Local\Temp\sck4.
-1742 cinit CODE >1151:C:\Users\Ezio\AppData\Local\Temp\sck4.
-1742 cinit CODE >1194:C:\Users\Ezio\AppData\Local\Temp\sck4.
-1746 cinit CODE >1195:C:\Users\Ezio\AppData\Local\Temp\sck4.
-1748 cinit CODE >1196:C:\Users\Ezio\AppData\Local\Temp\sck4.
-1748 cinit CODE >1197:C:\Users\Ezio\AppData\Local\Temp\sck4.
-174A cinit CODE >1198:C:\Users\Ezio\AppData\Local\Temp\sck4.
-174C cinit CODE >1199:C:\Users\Ezio\AppData\Local\Temp\sck4.
-174E cinit CODE >1205:C:\Users\Ezio\AppData\Local\Temp\sck4.
-174E cinit CODE >1207:C:\Users\Ezio\AppData\Local\Temp\sck4.
-1750 cinit CODE >1208:C:\Users\Ezio\AppData\Local\Temp\sck4.
+1742 cinit CODE >1146:C:\Users\Ezio\AppData\Local\Temp\saa0.
+1742 cinit CODE >1148:C:\Users\Ezio\AppData\Local\Temp\saa0.
+1742 cinit CODE >1151:C:\Users\Ezio\AppData\Local\Temp\saa0.
+1742 cinit CODE >1194:C:\Users\Ezio\AppData\Local\Temp\saa0.
+1746 cinit CODE >1195:C:\Users\Ezio\AppData\Local\Temp\saa0.
+1748 cinit CODE >1196:C:\Users\Ezio\AppData\Local\Temp\saa0.
+1748 cinit CODE >1197:C:\Users\Ezio\AppData\Local\Temp\saa0.
+174A cinit CODE >1198:C:\Users\Ezio\AppData\Local\Temp\saa0.
+174C cinit CODE >1199:C:\Users\Ezio\AppData\Local\Temp\saa0.
+174E cinit CODE >1205:C:\Users\Ezio\AppData\Local\Temp\saa0.
+174E cinit CODE >1207:C:\Users\Ezio\AppData\Local\Temp\saa0.
+1750 cinit CODE >1208:C:\Users\Ezio\AppData\Local\Temp\saa0.
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -390,17 +390,17 @@ __Hspace_2 0 0 ABS 0 - dist/default/production\StateMachine.X.production.obj
 _LcdLines 100B 0 SMALLCONST 0 smallconst dist/default/production\StateMachine.X.production.obj
 _SSP1STATbits FC7 0 ABS 0 - dist/default/production\StateMachine.X.production.obj
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\StateMachine.X.production.obj
-__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Ezio\AppData\Local\Temp\sck4.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Ezio\AppData\Local\Temp\saa0.obj
 __Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\StateMachine.X.production.obj
 _Delay10TCYx 1754 0 CODE 0 text23 dist/default/production\StateMachine.X.production.obj
 __end_of_LcdClear 1780 0 CODE 0 text19 dist/default/production\StateMachine.X.production.obj
 __end_of_LcdLines 1077 0 SMALLCONST 0 smallconst dist/default/production\StateMachine.X.production.obj
 setIODIR@dir 2D 0 COMRAM 1 cstackCOMRAM dist/default/production\StateMachine.X.production.obj
 __Lsmallconst 1000 0 SMALLCONST 0 smallconst dist/default/production\StateMachine.X.production.obj
-___sp 0 0 STACK 2 stack C:\Users\Ezio\AppData\Local\Temp\sck4.obj
+___sp 0 0 STACK 2 stack C:\Users\Ezio\AppData\Local\Temp\saa0.obj
 _init 1712 0 CODE 0 text14 dist/default/production\StateMachine.X.production.obj
 _main 1502 0 CODE 0 text0 dist/default/production\StateMachine.X.production.obj
-start 0 0 CODE 0 init C:\Users\Ezio\AppData\Local\Temp\sck4.obj
+start 0 0 CODE 0 init C:\Users\Ezio\AppData\Local\Temp\saa0.obj
 __size_of_init 0 0 ABS 0 - dist/default/production\StateMachine.X.production.obj
 __size_of_main 0 0 ABS 0 - dist/default/production\StateMachine.X.production.obj
 __size_of___lwdiv 0 0 ABS 0 - dist/default/production\StateMachine.X.production.obj
@@ -415,11 +415,11 @@ __end_of_WriteSPI1 1742 0 CODE 0 text22 dist/default/production\StateMachine.X.p
 __Hpowerup 0 0 CODE 0 powerup dist/default/production\StateMachine.X.production.obj
 __size_of_WriteSPI1 0 0 ABS 0 - dist/default/production\StateMachine.X.production.obj
 __end_of_initButtons 1778 0 CODE 0 text15 dist/default/production\StateMachine.X.production.obj
-__accesstop 60 0 ABS 0 - C:\Users\Ezio\AppData\Local\Temp\sck4.obj
-intlevel0 0 0 CODE 0 text C:\Users\Ezio\AppData\Local\Temp\sck4.obj
-intlevel1 0 0 CODE 0 text C:\Users\Ezio\AppData\Local\Temp\sck4.obj
-intlevel2 0 0 CODE 0 text C:\Users\Ezio\AppData\Local\Temp\sck4.obj
-intlevel3 0 0 CODE 0 text C:\Users\Ezio\AppData\Local\Temp\sck4.obj
+__accesstop 60 0 ABS 0 - C:\Users\Ezio\AppData\Local\Temp\saa0.obj
+intlevel0 0 0 CODE 0 text C:\Users\Ezio\AppData\Local\Temp\saa0.obj
+intlevel1 0 0 CODE 0 text C:\Users\Ezio\AppData\Local\Temp\saa0.obj
+intlevel2 0 0 CODE 0 text C:\Users\Ezio\AppData\Local\Temp\saa0.obj
+intlevel3 0 0 CODE 0 text C:\Users\Ezio\AppData\Local\Temp\saa0.obj
 __LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\StateMachine.X.production.obj
 __size_of_setGPIO 0 0 ABS 0 - dist/default/production\StateMachine.X.production.obj
 __LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\StateMachine.X.production.obj
@@ -432,8 +432,8 @@ _ADCON1 FC1 0 ABS 0 - dist/default/production\StateMachine.X.production.obj
 _ADCON2 FC0 0 ABS 0 - dist/default/production\StateMachine.X.production.obj
 _ADRESH FC4 0 ABS 0 - dist/default/production\StateMachine.X.production.obj
 _updateOutputs 1686 0 CODE 0 text1 dist/default/production\StateMachine.X.production.obj
-___inthi_sp 0 0 STACK 2 stack C:\Users\Ezio\AppData\Local\Temp\sck4.obj
-___intlo_sp 0 0 STACK 2 stack C:\Users\Ezio\AppData\Local\Temp\sck4.obj
+___inthi_sp 0 0 STACK 2 stack C:\Users\Ezio\AppData\Local\Temp\saa0.obj
+___intlo_sp 0 0 STACK 2 stack C:\Users\Ezio\AppData\Local\Temp\saa0.obj
 WriteSPI1@TempVar 2B 0 COMRAM 1 cstackCOMRAM dist/default/production\StateMachine.X.production.obj
 __Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\StateMachine.X.production.obj
 __Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\StateMachine.X.production.obj
@@ -508,7 +508,7 @@ __Hbank14 0 0 ABS 0 bank14 dist/default/production\StateMachine.X.production.obj
 __Hbank15 0 0 ABS 0 bank15 dist/default/production\StateMachine.X.production.obj
 __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\StateMachine.X.production.obj
 __Hbigram 0 0 ABS 0 bigram dist/default/production\StateMachine.X.production.obj
-__smallconst 1000 0 SMALLCONST 0 smallconst C:\Users\Ezio\AppData\Local\Temp\sck4.obj
+__smallconst 1000 0 SMALLCONST 0 smallconst C:\Users\Ezio\AppData\Local\Temp\saa0.obj
 __end_of_stateMachine_clima 12A8 0 CODE 0 text2 dist/default/production\StateMachine.X.production.obj
 __end_of_sprintf 1404 0 CODE 0 text3 dist/default/production\StateMachine.X.production.obj
 __Hcomram 0 0 ABS 0 comram dist/default/production\StateMachine.X.production.obj
@@ -642,8 +642,8 @@ OpenSPI1@bus_mode 2B 0 COMRAM 1 cstackCOMRAM dist/default/production\StateMachin
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\StateMachine.X.production.obj
 ___lwdiv@divisor 2D 0 COMRAM 1 cstackCOMRAM dist/default/production\StateMachine.X.production.obj
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\StateMachine.X.production.obj
-stackhi F5F 0 ABS 0 - C:\Users\Ezio\AppData\Local\Temp\sck4.obj
-stacklo 60 0 ABS 0 - C:\Users\Ezio\AppData\Local\Temp\sck4.obj
+stackhi F5F 0 ABS 0 - C:\Users\Ezio\AppData\Local\Temp\saa0.obj
+stacklo 60 0 ABS 0 - C:\Users\Ezio\AppData\Local\Temp\saa0.obj
 __Lintcode 0 0 CODE 0 intcode dist/default/production\StateMachine.X.production.obj
 __Lintret 0 0 ABS 0 intret dist/default/production\StateMachine.X.production.obj
 __Lirdata 0 0 CODE 0 irdata dist/default/production\StateMachine.X.production.obj
@@ -707,7 +707,7 @@ __Ltext22 0 0 ABS 0 text22 dist/default/production\StateMachine.X.production.obj
 __Ltext23 0 0 ABS 0 text23 dist/default/production\StateMachine.X.production.obj
 __Ltext24 0 0 ABS 0 text24 dist/default/production\StateMachine.X.production.obj
 __Ltext25 0 0 ABS 0 text25 dist/default/production\StateMachine.X.production.obj
-__ramtop 1000 0 RAM 0 ramtop C:\Users\Ezio\AppData\Local\Temp\sck4.obj
+__ramtop 1000 0 RAM 0 ramtop C:\Users\Ezio\AppData\Local\Temp\saa0.obj
 _sprintf 12A8 0 CODE 0 text3 dist/default/production\StateMachine.X.production.obj
 __end_of_getOnOffLeftButton 1796 0 CODE 0 text9 dist/default/production\StateMachine.X.production.obj
 __Lpowerup 0 0 CODE 0 powerup dist/default/production\StateMachine.X.production.obj
@@ -763,7 +763,7 @@ __Lram 0 0 ABS 0 ram dist/default/production\StateMachine.X.production.obj
 __Lsfr 0 0 ABS 0 sfr dist/default/production\StateMachine.X.production.obj
 checkInput@leftButton_old 2 0 COMRAM 1 bssCOMRAM dist/default/production\StateMachine.X.production.obj
 _state 9 0 COMRAM 1 bssCOMRAM dist/default/production\StateMachine.X.production.obj
-___extmem_base 20000 0 ABS 0 - C:\Users\Ezio\AppData\Local\Temp\sck4.obj
+___extmem_base 20000 0 ABS 0 - C:\Users\Ezio\AppData\Local\Temp\saa0.obj
 _LcdChar 1624 0 CODE 0 text12 dist/default/production\StateMachine.X.production.obj
 _LcdGoTo 1764 0 CODE 0 text13 dist/default/production\StateMachine.X.production.obj
 _LcdInit 1550 0 CODE 0 text16 dist/default/production\StateMachine.X.production.obj
